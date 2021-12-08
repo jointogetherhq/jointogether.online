@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {%- include head.html -%}
+  </head>
+  <body>
+    <div id="page">
+      {%- include header.html -%}
+    
+      <main>
+        <article>
+          <header>
+            <h1>{{ page.title | markdownify }}</h1>
+          </header>
+          {{ content }}
+        </article>
+      </main>
+
+      {%- include footer.html -%}
+      <div id="artwork-panel-5"></div>
+      <div id="artwork-panel-6"></div>
+    </div>
+  </body>
+</html>
