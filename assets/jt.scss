@@ -11,14 +11,14 @@
   font-family: 'JoinTogetherTitle'; 
   font-style: normal; 
   font-weight: 400;
-  src: url("/assets/fonts/WremenaLight.woff") format("woff");
+  src: url("{{ site.url }}/assets/fonts/WremenaLight.woff") format("woff");
 }
 
 @font-face {
   font-family: 'JoinTogetherBody'; 
   font-style: normal; 
   font-weight: 400;
-  src: url("/assets/fonts/Poppins-SemiBold.otf") format("opentype");
+  src: url("{{ site.url }}/assets/fonts/Poppins-SemiBold.otf") format("opentype");
 }
 
 
