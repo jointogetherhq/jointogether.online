@@ -7,9 +7,12 @@
     <div id="homepage">
       {%- include header.html -%}
       <header id="brand-area">
-        <div><h1>{{ site.title }}</h1></div>
-        <div><p>{{ site.description }}</p></div>
+        <p>We make <span>{{ site.description }}</span></p>
       </header>
+      
+      <p id="message-1">{{ page.message-1 }}</p>
+      
+      <p id="message-2">{{ page.message-2 }}</p>
     
       {%- include footer.html -%}
       <div id="artwork-panel-1"></div>

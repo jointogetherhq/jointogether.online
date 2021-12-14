@@ -3,22 +3,14 @@
 
 
 // Webfonts
-// Both fonts (Wremena and Inter) are free
-// Wremena: https://typefaces.temporarystate.net/preview/Wremena
-// Inter: https://rsms.me/inter/
-
-@font-face {
-  font-family: 'JoinTogetherTitle'; 
-  font-style: normal; 
-  font-weight: 400;
-  src: url("{{ site.url }}/assets/fonts/WremenaLight.woff") format("woff");
-}
+// Gellix is a commercial font by Displaay - we need to get a license for it
+// https://displaay.net/typeface/gellix/
 
 @font-face {
   font-family: 'JoinTogetherBody'; 
   font-style: normal; 
   font-weight: 400;
-  src: url("{{ site.url }}/assets/fonts/Poppins-SemiBold.otf") format("opentype");
+  src: url("{{ site.url }}/assets/fonts/GellixTRIAL-Bold.otf") format("opentype");
 }
 
 
@@ -34,29 +26,29 @@ $strapline-max-width: 1500px;
 
 @mixin core-font {
   font-family: JoinTogetherBody, sans-serif;
-  // -webkit-font-smoothing: antialiased;
-  font-size: 17px;
-  line-height: 1.4;
-  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  font-size: 19px;
+  line-height: 1.3;
   @media (min-width: $content-max-width) {
-    font-size: 21px;
-    line-height: 1.3;
-    letter-spacing: -0.01em;
+    font-size: 24px;
+    line-height: 1.15;
   }
 }
 
 @mixin header-font {
   font-family: JoinTogetherBody, sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-size: 28px;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  word-spacing: 0.01em;
-  @media (min-width: $content-max-width) {
-    font-size: 37px;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    word-spacing: 0.01em;
+  font-size: 10vw;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  @media (min-width: 640px) {
+    font-size: 4.5vw;
+  }
+  @media (min-width: $content-max-width*1.5) {
+    font-size: 3vw;
+  }
+  @media (min-width: $content-max-width*2) {
+    font-size: 2vw;
   }
 }
 
@@ -87,11 +79,14 @@ $strapline-max-width: 1500px;
 @mixin article-block {
   @include content-block;
   header {
+    @include header-font;
     min-height: 50vh;
     box-sizing: border-box;
     display: flex;
     align-items: flex-end;
-    border-bottom: 2px solid;
+    border-bottom: 0.1em solid;
+    display: flex;
+    justify-content: center;
   }
   @media (min-width: $content-max-width*1.5) {
     max-width: $content-max-width*1.5;
@@ -101,8 +96,11 @@ $strapline-max-width: 1500px;
     }
     h2 {
       margin-left: -50%;
-      width: 50%;
+      width: 17em;
+      max-width: 50%;
       float: left;
+      box-sizing: border-box;
+      padding-right: 2em;
     }
   }
   @media (min-width: $content-max-width*2) {
@@ -111,11 +109,15 @@ $strapline-max-width: 1500px;
     header, h2 {
       margin-left: -100%;
     }
+    h2 {
+      max-width: 100%;
+    }
   }
 }
 
 @mixin article-typography {
   h1 {
+    text-align: center;
     margin: 12.5vh 0 1em;
   }
   h2 {
@@ -123,6 +125,10 @@ $strapline-max-width: 1500px;
     box-sizing: border-box;
     &+* {
       margin-top: 12.5vh!important;
+    }
+    @media (max-width: 767px) {
+      font-size: 150%;
+      max-width: 12em;
     }
   }
   p {
@@ -151,11 +157,16 @@ $strapline-max-width: 1500px;
   line-height: inherit;
 }
 
-body {
-  @include core-font;
+html {
   position: relative;
   background: red;
   background: linear-gradient(0deg, rgba(29,57,94,1) 40%, $brand 60%);
+  background-repeat: repeat-y;
+}
+
+body {
+  @include core-font;
+  position: relative;
 }
 
 a {
@@ -182,18 +193,31 @@ a, button {
 
 #logo {
   position: relative;
-  z-index: 20;
+  z-index: 30;
   grid-column: 1 / 2;
-  grid-row: 1 / 3;
+  grid-row: 1 / 2;
+  align-self: start;
   @include content-block;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  div {
-    position: sticky;
-    top: 1em;
-    padding: 0.5ex;
+  @include header-font;
+  padding-top: 0;
+  a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
     color: white;
+    transition: color 0.6s ease 0s;
+    &:hover,
+    &:focus {
+      color: $brand;
+      transition-delay: 0.3s;
+    }
+  }
+  div {
+    padding: 0.5ex;
+    span {
+      display: none;
+    }
     &:first-child {
       padding-left: 0;
     }
@@ -202,14 +226,22 @@ a, button {
     }
     &:nth-child(2) {
       flex-grow: 1;
+      position: relative;
       &:after {
         content: " ";
         position: absolute;
         left: 0;
-        right: 0;
+        right: 0.1em;
         top: 0.9em;
         height: 0;
-        border-bottom: 2px solid;
+        border-bottom: 0.1em solid;
+      }
+    }
+  }
+  @media (min-width: 640px) {
+    div {
+      span {
+        display: inline;
       }
     }
   }
@@ -230,116 +262,69 @@ a, button {
   grid-row: 1 / 3;
   display: flex;
   flex-direction: column;
-  font-size: 13vw;
-  letter-spacing: -0.06em;
-  line-height: 0.95;
   justify-self: center;
   align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  padding-bottom: 40%;
-  padding-top: 10%;
-  div {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 2rem;
-  }
-  h1 {
-    width: 100%;
-    margin: 0 auto 0 0;
-  }
-  p {
-    width: 100%;
-    margin: 0 auto 0 0;
-  }
-  @media (min-width: $content-max-width) {
-    font-size: 6vw;
-    flex-direction: row;
-    width: auto;
-    padding-top: 0;
-    padding-bottom: 0;
-    div {
-      width: 50%;
-    }
-    h1 {
-      width: 4em;
-      margin: 0 auto 0 0;
-    }
-    p {
-      width: 8em;
-      margin: 0 0 0 auto;
-    }
-  }
-}
-
-
-
-#product-image {
-  position: relative;
-  z-index: 30;
-  grid-column: 1 / 2;
-  grid-row: 1 / 3;
-  width: 100%;
-  padding-top: 6.66vw;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  #img-wrapper {
-    position: relative;
-    width: 100%;
-    max-width: $content-max-width;
-    height: auto;
-    background: rgba(230,230,230,0.9);
-    -webkit-backdrop-filter: blur(5px);
-    padding: 25px 1px 1px;
-    border-radius: 5px;
-    box-shadow: 0 20px 30px rgba(0,0,0,0.4);
-    transform: perspective(500px) rotateZ(2deg) rotateY(-5deg);
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-      border-radius: 3px;
-    }
-  }
-}
-
-
-
-
-#strapline {
-  position: relative;
-  z-index: 50;
-  grid-column: 1 / 2;
-  grid-row: 2 / 4;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  transform: translateZ(0);
-  backface-visibility: hidden;
-  perspective: 1000;
+  padding-bottom: 6.66%;
   p {
-    color: white;
-    font-size: 4vw;
-    word-spacing: 0.25em;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    max-width: $strapline-max-width;
-    @media (min-width: $strapline-max-width) {
-      font-size: #{$strapline-max-width * 0.04};
+    text-align: center;
+    max-width: 10em;
+    margin: 0 auto;
+    font-size: 15vw;
+    letter-spacing: -0.03em;
+    line-height: 0.9;
+    text-shadow: 0 0 10px rgba(255,192,112,0.3), 0 0 1px rgba(255,192,112,0.5);
+    @media (min-width: 768px) {
+      font-size: 10vw;
     }
     span {
-      &:first-child,
-      &:last-child {
-        text-transform: uppercase;
-      }
+      text-transform: lowercase;
     }
+  }
+}
+
+
+
+#message-1 {
+  @include content-block;
+  z-index: 30;
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+  align-self: center;
+  justify-self: center;
+  color: white;
+  font-size: 180%;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  text-align: center;
+  @media (min-width: $content-max-width*1.5) {
+    font-size: 250%;
+    max-width: $content-max-width*1.5;
+  }
+  @media (min-width: $content-max-width*2) {
+    max-width: $content-max-width*2;
+  }
+}
+
+
+#message-2 {
+  @include content-block;
+  z-index: 30;
+  grid-column: 1 / 2;
+  grid-row: 3 / 5;
+  align-self: center;
+  justify-self: center;
+  font-size: 180%;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  text-align: center;
+  @media (min-width: $content-max-width*1.5) {
+    font-size: 250%;
+    max-width: $content-max-width*1.5;
+  }
+  @media (min-width: $content-max-width*2) {
+    max-width: $content-max-width*2;
   }
 }
 
