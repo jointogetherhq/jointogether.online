@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {%- include head.html new="true" -%}
+  </head>
+  <body>
+    <div>
+      <div id="banner">
+        {%- include header.html -%}
+      </div>
+      
+      <header id="brand-area">
+        <div>
+          <p><span>{{ site.description }}</span></p>
+        </div>
+      </header>
+      
+      <div id="message-1">
+        <div>
+          <p>{{ page.message-1 }}</p>
+        </div>
+      </div>
+      
+      <div id="message-2">
+        <div>
+          <p>{{ page.message-2 }}<span class="icon-1"></span><span class="icon-2"></span><span class="icon-3"></span></p>
+        </div>
+      </div>
+    
+      {%- include footer.html -%}
+      <div id="artwork-panel-1"></div>
+      <div id="artwork-panel-2"></div>
+      <div id="artwork-panel-3"></div>
+      <div id="artwork-panel-4"></div>
+      <div id="artwork-panel-5"></div>
+      <div id="artwork-panel-6"></div>
+      <div id="artwork-panel-7"></div>
+      <div id="artwork-panel-8"></div>
+    </div>
+  </body>
+</html>

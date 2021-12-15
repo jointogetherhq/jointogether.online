@@ -1,0 +1,375 @@
+---
+---
+
+
+// Webfonts
+// Gellix is a commercial font by Displaay - we need to get a license for it
+// https://displaay.net/typeface/gellix/
+
+@font-face {
+  font-family: 'JoinTogetherBody'; 
+  font-style: normal; 
+  font-weight: 400;
+  src: url("{{ site.url }}/assets/fonts/NeueMontreal-Bold.otf") format("opentype");
+}
+
+$brand: rgb(242,32,35);
+
+@mixin font-titles {
+  font-family: 'JoinTogetherBody'; 
+  font-size: 10vw;
+  letter-spacing: -0.02em;
+  line-height: 0.93;
+  @media (min-width: 640px) {
+    font-size: 8vw;
+  }
+  @media (min-width: 960px) {
+    font-size: 77px;
+  }
+}
+
+@mixin font-ui {
+  font-family: 'JoinTogetherBody'; 
+  font-size: 17px;
+  line-height: 1.3;
+  letter-spacing: 0;
+  @media (min-width: 640px) {
+    font-size: 25px;
+  }
+}
+
+@mixin panel {
+  display: block;
+  position: relative;
+  grid-column: 1 / 2;
+  width: 100%;
+  & > * {
+    box-sizing: border-box;
+    margin: 0 auto;
+    left: 3vw;
+    padding: 1rem 1rem 2rem 2rem;
+    max-width: 52rem;
+    position: sticky;
+    top: 0;
+    @include font-titles;
+    @media (min-width: 640px) {
+      padding: 1rem 3rem 2rem;
+    }
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-underline-offset: 0.1em;
+  text-decoration-thickness: 1px;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  & > div {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    min-height: 277vh;
+  }
+}
+
+#banner {
+  @include panel;
+  grid-row: 1 / 2;
+  z-index: 10;
+  a {
+    display: flex;
+    text-decoration: none;
+    div:nth-child(2) {
+      width: 1em;
+      height: 0.5em;
+      margin-left: 0.15em;
+      border-bottom: 0.1em solid;
+    }
+  }
+}
+
+#brand-area {
+  @include panel;
+  grid-row: 2 / 3;
+  z-index: 20;
+  p {
+    span {
+      display: block;
+      max-width: 8em;
+    }
+  }
+}
+
+#message-1 {
+  @include panel;
+  grid-row: 3 / 4;
+  z-index: 30;
+}
+
+#message-2 {
+  @include panel;
+  grid-row: 4 / 6;
+  z-index: 40;
+  color: white;
+  mix-blend-mode: difference;
+  span {
+    position: relative;
+    top: 0.15em;
+    margin-left: 0.15em;
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    background-size: contain;
+    background-position: top left;
+    filter: invert(1);
+    &.icon-1 {
+      background-image: url(images/icon-1.svg);
+    }
+    &.icon-2 {
+      background-image: url(images/icon-2.svg);
+    }
+    &.icon-3 {
+      background-image: url(images/icon-3.svg);
+    }
+  }
+}
+
+#newsletter-signup {
+  @include panel;
+  grid-row: 6 / 7;
+  z-index: 50;
+  form {
+    position: relative;
+    left: 0;
+    fieldset {
+      position: relative;
+      display: block;
+      width: 100%;
+      border: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    label {
+      width: 100%;
+      color: white;
+      padding-bottom: 15px;
+      @include font-ui;
+      a {
+        display: inline-block;
+      }
+    }
+    input {
+      flex-grow: 1;
+      background: white;
+      border: none;
+      border-radius: 5px 0 0 5px;
+      height: 50px;
+      box-sizing: border-box;
+      z-index: 5;
+      padding: 0 0 3px 15px;
+      @include font-ui;
+      width: 50px;
+      &:focus {
+        outline: none;
+      }
+      &+div {
+        position: absolute;
+        background: transparent;
+        border-radius: 13px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+        height: 70px;
+      }
+      &:focus+div {
+        background: $brand;
+      }
+    }
+    button {
+      background: white;
+      border-radius: 0 5px 5px 0;
+      border: none;
+      height: 50px;
+      box-sizing: border-box;
+      z-index: 5;
+      padding: 0 15px 3px 15px;
+      @include font-ui;
+      cursor: pointer;
+      &:hover {
+        background: #eee;
+      }
+    }
+  }
+}
+
+footer {
+  @include panel;
+  grid-row: 6 / 7;
+  z-index: 60;
+  align-self: end;
+  div {
+    height: 100%;
+    @include font-ui;
+    nav {
+      padding-top: 0.5em;
+    }
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      nav {
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+#artwork-panel-1 {
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+  grid-column: 1 / 2;
+  grid-row: 3 / 6;
+  border-radius: 125px 125px 0 0;
+  justify-self: center;
+  background: red;
+  background: linear-gradient(180deg, rgba($brand,1) 0%, rgba($brand,1) 50%, rgba($brand,0) 70%);
+  width: 29.5%;
+  max-width: 225px;
+  z-index: 2;
+  display: none;
+}
+
+#artwork-panel-2 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  background: cyan;
+  background: linear-gradient(180deg, rgba(189,206,252,1) 0%, rgba(223,218,225,1) 30%, rgba(251,188,155,1) 55%, rgba(234,153,149,1) 95%);
+}
+
+#artwork-panel-3 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  background: rgba(234,153,149,1);
+  &:before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: -12.5%;
+    right: -12.5%;
+    bottom: -50%;
+    background: rgba(150,150,150,1);
+    border-radius: 100%;
+    box-shadow: 0 -1vw 15vw rgba(255,255,255,1);
+  }
+}
+
+#artwork-panel-4 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  background: rgba(150,150,150,1);
+  &:before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: -12.5%;
+    right: -12.5%;
+    bottom: -50%;
+    background: white;
+    border-radius: 100%;
+    filter: blur(20px);
+  }
+}
+
+#artwork-panel-5 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  grid-column: 1 / 2;
+  grid-row: 4 / 6;
+  background: white;
+  &:before {
+    content: " ";
+    position: absolute;
+    top: 75%;
+    left: -12.5%;
+    right: -12.5%;
+    bottom: -25%;
+    background: rgba(0,0,0,1);
+    border-radius: 100%;
+  }
+}
+
+#artwork-panel-6 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  grid-column: 1 / 2;
+  grid-row: 6 / 7;
+  background: rgba(0,0,0,1);
+  &:before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: -12.5%;
+    right: -12.5%;
+    bottom: -50%;
+    background: $brand;
+    border-radius: 100%;
+    box-shadow: 0 -1vw 15vw rgba(rgba($brand,0),1);
+  }
+}
+
+#artwork-panel-7 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+  justify-self: start;
+  background-image: url(images/greg-jeanneau-9sxeKzuCVoE-unsplash.png);
+  background-size: cover;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  mix-blend-mode: screen;
+  z-index: 1;
+}
+
+#artwork-panel-8 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  grid-column: 1 / 2;
+  grid-row: 6 / 8;
+  justify-self: start;
+  background: $brand;
+  display: none;
+}
+
+
