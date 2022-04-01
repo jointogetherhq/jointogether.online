@@ -29,3 +29,15 @@ url: "https://thinkmake.github.io/jointogether.online/" # the base hostname & pr
 plugins:
   - jekyll-feed
 
+collections:
+  corporate-pages:
+    output: true
+    permalink: /:path/
+    layout: page
+    sort_by: order
+  product-pages:
+    output: true
+    permalink: /:path/
+    layout: product
+    sort_by: order
+    

@@ -1,28 +1,27 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    {%- include head.html -%}
-  </head>
-  <body>
-    <div id="homepage">
-      {%- include header.html -%}
-      <header id="brand-area">
-        <p>We make <span>{{ site.description }}</span></p>
-      </header>
-      
-      <p id="message-1">{{ page.message-1 }}</p>
-      
-      <p id="message-2">{{ page.message-2 }}</p>
-    
-      {%- include footer.html -%}
-      <div id="artwork-panel-1"></div>
-      <div id="artwork-panel-2"></div>
-      <div id="artwork-panel-3"></div>
-      <div id="artwork-panel-4"></div>
-      <div id="artwork-panel-5"></div>
-      <div id="artwork-panel-6"></div>
-      <div id="artwork-panel-7"></div>
-      <div id="artwork-panel-8"></div>
+---
+layout: base
+---
+
+<main id="layout-homepage">
+  <div id="layout-inner">
+  {% for item in page.paragraphs %}
+    <div class="lede-block">
+      <p>{{ item.text }}
+      {% if forloop.last == true %}
+        <span class="icon-1"></span>
+        <span class="icon-2"></span>
+        <span class="icon-3"></span>
+      {% endif %}
+      </p>
     </div>
-  </body>
-</html>
+  {% endfor %}
+  </div>
+  <div id="homepage-detail">
+    {{ content }}
+  </div>
+  <nav>
+  {% for item in page.buttons %}
+    <a href="{{ item.url }}">{{ item.label }}</a>
+  {% endfor %}
+  </nav>
+</main>

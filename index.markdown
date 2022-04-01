@@ -3,6 +3,22 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-message-1: We want to make joining a trade union quicker, easier and more accessible.
-message-2: Because bigger unions, with more members, can reshape our politics in favour of people who work rather than people with wealth.
+paragraphs: 
+  - text: 'Digital tools for <br>trade&nbsp;unions'
+  - text: 'We want to make joining a trade union quicker, easier and more accessible.'
+  - text: 'Because bigger unions with&nbsp;more members can help reshape our politics.'
+  - text: 'Better work for <br>everyone.'
+buttons:
+  - label: 'Book a call'
+    url: '#'
+  - label: 'Joining tool'
+    url: 'joining-tool'
 ---
+
+## Join Together helps unions get more members by:
+
+- Turning effective workplace organising and great campaigns into more members by making it quick and easy for people to join.
+- Giving prospective members a great first impression of joining a union.
+- Reducing member attrition and increasing revenue, by making it straightforward for people to update their contact information, payment details and their subs rate.
+- Being designed and built for unions, fully hosted, secure, scalable and continually optimised to get better and better over time.
+- Being built by a team who actually get unions.

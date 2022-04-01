@@ -2,578 +2,476 @@
 ---
 
 
-// Webfonts
-// Gellix is a commercial font by Displaay - we need to get a license for it
-// https://displaay.net/typeface/gellix/
 
-@font-face {
-  font-family: 'JoinTogetherBody'; 
-  font-style: normal; 
-  font-weight: 400;
-  src: url("{{ site.url }}/assets/fonts/GellixTRIAL-Bold.otf") format("opentype");
-}
-
-
-
-
-// general mixins
-
-$brand: rgb(235,0,16);
-
-$content-max-width: 600px;
-$header-max-width: 2000px;
-$strapline-max-width: 1500px;
-
-@mixin core-font {
-  font-family: JoinTogetherBody, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  font-size: 19px;
-  line-height: 1.3;
-  @media (min-width: $content-max-width) {
-    font-size: 24px;
-    line-height: 1.15;
-  }
-}
-
-@mixin header-font {
-  font-family: JoinTogetherBody, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  font-size: 10vw;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  @media (min-width: 640px) {
-    font-size: 4.5vw;
-  }
-  @media (min-width: $content-max-width*1.5) {
-    font-size: 3vw;
-  }
-  @media (min-width: $content-max-width*2) {
-    font-size: 2vw;
-  }
-}
-
-@mixin ui-font {
-  font-family: JoinTogetherBody, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  font-size: 13px;
-  line-height: 1.4;
-  letter-spacing: -0.01em;
-  @media (min-width: $content-max-width) {
-    font-size: 19px;
-    line-height: 1.3;
-    letter-spacing: -0.02em;
-  }
-}
-
-@mixin content-block {
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 2rem;
-  width: 100%;
-  max-width: $content-max-width;
-  @media (min-width: $content-max-width) {
-    padding: 1rem;
-  }
-}
-
-@mixin article-block {
-  @include content-block;
-  header {
-    @include header-font;
-    min-height: 50vh;
-    box-sizing: border-box;
-    display: flex;
-    align-items: flex-end;
-    border-bottom: 0.1em solid;
-    display: flex;
-    justify-content: center;
-  }
-  @media (min-width: $content-max-width*1.5) {
-    max-width: $content-max-width*1.5;
-    padding-left: $content-max-width*0.5;
-    header {
-      margin-left: -50%;
-    }
-    h2 {
-      margin-left: -50%;
-      width: 17em;
-      max-width: 50%;
-      float: left;
-      box-sizing: border-box;
-      padding-right: 2em;
-    }
-  }
-  @media (min-width: $content-max-width*2) {
-    max-width: $content-max-width*2;
-    padding-left: $content-max-width;
-    header, h2 {
-      margin-left: -100%;
-    }
-    h2 {
-      max-width: 100%;
-    }
-  }
-}
-
-@mixin article-typography {
-  h1 {
-    text-align: center;
-    margin: 12.5vh 0 1em;
-  }
-  h2 {
-    margin-top: 12.5vh;
-    box-sizing: border-box;
-    &+* {
-      margin-top: 12.5vh!important;
-    }
-    @media (max-width: 767px) {
-      font-size: 150%;
-      max-width: 12em;
-    }
-  }
-  p {
-    margin: 1em 0 0;
-  }
-  ul, ol {
-    margin: 1em 0 0;
-    padding: 0 0 0 1em;
-  }
-  pre:focus {
-    outline: none;
-  }
-}
-
-
-
-// basic reset
+// RESET
 
 * {
-  margin: 0;
-  padding: 0;
+  border: none;
+  color: inherit;
+  background: transparent;
   font-family: inherit;
   font-size: inherit;
   font-style: inherit;
   font-weight: inherit;
+  letter-spacing: inherit;
   line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
-html {
+
+
+// FONT EMBEDDING
+
+@font-face {
+  font-family: 'JoinTogether'; 
+  font-style: normal; 
+  font-weight: 800;
+  src: url("{{ site.url }}/assets/fonts/JoinTogether-Bold.otf") format("opentype");
+}
+
+// font is called Theinhardt-Bold needs licensing
+
+
+
+// VARIABLES
+
+$text: rgb(0,0,0);
+$page: rgb(255,255,255);
+$light-shade: darken($page, 6%);
+$dark-shade: lighten($text, 50%);
+$highlight: rgb(242,32,35);
+
+$measure: 19px;
+$baseline: $measure*1.2;
+$gutter: 16px;
+$whitespace: 22.5vh;
+$viewport-trigger: 760px;
+$max-width-narrow: 580px;
+$max-width-wide: 31em;
+$left-column-max: $max-width-wide * 0.7;
+$corner-radius: 8px;
+$transition: 0.3s ease;
+
+
+
+// MIXINS
+
+@mixin font-core {
+  font-family: JoinTogether, sans-serif;
+  font-size: $measure;
+  font-weight: 800;
+  line-height: $baseline;
+  letter-spacing: 0.01em;
+}
+
+@mixin font-large {
+  font-size: 5.5vw;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  @media (min-width: 1400px) {
+    font-size: 4.5vw;
+  }
+}
+
+@mixin layout-block {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
   position: relative;
-  background: red;
-  background: linear-gradient(0deg, rgba(29,57,94,1) 40%, $brand 60%);
-  background-repeat: repeat-y;
+  margin: 0 auto;
+  padding: $gutter;
+}
+
+@mixin centered-block {
+  margin: 0 auto;
+  width: 100%;
+  max-width: $max-width-narrow;
+  box-sizing: border-box;
+}
+
+@mixin grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 0 $gutter;
+  @media (min-width: $viewport-trigger) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@mixin text {
+  width: auto;
+  @media (min-width: $viewport-trigger) {
+    padding-left: calc(50% + #{$gutter * 0.5});
+    #header {
+      width: calc(200% + #{$gutter});
+      margin-left: calc(-100% - #{$gutter});
+      text-align: center;
+    }
+    h2 {
+      float: left;
+      margin-left: calc(#{$left-column-max *-1} - #{$gutter});
+      max-width: 16em;
+    }
+  }
+}
+
+@mixin body-typography {
+  #header {
+    margin-top: $whitespace*0.5;
+    margin-bottom: $whitespace*0.5;
+  }
+  h1 {
+    font-weight: bold;
+  }
+  h2, h3, h4, h5, h6 {
+    font-weight: 800;
+    margin-bottom: $gutter;
+    max-width: $max-width-wide;
+  }
+  h2, h2 + * {
+    padding-top: $whitespace*0.5;
+  }
+  p, ol, ul, div:not(#header), 
+  blockquote, quote {
+    margin-bottom: $gutter;
+    max-width: $max-width-wide;
+  }
+  ul {
+    list-style: none;
+    li {
+      position: relative;
+      padding-left: $gutter;
+      &:before {
+        content: "•";
+        display: inline-block;
+        position: relative;
+        margin-left: $gutter*-1;
+        width: $gutter;
+      }
+    }
+  }
+}
+
+@mixin button {
+  position: relative;
+  padding: $gutter;
+  height: $baseline;
+  background: $light-shade;
+  border-radius: $corner-radius;
+  text-decoration: none;
+  &:before {
+    content: " ";
+    position: absolute;
+    top: $gutter *-0.5;
+    left: $gutter *-0.5;
+    right: $gutter *-0.5;
+    bottom: $gutter *-0.5;
+    background: $highlight;
+    border-radius: $corner-radius*1.666;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity $transition;
+  }
+  &:focus {
+    outline: none;
+    &:before {
+      opacity: 1;
+    }
+  }
+}
+
+
+
+// BASE STYLES
+
+html {
+  background: $page;
+  color: $text;
+  @include font-core();
+  -webkit-font-smoothing: antialiased;
+
 }
 
 body {
-  @include core-font;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: $gutter $gutter 0;
+  min-height: calc(100vh - #{$gutter});
 }
 
 a {
-  color: inherit;
+  text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.15em;
-  &:hover,
-  &:focus {
-    opacity: 0.9999;
-    text-decoration-thickness: 3px;
-  }
+  text-decoration-color: $dark-shade;
 }
 
-a, button {
-  &:focus {
-    color: $brand;
-    background: black;
-    outline: none;
-  }
+hr {
+  display: block;
+  height: $whitespace;
 }
 
 
 
+// BRAND AREA
 
-#logo {
-  position: relative;
-  z-index: 30;
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  align-self: start;
-  @include content-block;
-  @include header-font;
-  padding-top: 0;
+header {
+  @include layout-block();
+  text-align: center;
   a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: inline;
     text-decoration: none;
-    color: white;
-    transition: color 0.6s ease 0s;
-    &:hover,
-    &:focus {
-      color: $brand;
-      transition-delay: 0.3s;
-    }
-  }
-  div {
-    padding: 0.5ex;
-    span {
-      display: none;
-    }
-    &:first-child {
-      padding-left: 0;
-    }
-    &:last-child {
-      padding-right: 0;
-    }
-    &:nth-child(2) {
-      flex-grow: 1;
-      position: relative;
-      &:after {
-        content: " ";
-        position: absolute;
-        left: 0;
-        right: 0.1em;
-        top: 0.9em;
-        height: 0;
-        border-bottom: 0.1em solid;
-      }
-    }
-  }
-  @media (min-width: 640px) {
-    div {
-      span {
-        display: inline;
-      }
-    }
-  }
-  @media (min-width: $content-max-width*1.5) {
-    max-width: $content-max-width*1.5;
-  }
-  @media (min-width: $content-max-width*2) {
-    max-width: $content-max-width*2;
   }
 }
 
 
 
-#brand-area {
-  position: relative;
-  z-index: 20;
-  grid-column: 1 / 2;
-  grid-row: 1 / 3;
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding-bottom: 6.66%;
-  p {
-    text-align: center;
-    max-width: 10em;
-    margin: 0 auto;
-    font-size: 15vw;
-    letter-spacing: -0.03em;
-    line-height: 0.9;
-    text-shadow: 0 0 10px rgba(255,192,112,0.3), 0 0 1px rgba(255,192,112,0.5);
-    @media (min-width: 768px) {
-      font-size: 10vw;
+// LAYOUT - HOMEPAGE
+
+#layout-homepage {
+  @include layout-block();
+  #layout-inner {
+    @include grid();
+    @media (min-width: $viewport-trigger) {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
-    span {
-      text-transform: lowercase;
-    }
-  }
-}
-
-
-
-#message-1 {
-  @include content-block;
-  z-index: 30;
-  grid-column: 1 / 2;
-  grid-row: 2 / 4;
-  align-self: center;
-  justify-self: center;
-  color: white;
-  font-size: 180%;
-  letter-spacing: -0.02em;
-  line-height: 1;
-  text-align: center;
-  @media (min-width: $content-max-width*1.5) {
-    font-size: 250%;
-    max-width: $content-max-width*1.5;
-  }
-  @media (min-width: $content-max-width*2) {
-    max-width: $content-max-width*2;
-  }
-}
-
-
-#message-2 {
-  @include content-block;
-  z-index: 30;
-  grid-column: 1 / 2;
-  grid-row: 3 / 5;
-  align-self: center;
-  justify-self: center;
-  font-size: 180%;
-  letter-spacing: -0.02em;
-  line-height: 1;
-  text-align: center;
-  @media (min-width: $content-max-width*1.5) {
-    font-size: 250%;
-    max-width: $content-max-width*1.5;
-  }
-  @media (min-width: $content-max-width*2) {
-    max-width: $content-max-width*2;
-  }
-}
-
-
-
-
-#newsletter-signup {
-  position: relative;
-  z-index: 30;
-  grid-column: 1 / 2;
-  grid-row: 4 / 6;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  form {
-    @include content-block;
-    position: relative;
-    fieldset {
-      position: relative;
-      display: block;
-      width: 100%;
-      border: none;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-    label {
-      width: 100%;
-      color: white;
-      padding-bottom: 10px;
-      text-align: center;
-      a {
-        display: inline-block;
+    .lede-block {
+      padding: $whitespace 0;
+      justify-self: center;
+      p {
+        max-width: 13em;
+        @include font-large();
+        span {
+          position: relative;
+          top: 0.15em;
+          display: inline-block;
+          width: 0.8em;
+          height: 0.8em;
+          background-size: contain;
+          background-position: top left;
+          // filter: invert(1);
+          &.icon-1 {
+            background-image: url(images/icon-1.svg);
+          }
+          &.icon-2 {
+            background-image: url(images/icon-2.svg);
+          }
+          &.icon-3 {
+            background-image: url(images/icon-3.svg);
+          }
+        }
       }
-    }
-    input {
-      flex-grow: 1;
-      background: white;
-      border: none;
-      border-radius: 5px 0 0 5px;
-      height: 50px;
-      z-index: 5;
-      padding: 0 0 0 15px;
-      @include ui-font;
-      width: 50px;
-      &:focus {
-        outline: none;
+      @media (min-width: $viewport-trigger) {
+        &:nth-child(2n-1) {
+          grid-column: 1 / 6;
+        }
+        &:nth-child(2n) {
+          grid-column: 2 / 7;
+        }
+        &:nth-child(1) {
+          grid-row: 1 / 2;
+        }
+        &:nth-child(2) {
+          grid-row: 2 / 3;
+        }
+        &:nth-child(3) {
+          grid-row: 3 / 4;
+        }
+        &:nth-child(4) {
+          grid-row: 4 / 5;
+        }
+        &:nth-child(5) {
+          grid-row: 5 / 6;
+        }
+        &:nth-child(6) {
+          grid-row: 6 / 7;
+        }
+        &:nth-child(7) {
+          grid-row: 7 / 8;
+        }
+        &:nth-child(8) {
+          grid-row: 8 / 9;
+        }
+        &:nth-child(9) {
+          grid-row: 9 / 10;
+        }
+        &:nth-child(10) {
+          grid-row: 10 / 11;
+        }
       }
-      &+div {
-        position: absolute;
-        background: transparent;
-        border-radius: 13px;
-        left: -10px;
-        right: -10px;
-        bottom: -10px;
-        height: 70px;
-      }
-      &:focus+div {
-        background: $brand;
-      }
-    }
-    button {
-      background: white;
-      border-radius: 0 5px 5px 0;
-      border: none;
-      height: 50px;
-      z-index: 5;
-      padding: 0 15px;
-      @include ui-font;
-      cursor: pointer;
-      &:hover {
-        background: #eee;
+      @media (min-width: 1400px) {
+        &:nth-child(2n-1) {
+          grid-column: 1 / 5;
+        }
+        &:nth-child(2n) {
+          grid-column: 3 / 7;
+        }
       }
     }
   }
-}
-
-
-
-
-footer {
-  position: relative;
-  grid-column: 1 / 2;
-  grid-row: 5 / 6;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-content: center;
-  color: white;
-  div {
-    @include content-block;
-    z-index: 30;
-    width: 100%;
-    box-sizing: border-box;
-    position: relative;
+  #homepage-detail {
+    @include centered-block();
+    h1, h2, h3, h4, h5, h6,
+    p, ol, ul, div, 
+    blockquote, quote {
+      margin-bottom: $gutter;
+    }
+    ul {
+      list-style: none;
+      li {
+        position: relative;
+        padding-left: $gutter;
+        &:before {
+          content: "•";
+          display: inline-block;
+          position: relative;
+          margin-left: $gutter*-1;
+          width: $gutter;
+        }
+      }
+    }
+  }
+  nav {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    @include ui-font;
-    p, nav {
-      width: 100%;
+    justify-content: center;
+    padding-top: $gutter;
+    a {
+      @include button();
+      margin: 0 $gutter*0.5;
+    }
+  }
+}
+
+
+
+// LAYOUT - PRODUCT
+
+#layout-product {
+  @include layout-block();
+  #layout-inner {
+    #header {
+      @include font-large();
       text-align: center;
-      @media (min-width: $content-max-width) {
-        width: auto;
+      margin-top: $whitespace*0.5;
+      margin-bottom: $whitespace;
+    }
+  }
+}
+
+
+
+// LAYOUT - PAGES
+
+#layout-page {
+  @include layout-block();
+  #layout-inner {
+    @include body-typography();
+    @include text();
+    #header {
+      @include font-large();
+    }
+  }
+}
+
+
+
+// FOOTER
+
+footer {
+  @include layout-block();
+  form {
+    @include centered-block();
+    position: relative;
+    display: block;
+    overflow: visible;
+    margin-top: $whitespace;
+    margin-bottom: $whitespace;
+    fieldset {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      label {
+        width: 100%;
+        padding-bottom: $gutter;
+        text-align: center;
+      }
+      input {
+        position: relative;
+        z-index: 2;
+        flex-grow: 1;
+        padding: $gutter;
+        height: $baseline;
+        background: $light-shade;
+        border-radius: $corner-radius 0 0 $corner-radius;
+        & + div {
+          position: absolute;
+          z-index: 1;
+          bottom: $gutter*-0.5;
+          left: $gutter*-0.5;
+          right: $gutter*-0.5;
+          height: $baseline + $gutter*3;
+          border-radius: $corner-radius*1.666;
+          color: $highlight;
+          background: $highlight;
+          opacity: 0;
+          transition: opacity $transition;
+        }
+        &:focus {
+          outline: none;
+          & + div {
+            opacity: 1;
+          }
+        }
+      }
+      button {
+        position: relative;
+        z-index: 3;
+        padding: $gutter;
+        height: $baseline + $gutter*2;
+        cursor: pointer;
+        background: $light-shade;
+        border-radius: 0 $corner-radius $corner-radius 0;
+        &:hover {
+          background: darken($page, 10%);
+        }
+        &:focus {
+          outline: none;
+          background: $highlight;
+          color: $page;
+        }
       }
     }
   }
-}
-
-
-
-
-#homepage {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, 50vh);
-  justify-items: stretch;
-}
-
-#artwork-panel-1 {
-  position: relative;
-  overflow: hidden;
-  z-index: 10;
-  margin-top: -500px;
-  border-top: 500px solid $brand;
-  grid-column: 1 / 2;
-  grid-row: 1 / 6;
-  justify-self: center;
-  background: red;
-  background: linear-gradient(180deg, rgba($brand,1) 0%, rgba($brand,1) 67%, rgba($brand,0) 80%);
-  width: 33%;
-  max-width: 320px;
-}
-#artwork-panel-2 {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  background: cyan;
-  background: linear-gradient(180deg, rgba(29,57,94,1) 0%, rgba(03,40,67,1) 10%, rgba(146,138,127,1)35%, rgba(255,192,112,1) 95%);
-}
-#artwork-panel-3 {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-  background: rgba(255,192,112,1);
-  &:before {
-    content: " ";
-    position: absolute;
-    top: 50%;
-    left: -12.5%;
-    right: -12.5%;
-    bottom: -50%;
-    background: rgba(0,0,0,1);
-    border-radius: 100%;
-    box-shadow: 0 -1vw 15vw rgba(255,255,255,1);
-  }
-}
-#artwork-panel-4 {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
-  background: rgba(0,0,0,1);
-  &:before {
-    content: " ";
-    position: absolute;
-    top: 50%;
-    left: -12.5%;
-    right: -12.5%;
-    bottom: -50%;
-    background: white;
-    border-radius: 100%;
-    filter: blur(20px);
-  }
-}
-#artwork-panel-5 {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  grid-column: 1 / 2;
-  grid-row: 4 / 5;
-  background: white;
-  &:before {
-    content: " ";
-    position: absolute;
-    top: 50%;
-    left: -12.5%;
-    right: -12.5%;
-    bottom: -50%;
-    background: rgba(0,0,0,1);
-    border-radius: 100%;
-  }
-}
-#artwork-panel-6 {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  grid-column: 1 / 2;
-  grid-row: 5 / 6;
-  background: rgba(0,0,0,1);
-  &:before {
-    content: " ";
-    position: absolute;
-    top: 50%;
-    left: -12.5%;
-    right: -12.5%;
-    bottom: -50%;
-    background: $brand;
-    border-radius: 100%;
-    box-shadow: 0 -1vw 15vw rgba(rgba($brand,0),1);
-  }
-}
-#artwork-panel-7,
-#artwork-panel-8 {
-  display: none;
-}
-
-
-#page {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, minmax(50vh, max-content));
-  background: rgba(29,57,94,1);
-  main {
-    position: relative;
-    width: 100%;
-    padding-bottom: 50vh;
-    grid-column: 1 / 2;
-    grid-row: 1 / 5;
-    z-index: 21;
-    color: white;
-    background: linear-gradient(180deg, rgba($brand,0) 0%, rgba($brand,1) 25%);
-    article {
-      @include article-block;
-      @include article-typography;
+  #footer-navigation {
+    @include grid;
+    padding-top: $gutter;
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
     }
-    &~#artwork-panel-5 {
-      background: transparent;
-      z-index: 22;
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      h2 {
+        position: absolute;
+        left: -1000%;
+      }
+      span + span:before {
+        content: ", ";
+        padding-right: 0.1em;
+      }
+      a {
+        white-space: nowrap;
+      }
     }
   }
 }

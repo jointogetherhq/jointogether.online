@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Privacy policy
-permalink: /privacy-policy/
+order: 10
 ---
 
 ## Our contact details
