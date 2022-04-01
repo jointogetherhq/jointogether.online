@@ -28,7 +28,7 @@
   font-family: 'JoinTogether'; 
   font-style: normal; 
   font-weight: 800;
-  src: url("{{ site.url }}/assets/fonts/JoinTogether-Bold.otf") format("opentype");
+  src: url("{{ site.baseurl }}/assets/fonts/JoinTogether-Bold.otf") format("opentype");
 }
 
 // font is called Theinhardt-Bold needs licensing
@@ -162,24 +162,13 @@ $transition: 0.3s ease;
   background: $light-shade;
   border-radius: $corner-radius;
   text-decoration: none;
-  &:before {
-    content: " ";
-    position: absolute;
-    top: $gutter *-0.5;
-    left: $gutter *-0.5;
-    right: $gutter *-0.5;
-    bottom: $gutter *-0.5;
-    background: $highlight;
-    border-radius: $corner-radius*1.666;
-    z-index: -1;
-    opacity: 0;
-    transition: opacity $transition;
+  &:hover {
+    background: darken($page, 10%);
   }
   &:focus {
     outline: none;
-    &:before {
-      opacity: 1;
-    }
+    background: $highlight;
+    color: $page;
   }
 }
 
@@ -208,6 +197,16 @@ a {
   text-decoration-thickness: 1px;
   text-underline-offset: 0.15em;
   text-decoration-color: $dark-shade;
+  &:hover {
+    text-decoration-thickness: 2px;
+    text-decoration-color: $highlight;
+  }
+  &:focus {
+    outline: none;
+    color: $highlight;
+    text-decoration-thickness: 2px;
+    text-decoration-color: $highlight;
+  }
 }
 
 hr {

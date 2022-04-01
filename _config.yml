@@ -22,8 +22,8 @@ title: Join Together
 email: hello@jointogether.online
 description: >- 
   Digital tools for trade unions
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://thinkmake.github.io/jointogether.online/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/jointogether.online" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 plugins:
