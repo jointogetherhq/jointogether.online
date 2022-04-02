@@ -222,8 +222,18 @@ header {
   @include layout-block();
   text-align: center;
   a {
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
+    svg {
+      width: 100px;
+      height: auto;
+      margin-right: $gutter;
+    }
+
   }
 }
 
