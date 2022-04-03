@@ -365,7 +365,7 @@ header {
     }
   }
   nav {
-    @include cta-buttons;
+    @include cta-buttons();
   }
 }
 
@@ -376,7 +376,7 @@ header {
 #layout-product {
   @include layout-block();
   #layout-inner {
-    @include body-typography
+    @include body-typography();
     #header {
       @include font-large();
       text-align: center;
