@@ -1,7 +1,10 @@
 ---
 layout: product
-title: Our joining tool
+title: We’re making it easier to join a union
 order: 1
+buttons:
+  - label: 'Book a call to discuss your needs'
+    url: '#'
 ---
 
 It shouldn’t be hard to join a union. So Join Together:
@@ -26,3 +29,4 @@ Join Together features:
 6. Automated “resume application” feature for people who don’t join in one sitting.
 7. Built in analytics and reporting showing conversion rates, top employers and member lifetime value.
 
+Another paragraph about how we work.

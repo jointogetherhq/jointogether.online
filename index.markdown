@@ -11,7 +11,7 @@ paragraphs:
 buttons:
   - label: 'Book a call'
     url: '#'
-  - label: 'Joining tool'
+  - label: 'Union joining tools'
     url: 'joining-tool'
 ---
 

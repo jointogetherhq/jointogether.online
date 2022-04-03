@@ -46,6 +46,7 @@ $highlight: rgb(242,32,35);
 $measure: 19px;
 $baseline: $measure*1.2;
 $gutter: 16px;
+$indent: 0.85em;
 $whitespace: 22.5vh;
 $viewport-trigger: 760px;
 $max-width-narrow: 580px;
@@ -64,6 +65,11 @@ $transition: 0.3s ease;
   font-weight: 800;
   line-height: $baseline;
   letter-spacing: 0.01em;
+}
+
+@mixin font-medium {
+  font-size: $measure *1.5;
+  line-height: $baseline *1.5;
 }
 
 @mixin font-large {
@@ -124,10 +130,8 @@ $transition: 0.3s ease;
     margin-bottom: $whitespace*0.5;
   }
   h1 {
-    font-weight: bold;
   }
   h2, h3, h4, h5, h6 {
-    font-weight: 800;
     margin-bottom: $gutter;
     max-width: $max-width-wide;
   }
@@ -143,15 +147,20 @@ $transition: 0.3s ease;
     list-style: none;
     li {
       position: relative;
-      padding-left: $gutter;
+      padding-left: $indent;
       &:before {
         content: "•";
         display: inline-block;
         position: relative;
-        margin-left: $gutter*-1;
-        width: $gutter;
+        margin-left: $indent *-1;
+        width: $indent;
       }
     }
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -169,6 +178,17 @@ $transition: 0.3s ease;
     outline: none;
     background: $highlight;
     color: $page;
+  }
+}
+
+@mixin cta-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: $indent*4;
+  a {
+    @include button();
+    margin: 0 $gutter*0.5;
   }
 }
 
@@ -345,14 +365,7 @@ header {
     }
   }
   nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: $gutter;
-    a {
-      @include button();
-      margin: 0 $gutter*0.5;
-    }
+    @include cta-buttons;
   }
 }
 
@@ -363,11 +376,49 @@ header {
 #layout-product {
   @include layout-block();
   #layout-inner {
+    @include body-typography
     #header {
       @include font-large();
       text-align: center;
       margin-top: $whitespace*0.5;
       margin-bottom: $whitespace;
+      h1 {
+        max-width: 10em;
+        margin: 0 auto;
+      }
+    }
+    #body {
+      @include font-medium();
+      margin: 0 auto;
+      max-width: $max-width-wide;
+      ol {
+        @include grid;
+        list-style: none;
+        counter-reset: ol;
+        li {
+          position: relative;
+          margin: $indent*2 0;
+          grid-row: span 2;
+          counter-increment: ol;
+          display: flex;
+          flex-direction: row;
+          align-self: center;
+          &:nth-child(2) {
+            grid-column: 2 / 3;
+            grid-row: 2 / 4;
+          }
+          &:before {
+            content: counter(ol);
+            @include font-large();
+            position: relative;
+            top: -0.085em;
+            padding-right: $indent*0.5;
+          }
+        }
+      }
+    }
+    nav {
+      @include cta-buttons;
     }
   }
 }
@@ -383,6 +434,10 @@ header {
     @include text();
     #header {
       @include font-large();
+      h1 {
+        max-width: 10em;
+        margin: 0 auto;
+      }
     }
   }
 }
