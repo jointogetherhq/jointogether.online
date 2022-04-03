@@ -49,7 +49,7 @@ $gutter: 16px;
 $indent: 0.85em;
 $whitespace: 22.5vh;
 $viewport-trigger: 760px;
-$max-width-narrow: 580px;
+$max-width-narrow: 500px;
 $max-width-wide: 31em;
 $left-column-max: $max-width-wide * 0.7;
 $corner-radius: 8px;
@@ -131,7 +131,8 @@ $transition: 0.3s ease;
   }
   h1 {
   }
-  h2, h3, h4, h5, h6 {
+  h3, h4, h5, h6 {
+    margin-top: $whitespace*0.5;
     margin-bottom: $gutter;
     max-width: $max-width-wide;
   }
@@ -367,6 +368,40 @@ header {
   nav {
     @include cta-buttons();
   }
+  #blog-posts {
+    margin-top: $whitespace;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    h2 {
+      width: 100%;
+      margin-bottom: $gutter;
+      text-align: center;
+    }
+    article {
+      justify-self: center;
+      max-width: $max-width-narrow;
+      
+      padding: $whitespace*0.5 $gutter 0;
+      h3 {
+        @include font-medium();
+        margin-bottom: $gutter;
+        a {
+          text-decoration: none;
+          &:hover,
+          &:focus {
+            text-decoration: underline;
+          }
+        }
+      }
+      div {
+        p {
+          margin-bottom: $gutter;
+        }
+      }
+    }
+  }
 }
 
 
@@ -419,6 +454,25 @@ header {
     }
     nav {
       @include cta-buttons;
+    }
+  }
+}
+
+
+
+// LAYOUT - POSTS
+
+#layout-post {
+  @include layout-block();
+  #layout-inner {
+    @include body-typography();
+    @include text();
+    #header {
+      @include font-large();
+      h1 {
+        max-width: 10em;
+        margin: 0 auto;
+      }
     }
   }
 }

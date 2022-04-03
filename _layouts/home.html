@@ -24,4 +24,17 @@ layout: base
     <a href="{{ item.url }}">{{ item.label }}</a>
   {% endfor %}
   </nav>
+  <section id="blog-posts">
+    <h2>Posts</h2>
+    {% for post in site.posts %}
+    <article>
+      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+      <div>
+        <p>{{ post.date | date_to_long_string }}</p>
+        {{ post.excerpt }}
+      </div>
+      <a href="{{ site.baseurl }}{{ post.url }}">Continue reading this post</a>
+    </article>
+    {% endfor %}
+  </section>
 </main>
