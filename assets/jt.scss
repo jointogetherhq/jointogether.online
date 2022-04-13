@@ -400,7 +400,7 @@ header {
         &:nth-child(10) {
           grid-row: 10 / 11;
         }
-        &:last-child {
+        &.last-child {
           justify-self: center;
         }
       }
