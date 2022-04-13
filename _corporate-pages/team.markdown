@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Team
-order: 2
+order: "2"
 ---
 
 ## Name Surname

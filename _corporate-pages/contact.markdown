@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contact
-order: 1
+order: "1"
 ---
 
 ## Name Surname
