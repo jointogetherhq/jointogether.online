@@ -38,7 +38,6 @@
   src: url("{{ site.baseurl }}/assets/fonts/JoinTogether-Body.otf") format("opentype");
 }
 
-// font is called Theinhardt-Bold needs licensing
 
 
 
@@ -47,8 +46,8 @@
 $text: rgb(0,0,0);
 $page: rgb(255,255,255);
 $light-shade: darken($page, 6%);
-$dark-shade: lighten($text, 50%);
-$highlight: rgb(242,32,35);
+$dark-shade: lighten($text, 20%);
+$highlight: rgb(255,59,48);
 
 $measure: 19px;
 $baseline: $measure*1.2;
@@ -80,7 +79,7 @@ $transition: 0.3s ease;
 @mixin font-medium {
   font-size: $measure *1.5;
   line-height: $baseline *1.5;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0;
 }
 
@@ -142,7 +141,7 @@ $transition: 0.3s ease;
   -ms-hyphens: auto;
   -webkit-hyphens: auto;
   #header {
-    margin-top: $whitespace*0.5;
+    margin-top: $whitespace;
     margin-bottom: $whitespace*0.5;
   }
   h1 {
@@ -197,6 +196,7 @@ $transition: 0.3s ease;
   border-radius: $corner-radius;
   text-decoration: none;
   text-align: center;
+  font-weight: 800;
   &:hover {
     background: darken($page, 10%);
   }
@@ -287,7 +287,10 @@ hr {
 
 header {
   @include layout-block();
+  position: absolute;
+  z-index: 50;
   text-align: center;
+  font-weight: 800;
   a {
     display: flex;
     flex-direction: row;
@@ -300,7 +303,6 @@ header {
       height: auto;
       margin-right: $gutter;
     }
-
   }
 }
 
@@ -310,14 +312,21 @@ header {
 
 #layout-homepage {
   @include layout-block();
+  overflow: hidden;
+  padding: 0;
   #layout-inner {
     @include grid();
+    position: relative;
+    z-index: 20;
     @media (min-width: $viewport-trigger) {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
     .lede-block {
-      padding: $whitespace 0;
+      padding: $whitespace*0.9 0;
       justify-self: center;
+      &:first-child {
+        padding-top: $whitespace;
+      }
       p {
         max-width: 13em;
         @include font-large();
@@ -389,8 +398,25 @@ header {
       }
     }
   }
+  section {
+    position: relative;
+    z-index: 10;
+    margin-top: $whitespace*0.5;
+    padding: $gutter;
+    background: $text;
+    color: $page;
+    &:before {
+      content: " ";
+      @include graphic-horizon();
+      z-index: 1;
+      top: -20%;
+      background: $text;
+    }
+  }
   #homepage-detail {
     @include centered-block();
+    position: relative;
+    z-index: 10;
     h1, h2, h3, h4, h5, h6,
     p, ol, ul, div, 
     blockquote, quote {
@@ -413,8 +439,18 @@ header {
   }
   nav {
     @include cta-buttons();
+    position: relative;
+    z-index: 10;
+    a {
+      background: $dark-shade;
+      &:hover {
+        background: lighten($dark-shade, 10%);
+      }
+    }
   }
   #blog-posts {
+    position: relative;
+    z-index: 10;
     margin-top: $whitespace;
     display: flex;
     flex-direction: row;
@@ -422,7 +458,6 @@ header {
     justify-content: space-around;
     h2 {
       width: 100%;
-      margin-bottom: $gutter;
       text-align: center;
     }
     article {
@@ -432,6 +467,7 @@ header {
       h3 {
         @include font-medium();
         margin-bottom: $gutter;
+        font-weight: 800;
         a {
           text-decoration: none;
           &:hover,
@@ -447,6 +483,66 @@ header {
       }
     }
   }
+  #graphic {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    & > div {
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr $max-width-narrow 1fr;
+      grid-template-rows: 100vh 90vh 1fr;
+    }
+    #block-1 {
+      z-index: 2;
+      grid-column: 2 / 3;
+      grid-row: 1 / 4;
+      height: 100%;
+      background: linear-gradient(180deg, rgba($highlight, 1) 0%, rgba($highlight, 1) 55%, rgba($highlight, 0) 65%);
+      justify-self: stretch;
+      align-self: stretch;
+      display: none;
+    }
+    #block-2 {
+      grid-column: 1 / 4;
+      grid-row: 1 / 2;
+      background: 
+        linear-gradient(180deg, #697897 0%, #f4b19e 50%, #fead78 100%),
+        url({{ site.baseurl }}/assets/images/clouds.png);
+      background-blend-mode: lighten; 
+      background-size: cover;
+      background-position: left bottom;
+    }
+    #block-3 {
+      position: relative;
+      overflow: visible;
+      grid-column: 1 / 4;
+      grid-row: 2 / 4;
+      background: $page;
+      &:before {
+        content: " ";
+        @include graphic-horizon();
+        top: -10vw;
+        background: $page;
+      }
+    }
+    #block-4 {
+      display: none;
+    }
+  }
+  & + footer {
+    background: $text;
+    &:before {
+      background: $page;
+    }
+    form fieldset label {
+      color: $text;
+    }
+  }
 }
 
 
@@ -457,6 +553,10 @@ header {
   @include layout-block();
   #layout-inner {
     @include body-typography();
+    @media (min-width: $viewport-trigger) {
+      padding-left: $gutter*3;
+      padding-right: $gutter*3;
+    }
     #header {
       @media (min-width: $viewport-trigger) {
         @include font-medium();
@@ -482,13 +582,13 @@ header {
         li {
           position: relative;
           @include font-core();
-          max-width: 18em;
           margin: $indent*2 0;
           counter-increment: ol;
           display: flex;
           flex-direction: row;
           align-self: center;
           @media (min-width: $viewport-trigger) {
+            max-width: 18em;
             grid-row: span 2;
             &:nth-child(2) {
               grid-column: 2 / 3;
@@ -498,11 +598,12 @@ header {
           &:before {
             content: counter(ol);
             @include font-large();
+            color: $highlight;
             position: relative;
-            top: -0.085em;
+            top: -0.125em;
             padding-right: $indent*0.75;
             @media (min-width: $viewport-trigger) {
-              padding-right: $indent*0.5;
+              padding-right: $indent*0.33;
             }
           }
         }
@@ -567,6 +668,7 @@ header {
 footer {
   @include layout-block();
   overflow: hidden;
+  z-index: 30;
   form {
     @include centered-block();
     position: relative;
@@ -695,6 +797,6 @@ footer {
     z-index: 2;
     top: 75%;
     background: $highlight;
-    box-shadow: 0 0 $whitespace $highlight;
+    box-shadow: 0 0 $whitespace*0.5 #fead78;
   }
 }
