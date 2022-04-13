@@ -54,7 +54,9 @@ $baseline: $measure*1.2;
 $gutter: 16px;
 $indent: 0.85em;
 $whitespace: 22.5vh;
-$viewport-trigger: 760px;
+$viewport-tablet: 760px;
+$viewport-desktop: 1020px;
+$viewport-wide: 1100px;
 $max-width-narrow: 500px;
 $max-width-wide: 31em;
 $corner-radius: 8px;
@@ -88,7 +90,7 @@ $transition: 0.3s ease;
   line-height: 1;
   font-weight: 800;
   letter-spacing: -0.03em;
-  @media (min-width: $viewport-trigger) {
+  @media (min-width: $viewport-tablet) {
     font-size: 5.5vw;
   }
   @media (min-width: 1400px) {
@@ -97,42 +99,43 @@ $transition: 0.3s ease;
 }
 
 @mixin layout-block {
-  display: block;
   width: 100%;
   box-sizing: border-box;
   position: relative;
   margin: 0 auto;
   padding: $gutter;
-}
-
-@mixin centered-block {
-  margin: 0 auto;
-  width: 100%;
-  max-width: $max-width-narrow;
-  box-sizing: border-box;
-}
-
-@mixin grid {
   display: grid;
-  grid-template-columns: 100%;
-  grid-gap: 0 $gutter;
-  @media (min-width: $viewport-trigger) {
-    grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  @media (min-width: $viewport-tablet) {
+    padding: $gutter $gutter*2;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  @media (min-width: $viewport-wide) {
+    padding: $gutter $gutter*3;
+    grid-template-columns: 1fr $viewport-wide*0.225 $viewport-wide*0.225 $viewport-wide*0.225 $viewport-wide*0.225 1fr;
   }
 }
 
-@mixin text {
-  width: auto;
-  @media (min-width: $viewport-trigger) {
+@mixin text-area {
+  grid-column: 1 / 2;
+  position: relative;
+  @media (min-width: $viewport-tablet) {
+    grid-column: 1 / 7;
+    padding-left: 50%;
     #header {
-      width: calc(200% + #{$gutter});
-      margin-left: calc(-100% - #{$gutter});
+      position: relative;
+      width: 200%;
+      margin-left: -100%;
     }
     h2 {
-      width: 90%;
+      position: relative;
       float: left;
-      margin-left: calc(-100% - #{$gutter});
+      width: calc(100% - #{$gutter});
+      margin-left: -100%;
     }
+  }
+  @media (min-width: $viewport-wide) {
+    grid-column: 2 / 6;
   }
 }
 
@@ -143,12 +146,15 @@ $transition: 0.3s ease;
   #header {
     margin-top: $whitespace;
     margin-bottom: $whitespace*0.5;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 0.25em;
   }
   h1 {
   }
   h2 {
     @include font-medium();
-    @media (min-width: $viewport-trigger) {
+    @media (min-width: $viewport-tablet) {
       @include font-core();
     }
   }
@@ -163,7 +169,6 @@ $transition: 0.3s ease;
   p, ol, ul, div:not(#header), 
   blockquote, quote {
     margin-bottom: $gutter;
-    max-width: $max-width-wide;
     margin-left: auto;
     margin-right: auto;
   }
@@ -216,7 +221,7 @@ $transition: 0.3s ease;
     @include button();
     margin: $gutter*0.5;
   }
-  @media (min-width: $viewport-trigger) {
+  @media (min-width: $viewport-tablet) {
     flex-direction: row;
     a {
       margin: 0 $gutter*0.5;
@@ -286,22 +291,32 @@ hr {
 // BRAND AREA
 
 header {
-  @include layout-block();
   position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
   z-index: 50;
-  text-align: center;
-  font-weight: 800;
+  h1 {
+    @include layout-block();
+  }
   a {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+    grid-column: 1 / 2;
+    @media (min-width: $viewport-tablet) {
+      grid-column: 2 / 6;
+    }
+    position: relative;
+    justify-self: start;
+    display: inline-block;
     text-decoration: none;
+    overflow: hidden;
     svg {
       width: 100px;
       height: auto;
       margin-right: $gutter;
+    }
+    span {
+      position: absolute;
+      left: -5000%;
     }
   }
 }
@@ -311,19 +326,16 @@ header {
 // LAYOUT - HOMEPAGE
 
 #layout-homepage {
-  @include layout-block();
   overflow: hidden;
-  padding: 0;
   #layout-inner {
-    @include grid();
+    @include layout-block();
     position: relative;
-    z-index: 20;
-    @media (min-width: $viewport-trigger) {
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
+    z-index: 2;
+    margin-bottom: $whitespace*0.5;
     .lede-block {
-      padding: $whitespace*0.9 0;
-      justify-self: center;
+      position: relative;
+      z-index: 5;
+      padding: $whitespace*0.75 0;
       &:first-child {
         padding-top: $whitespace;
       }
@@ -350,14 +362,15 @@ header {
           }
         }
       }
-      @media (min-width: $viewport-trigger) {
+      @media (min-width: $viewport-tablet) {
         &:nth-child(2n-1) {
           grid-column: 1 / 6;
         }
         &:nth-child(2n) {
-          grid-column: 2 / 7;
+          grid-column: 3 / 7;
         }
         &:nth-child(1) {
+          grid-column: 2 / 6;
           grid-row: 1 / 2;
         }
         &:nth-child(2) {
@@ -387,24 +400,28 @@ header {
         &:nth-child(10) {
           grid-row: 10 / 11;
         }
-      }
-      @media (min-width: 1400px) {
-        &:nth-child(2n-1) {
-          grid-column: 1 / 5;
-        }
-        &:nth-child(2n) {
-          grid-column: 3 / 7;
+        &:last-child {
+          justify-self: center;
         }
       }
     }
+    &:after {
+      content: " ";
+      position: absolute;
+      background: #fead78;
+      width: 80vw;
+      height: 80vw;
+      border-radius: 40vw;
+      bottom: -50vw;
+      left: 30%;
+      z-index: 3;
+    }
   }
   section {
-    position: relative;
-    z-index: 10;
-    margin-top: $whitespace*0.5;
-    padding: $gutter;
+    @include layout-block();
     background: $text;
     color: $page;
+    z-index: 10;
     &:before {
       content: " ";
       @include graphic-horizon();
@@ -414,8 +431,10 @@ header {
     }
   }
   #homepage-detail {
-    @include centered-block();
-    position: relative;
+    grid-column: 1 / 2;
+    @media (min-width: $viewport-tablet) {
+      grid-column: 2 / 6;
+    }
     z-index: 10;
     h1, h2, h3, h4, h5, h6,
     p, ol, ul, div, 
@@ -439,6 +458,10 @@ header {
   }
   nav {
     @include cta-buttons();
+    grid-column: 1 / 2;
+    @media (min-width: $viewport-tablet) {
+      grid-column: 2 / 6;
+    }
     position: relative;
     z-index: 10;
     a {
@@ -449,6 +472,10 @@ header {
     }
   }
   #blog-posts {
+    grid-column: 1 / 2;
+    @media (min-width: $viewport-tablet) {
+      grid-column: 1 / 7;
+    }
     position: relative;
     z-index: 10;
     margin-top: $whitespace;
@@ -486,7 +513,7 @@ header {
   #graphic {
     position: absolute;
     overflow: hidden;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     right: 0;
@@ -494,15 +521,15 @@ header {
     & > div {
       height: 100%;
       display: grid;
-      grid-template-columns: 1fr $max-width-narrow 1fr;
-      grid-template-rows: 100vh 90vh 1fr;
+      grid-template-columns: 1fr $max-width-narrow*0.5 1fr;
+      grid-template-rows: 105vh 90vh 1fr;
     }
     #block-1 {
       z-index: 2;
       grid-column: 2 / 3;
       grid-row: 1 / 4;
       height: 100%;
-      background: linear-gradient(180deg, rgba($highlight, 1) 0%, rgba($highlight, 1) 55%, rgba($highlight, 0) 65%);
+      background: linear-gradient(180deg, rgba($highlight, 1) 0%, rgba($highlight, 1) 55%, rgba($highlight, 0) 80%);
       justify-self: stretch;
       align-self: stretch;
       display: none;
@@ -510,14 +537,19 @@ header {
     #block-2 {
       grid-column: 1 / 4;
       grid-row: 1 / 2;
-      background: 
-        linear-gradient(180deg, #697897 0%, #f4b19e 50%, #fead78 100%),
-        url({{ site.baseurl }}/assets/images/clouds.png);
-      background-blend-mode: lighten; 
-      background-size: cover;
-      background-position: left bottom;
+      background: linear-gradient(180deg, #697897 0%, #f4b19e 50%, #fead78 100%);
+      background-attachment: fixed;
     }
     #block-3 {
+      grid-column: 1 / 4;
+      grid-row: 1 / 2;
+      background: url({{ site.baseurl }}/assets/images/clouds.png);
+      mix-blend-mode: lighten; 
+      background-size: cover;
+      background-position: left bottom;
+      background-attachment: fixed;
+    }
+    #block-4 {
       position: relative;
       overflow: visible;
       grid-column: 1 / 4;
@@ -529,9 +561,6 @@ header {
         top: -10vw;
         background: $page;
       }
-    }
-    #block-4 {
-      display: none;
     }
   }
   & + footer {
@@ -552,30 +581,34 @@ header {
 #layout-product {
   @include layout-block();
   #layout-inner {
-    @include body-typography();
-    @media (min-width: $viewport-trigger) {
-      padding-left: $gutter*3;
-      padding-right: $gutter*3;
+    grid-column: 1 / 2;
+    margin: $whitespace 0;
+    @media (min-width: $viewport-tablet) {
+      grid-column: 2 / 6;
     }
+    @include body-typography();
     #header {
-      @media (min-width: $viewport-trigger) {
+      @media (min-width: $viewport-tablet) {
         @include font-medium();
       }
-      margin: $whitespace auto;
-      max-width: $max-width-wide;
+      margin: 0 auto $whitespace;
       h1 {
         @include font-large();
-        max-width: 11em;
       }
     }
     #body {
       margin: 0 auto;
       max-width: $max-width-wide;
-      @media (min-width: $viewport-trigger) {
+      @media (min-width: $viewport-tablet) {
         @include font-medium();
       }
       ol {
-        @include grid;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 0 $gutter;
+        @media (min-width: $viewport-tablet) {
+        grid-template-columns: 1fr 1fr;
+        }
         list-style: none;
         counter-reset: ol;
         margin-bottom: $whitespace*0.5;
@@ -587,7 +620,7 @@ header {
           display: flex;
           flex-direction: row;
           align-self: center;
-          @media (min-width: $viewport-trigger) {
+          @media (min-width: $viewport-tablet) {
             max-width: 18em;
             grid-row: span 2;
             &:nth-child(2) {
@@ -602,7 +635,7 @@ header {
             position: relative;
             top: -0.125em;
             padding-right: $indent*0.75;
-            @media (min-width: $viewport-trigger) {
+            @media (min-width: $viewport-tablet) {
               padding-right: $indent*0.33;
             }
           }
@@ -621,18 +654,12 @@ header {
 
 #layout-post {
   @include layout-block();
-  @include grid;
-  max-width: calc(#{$max-width-wide*2} + #{$gutter});
   #layout-inner {
     @include body-typography();
-    @include text();
-    @media (min-width: $viewport-trigger) {
-      grid-column: 2 / 3;
-    }
+    @include text-area();
     #header {
-      @include font-large();
       h1 {
-        max-width: 8em;
+        @include font-large();
       }
     }
   }
@@ -644,18 +671,12 @@ header {
 
 #layout-page {
   @include layout-block();
-  @include grid;
-  max-width: calc(#{$max-width-wide*2} + #{$gutter});
   #layout-inner {
     @include body-typography();
-    @include text();
-    @media (min-width: $viewport-trigger) {
-      grid-column: 2 / 3;
-    }
+    @include text-area();
     #header {
-      @include font-large();
       h1 {
-        max-width: 8em;
+        @include font-large();
       }
     }
   }
@@ -669,14 +690,18 @@ footer {
   @include layout-block();
   overflow: hidden;
   z-index: 30;
+  #newsletter-signup {
+    grid-column: 1 / 2;
+    margin: $whitespace 0;
+    @media (min-width: $viewport-tablet) {
+      grid-column: 2 / 6;
+    }
+  }
   form {
-    @include centered-block();
     position: relative;
     z-index: 5;
     display: block;
     overflow: visible;
-    margin-top: $whitespace;
-    margin-bottom: $whitespace;
     fieldset {
       display: flex;
       flex-direction: row;
@@ -736,14 +761,22 @@ footer {
     }
   }
   #footer-navigation {
+    grid-column: 1 / 2;
+    @media (min-width: $viewport-tablet) {
+      grid-column: 1 / 7;
+    }
+    @media (min-width: $viewport-desktop) {
+      grid-column: 2 / 6;
+    }
     position: relative;
     z-index: 6;
     padding: $gutter 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    @media (min-width: $viewport-trigger) {
+    @media (min-width: $viewport-tablet) {
       flex-direction: row;
+      justify-content: space-between;
     }
     div {
       display: flex;
@@ -756,7 +789,7 @@ footer {
       justify-content: center;
       flex-wrap: wrap;
       margin-top: $gutter;
-      @media (min-width: $viewport-trigger) {
+      @media (min-width: $viewport-tablet) {
         margin-top: 0;
         margin-left: 1ex;
       }
@@ -768,9 +801,6 @@ footer {
         &+ span:before {
           content: ", ";
           padding-right: 0.1em;
-        }
-        &:last-child:after {
-          content: ".";
         }
       }
       a {

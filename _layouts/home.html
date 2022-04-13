@@ -4,7 +4,7 @@ layout: base
 
 <main id="layout-homepage">
   <div id="layout-inner">
-  {% for item in page.paragraphs %}
+    {% for item in page.paragraphs %}
     <div class="lede-block">
       <p>{{ item.text }}
       {% if forloop.last == true %}
@@ -14,7 +14,16 @@ layout: base
       {% endif %}
       </p>
     </div>
-  {% endfor %}
+    {% endfor %}
+    <div id="graphic">
+      <div>
+        <div id="block-1"></div>
+        <div id="block-2"></div>
+        <div id="block-3"></div>
+        <div id="block-4"></div>
+        <div id="block-5"></div>
+      </div>
+    </div>
   </div>
   <section>
     <div id="homepage-detail">
@@ -39,13 +48,4 @@ layout: base
         {% endfor %}
         </div>
   </section>
-  
-  <div id="graphic">
-    <div>
-      <div id="block-1"></div>
-      <div id="block-2"></div>
-      <div id="block-3"></div>
-      <div id="block-4"></div>
-    </div>
-  </div>
 </main>
