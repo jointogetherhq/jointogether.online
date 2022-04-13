@@ -34,7 +34,7 @@ collections:
     output: true
     permalink: /:path/
     layout: page
-    sort_by: order
+    sort_by: footer-order
   product-pages:
     output: true
     permalink: /:path/

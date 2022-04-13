@@ -12,7 +12,7 @@
     <div><p>&copy; JoinTogether Cooperative Ltd.&nbsp;2021</p></div>
     <nav>
       <h2>Corporate info: </h2>
-      {% assign footerLinks = site.corporate-pages | sort: 'order' %}
+      {% assign footerLinks = site.corporate-pages | sort: 'footer-order' %}
       {% for item in footerLinks %}
         <span><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></span> 
       {% endfor %}

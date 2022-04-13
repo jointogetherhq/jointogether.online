@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Privacy policy
-order: "10"
+footer-order: "10"
 ---
 
 ## 1. Who are we?
