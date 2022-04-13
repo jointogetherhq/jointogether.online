@@ -28,7 +28,14 @@
   font-family: 'JoinTogether'; 
   font-style: normal; 
   font-weight: 800;
-  src: url("{{ site.baseurl }}/assets/fonts/JoinTogether-Bold.otf") format("opentype");
+  src: url("{{ site.baseurl }}/assets/fonts/JoinTogether-Head.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'JoinTogether'; 
+  font-style: normal; 
+  font-weight: 700;
+  src: url("{{ site.baseurl }}/assets/fonts/JoinTogether-Body.otf") format("opentype");
 }
 
 // font is called Theinhardt-Bold needs licensing
@@ -51,7 +58,6 @@ $whitespace: 22.5vh;
 $viewport-trigger: 760px;
 $max-width-narrow: 500px;
 $max-width-wide: 31em;
-$left-column-max: $max-width-wide * 0.9;
 $corner-radius: 8px;
 $transition: 0.3s ease;
 
@@ -62,21 +68,30 @@ $transition: 0.3s ease;
 @mixin font-core {
   font-family: JoinTogether, sans-serif;
   font-size: $measure;
-  font-weight: 800;
+  font-weight: 700;
   line-height: $baseline;
   letter-spacing: 0.01em;
+  @media (max-width: 759px) {
+    font-size: $measure*0.85;
+    line-height: $baseline*0.9;
+  }
 }
 
 @mixin font-medium {
   font-size: $measure *1.5;
   line-height: $baseline *1.5;
+  font-weight: 800;
+  letter-spacing: 0;
 }
 
 @mixin font-large {
-  font-size: 5.5vw;
+  font-size: 10vw;
   line-height: 1;
   font-weight: 800;
   letter-spacing: -0.03em;
+  @media (min-width: $viewport-trigger) {
+    font-size: 5.5vw;
+  }
   @media (min-width: 1400px) {
     font-size: 4.5vw;
   }
@@ -110,26 +125,33 @@ $transition: 0.3s ease;
 @mixin text {
   width: auto;
   @media (min-width: $viewport-trigger) {
-    padding-left: calc(50% + #{$gutter * 0.5});
     #header {
       width: calc(200% + #{$gutter});
       margin-left: calc(-100% - #{$gutter});
-      text-align: center;
     }
     h2 {
+      width: 90%;
       float: left;
-      margin-left: calc(#{$left-column-max *-1} - #{$gutter});
-      // max-width: 16em;
+      margin-left: calc(-100% - #{$gutter});
     }
   }
 }
 
 @mixin body-typography {
+  -webkit-font-smoothing: antialiased;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
   #header {
     margin-top: $whitespace*0.5;
     margin-bottom: $whitespace*0.5;
   }
   h1 {
+  }
+  h2 {
+    @include font-medium();
+    @media (min-width: $viewport-trigger) {
+      @include font-core();
+    }
   }
   h3, h4, h5, h6 {
     margin-top: $whitespace*0.5;
@@ -143,6 +165,8 @@ $transition: 0.3s ease;
   blockquote, quote {
     margin-bottom: $gutter;
     max-width: $max-width-wide;
+    margin-left: auto;
+    margin-right: auto;
   }
   ul {
     list-style: none;
@@ -172,6 +196,7 @@ $transition: 0.3s ease;
   background: $light-shade;
   border-radius: $corner-radius;
   text-decoration: none;
+  text-align: center;
   &:hover {
     background: darken($page, 10%);
   }
@@ -184,13 +209,33 @@ $transition: 0.3s ease;
 
 @mixin cta-buttons {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   padding-top: $indent*4;
   a {
     @include button();
-    margin: 0 $gutter*0.5;
+    margin: $gutter*0.5;
   }
+  @media (min-width: $viewport-trigger) {
+    flex-direction: row;
+    a {
+      margin: 0 $gutter*0.5;
+    }
+  }
+}
+
+
+
+// BACKGROUND GRAPHICS
+
+@mixin graphic-horizon {
+  position: absolute;
+  left: -50vw;
+  right: -50vw;
+  width: 200vw;
+  height: 100vw;
+  background: #eee;
+  border-radius: 100%;
 }
 
 
@@ -198,18 +243,19 @@ $transition: 0.3s ease;
 // BASE STYLES
 
 html {
-  background: $page;
+  min-width: 320px;
+  background: $highlight;
+  background: linear-gradient(0deg, $page 0%, $page 49.9%, $highlight 50%);
   color: $text;
   @include font-core();
-  -webkit-font-smoothing: antialiased;
-
+  hyphens: auto;
 }
 
 body {
+  background: $page;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: $gutter $gutter 0;
   min-height: calc(100vh - #{$gutter});
 }
 
@@ -382,7 +428,6 @@ header {
     article {
       justify-self: center;
       max-width: $max-width-narrow;
-      
       padding: $whitespace*0.5 $gutter 0;
       h3 {
         @include font-medium();
@@ -413,41 +458,52 @@ header {
   #layout-inner {
     @include body-typography();
     #header {
-      @include font-large();
-      text-align: center;
-      margin-top: $whitespace*0.5;
-      margin-bottom: $whitespace;
+      @media (min-width: $viewport-trigger) {
+        @include font-medium();
+      }
+      margin: $whitespace auto;
+      max-width: $max-width-wide;
       h1 {
-        max-width: 10em;
-        margin: 0 auto;
+        @include font-large();
+        max-width: 11em;
       }
     }
     #body {
-      @include font-medium();
       margin: 0 auto;
       max-width: $max-width-wide;
+      @media (min-width: $viewport-trigger) {
+        @include font-medium();
+      }
       ol {
         @include grid;
         list-style: none;
         counter-reset: ol;
+        margin-bottom: $whitespace*0.5;
         li {
           position: relative;
+          @include font-core();
+          max-width: 18em;
           margin: $indent*2 0;
-          grid-row: span 2;
           counter-increment: ol;
           display: flex;
           flex-direction: row;
           align-self: center;
-          &:nth-child(2) {
-            grid-column: 2 / 3;
-            grid-row: 2 / 4;
+          @media (min-width: $viewport-trigger) {
+            grid-row: span 2;
+            &:nth-child(2) {
+              grid-column: 2 / 3;
+              grid-row: 2 / 4;
+            }
           }
           &:before {
             content: counter(ol);
             @include font-large();
             position: relative;
             top: -0.085em;
-            padding-right: $indent*0.5;
+            padding-right: $indent*0.75;
+            @media (min-width: $viewport-trigger) {
+              padding-right: $indent*0.5;
+            }
           }
         }
       }
@@ -464,14 +520,18 @@ header {
 
 #layout-post {
   @include layout-block();
+  @include grid;
+  max-width: calc(#{$max-width-wide*2} + #{$gutter});
   #layout-inner {
     @include body-typography();
     @include text();
+    @media (min-width: $viewport-trigger) {
+      grid-column: 2 / 3;
+    }
     #header {
       @include font-large();
       h1 {
-        max-width: 10em;
-        margin: 0 auto;
+        max-width: 8em;
       }
     }
   }
@@ -483,14 +543,18 @@ header {
 
 #layout-page {
   @include layout-block();
+  @include grid;
+  max-width: calc(#{$max-width-wide*2} + #{$gutter});
   #layout-inner {
     @include body-typography();
     @include text();
+    @media (min-width: $viewport-trigger) {
+      grid-column: 2 / 3;
+    }
     #header {
       @include font-large();
       h1 {
-        max-width: 10em;
-        margin: 0 auto;
+        max-width: 8em;
       }
     }
   }
@@ -502,9 +566,11 @@ header {
 
 footer {
   @include layout-block();
+  overflow: hidden;
   form {
     @include centered-block();
     position: relative;
+    z-index: 5;
     display: block;
     overflow: visible;
     margin-top: $whitespace;
@@ -518,6 +584,7 @@ footer {
         width: 100%;
         padding-bottom: $gutter;
         text-align: center;
+        color: $page;
       }
       input {
         position: relative;
@@ -567,8 +634,15 @@ footer {
     }
   }
   #footer-navigation {
-    @include grid;
-    padding-top: $gutter;
+    position: relative;
+    z-index: 6;
+    padding: $gutter 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (min-width: $viewport-trigger) {
+      flex-direction: row;
+    }
     div {
       display: flex;
       flex-direction: row;
@@ -579,17 +653,48 @@ footer {
       flex-direction: row;
       justify-content: center;
       flex-wrap: wrap;
+      margin-top: $gutter;
+      @media (min-width: $viewport-trigger) {
+        margin-top: 0;
+        margin-left: 1ex;
+      }
       h2 {
         position: absolute;
         left: -1000%;
       }
-      span + span:before {
-        content: ", ";
-        padding-right: 0.1em;
+      span {
+        &+ span:before {
+          content: ", ";
+          padding-right: 0.1em;
+        }
+        &:last-child:after {
+          content: ".";
+        }
       }
       a {
         white-space: nowrap;
+        text-decoration-color: inherit;
+        &:focus {
+          color: $page;
+        }
       }
     }
+  }
+  
+  &:before {
+    content: " ";
+    @include graphic-horizon();
+    z-index: 1;
+    top: 15%;
+    background: $text;
+  }
+  
+  &:after {
+    content: " ";
+    @include graphic-horizon();
+    z-index: 2;
+    top: 75%;
+    background: $highlight;
+    box-shadow: 0 0 $whitespace $highlight;
   }
 }
