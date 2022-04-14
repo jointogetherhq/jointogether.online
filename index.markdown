@@ -5,9 +5,9 @@
 layout: home
 paragraphs: 
   - text: 'Digital tools for <br>trade&nbsp;unions'
-  - text: 'We want to make joining a trade union quicker, easier and more accessible.'
-  - text: 'Because bigger unions with&nbsp;more members can help reshape our politics.'
-  - text: 'Better work for <br>everyone.'
+  - text: 'We want to make joining a trade union quicker, easier and more accessible'
+  - text: 'Because bigger unions with&nbsp;more members can help reshape our politics'
+  - text: 'Better work for <br>everyone'
 buttons:
   - label: 'Book a call'
     url: '#'
