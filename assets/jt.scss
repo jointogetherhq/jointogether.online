@@ -45,11 +45,12 @@
 
 $text: rgb(0,0,0);
 $page: rgb(255,255,255);
-$light-shade: darken($page, 6%);
-$dark-shade: lighten($text, 20%);
+$light-shade: rgba($text, 0.05);
+$dark-shade: rgba($page, 0.125);
+$border: rgba($text, 0.3);
 $highlight: rgb(255,59,48);
 
-$measure: 19px;
+$measure: 17px;
 $baseline: $measure*1.2;
 $gutter: 16px;
 $indent: 0.85em;
@@ -59,7 +60,7 @@ $viewport-desktop: 1020px;
 $viewport-wide: 1100px;
 $max-width-narrow: 500px;
 $max-width-wide: 31em;
-$corner-radius: 8px;
+$corner-radius: 13px;
 $transition: 0.3s ease;
 
 
@@ -68,13 +69,15 @@ $transition: 0.3s ease;
 
 @mixin font-core {
   font-family: JoinTogether, sans-serif;
-  font-size: $measure;
+  font-size: $measure*0.85;
+  line-height: $baseline*0.9;
   font-weight: 700;
-  line-height: $baseline;
   letter-spacing: 0.01em;
-  @media (max-width: 759px) {
-    font-size: $measure*0.85;
-    line-height: $baseline*0.9;
+  @media (min-width: $viewport-tablet) {
+  }
+  @media (min-width: $viewport-desktop) {
+    font-size: $measure;
+    line-height: $baseline;
   }
 }
 
@@ -91,10 +94,10 @@ $transition: 0.3s ease;
   font-weight: 800;
   letter-spacing: -0.03em;
   @media (min-width: $viewport-tablet) {
-    font-size: 5.5vw;
+    font-size: 5vw;
   }
-  @media (min-width: 1400px) {
-    font-size: 4.5vw;
+  @media (min-width: $viewport-wide) {
+    font-size: 4.75vw;
   }
 }
 
@@ -140,15 +143,15 @@ $transition: 0.3s ease;
 }
 
 @mixin body-typography {
-  -webkit-font-smoothing: antialiased;
+  hyphens: auto;
   -ms-hyphens: auto;
   -webkit-hyphens: auto;
   #header {
     margin-top: $whitespace;
     margin-bottom: $whitespace*0.5;
-    text-align: center;
-    text-transform: uppercase;
-    word-spacing: 0.25em;
+    hyphens: none;
+    -ms-hyphens: none;
+    -webkit-hyphens: none;
   }
   h1 {
   }
@@ -201,9 +204,8 @@ $transition: 0.3s ease;
   border-radius: $corner-radius;
   text-decoration: none;
   text-align: center;
-  font-weight: 800;
   &:hover {
-    background: darken($page, 10%);
+    background: rgba($text, 0.1);
   }
   &:focus {
     outline: none;
@@ -216,31 +218,27 @@ $transition: 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: $indent*4;
+  padding-top: $gutter;
   a {
     @include button();
-    margin: $gutter*0.5;
+    margin: $gutter*0.5 0;
   }
   @media (min-width: $viewport-tablet) {
     flex-direction: row;
+    justify-content: flex-start;
     a {
-      margin: 0 $gutter*0.5;
+      margin: 0 1px;
+      border-radius: 0;
+      &:first-child {
+        border-top-left-radius: $corner-radius;
+        border-bottom-left-radius: $corner-radius;
+      }
+      &:last-child {
+        border-top-right-radius: $corner-radius;
+        border-bottom-right-radius: $corner-radius;
+      }
     }
   }
-}
-
-
-
-// BACKGROUND GRAPHICS
-
-@mixin graphic-horizon {
-  position: absolute;
-  left: -50vw;
-  right: -50vw;
-  width: 200vw;
-  height: 100vw;
-  background: #eee;
-  border-radius: 100%;
 }
 
 
@@ -248,27 +246,24 @@ $transition: 0.3s ease;
 // BASE STYLES
 
 html {
+  position: relative;
   min-width: 320px;
   background: $highlight;
-  background: linear-gradient(0deg, $page 0%, $page 49.9%, $highlight 50%);
+  background: linear-gradient(0deg, $page 0%, $page 49.9%, $text 50%);
   color: $text;
   @include font-core();
-  hyphens: auto;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
   background: $page;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: calc(100vh - #{$gutter});
 }
 
 a {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.15em;
-  text-decoration-color: $dark-shade;
+  text-decoration-color: $border;
   &:hover {
     text-decoration-thickness: 2px;
     text-decoration-color: $highlight;
@@ -293,7 +288,7 @@ hr {
 header {
   position: absolute;
   width: 100%;
-  top: 0;
+  top: $gutter*0.5;
   left: 0;
   z-index: 50;
   h1 {
@@ -326,18 +321,19 @@ header {
 // LAYOUT - HOMEPAGE
 
 #layout-homepage {
-  overflow: hidden;
   #layout-inner {
     @include layout-block();
     position: relative;
     z-index: 2;
-    margin-bottom: $whitespace*0.5;
     .lede-block {
       position: relative;
       z-index: 5;
       padding: $whitespace*0.75 0;
       &:first-child {
         padding-top: $whitespace;
+      }
+      &.last-child {
+        padding-bottom: $whitespace;
       }
       p {
         max-width: 13em;
@@ -350,7 +346,6 @@ header {
           height: 0.8em;
           background-size: contain;
           background-position: top left;
-          // filter: invert(1);
           &.icon-1 {
             background-image: url(images/icon-1.svg);
           }
@@ -405,41 +400,89 @@ header {
         }
       }
     }
-    &:after {
-      content: " ";
+    #graphic {
       position: absolute;
-      background: #fead78;
-      width: 80vw;
-      height: 80vw;
-      border-radius: 40vw;
-      bottom: -50vw;
-      left: 30%;
-      z-index: 3;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, $page 0%, #eee 100%);
+      @media (min-width: $viewport-tablet) {
+        top: $gutter;
+        left: $gutter;
+        right: $gutter;
+        border-radius: $corner-radius;
+      }
+      #graphic-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+      }
+      // #block-1 {
+      //   position: absolute;
+      //   z-index: 10;
+      //   left: -25%;
+      //   right: -25%;
+      //   top: 100%;
+      //   margin-top: -30%;
+      //   width: 150%;
+      //   height: 0;
+      //   padding-top: 100%;
+      //   border-radius: 100%;
+      //   background: $text;
+      //   box-shadow: 
+      //     0 0 $whitespace $page,
+      //     inset $whitespace 0 $whitespace rgba($highlight, 0.6);
+      // }
+      // #block-2 {
+      //   position: absolute;
+      //   z-index: 5;
+      //   left: -5%;
+      //   top: 100%;
+      //   margin-top: -30%;
+      //   width: 20vw;
+      //   height: 20vw;
+      //   border-radius: 100%;
+      //   background: $highlight;
+      // }
+      // #block-3 {
+      //   position: absolute;
+      //   z-index: 1;
+      //   bottom: 0;
+      //   left: 0;
+      //   right: 0;
+      //   height: 100vh;
+      //   display: none;
+      //   background: linear-gradient(180deg, rgba($highlight, 0) 0%, rgba($highlight, 1) 100%);
+      // }
     }
   }
   section {
     @include layout-block();
-    background: $text;
-    color: $page;
-    z-index: 10;
-    &:before {
-      content: " ";
-      @include graphic-horizon();
-      z-index: 1;
-      top: -20%;
-      background: $text;
-    }
+    margin-top: $whitespace;
+    z-index: 2;
   }
   #homepage-detail {
     grid-column: 1 / 2;
     @media (min-width: $viewport-tablet) {
       grid-column: 2 / 6;
     }
+    @media (min-width: $viewport-wide) {
+      grid-column: 2 / 5;
+    }
     z-index: 10;
     h1, h2, h3, h4, h5, h6,
     p, ol, ul, div, 
     blockquote, quote {
       margin-bottom: $gutter;
+    }
+    h2 {
+      @include font-medium();
+      font-weight: 800;
     }
     ul {
       list-style: none;
@@ -461,36 +504,41 @@ header {
     grid-column: 1 / 2;
     @media (min-width: $viewport-tablet) {
       grid-column: 2 / 6;
+      padding-top: $gutter*0.5;
+    }
+    @media (min-width: $viewport-wide) {
+      grid-column: 2 / 6;
     }
     position: relative;
     z-index: 10;
-    a {
-      background: $dark-shade;
-      &:hover {
-        background: lighten($dark-shade, 10%);
-      }
-    }
   }
   #blog-posts {
-    grid-column: 1 / 2;
-    @media (min-width: $viewport-tablet) {
-      grid-column: 1 / 7;
-    }
-    position: relative;
-    z-index: 10;
-    margin-top: $whitespace;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    @include layout-block();
+    padding: 0;
+    grid-column: 1 / -1;
     h2 {
+      grid-column: 1 / 2;
+      padding-top: $whitespace;
       width: 100%;
-      text-align: center;
+      @media (min-width: $viewport-tablet) {
+        grid-column: 2 / 7;
+      }
+    }
+    @media (min-width: $viewport-tablet) {
+      h2+article:last-child {
+        grid-column: 2 / 5;
+      }
+      article {
+        &:nth-child(2n) {
+          grid-column: 2 / 4;
+        }
+        &:nth-child(2n-1) {
+          grid-column: 4 / 6;
+        }
+      }
     }
     article {
-      justify-self: center;
-      max-width: $max-width-narrow;
-      padding: $whitespace*0.5 $gutter 0;
+      padding-top: $gutter;
       h3 {
         @include font-medium();
         margin-bottom: $gutter;
@@ -510,68 +558,6 @@ header {
       }
     }
   }
-  #graphic {
-    position: absolute;
-    overflow: hidden;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    & > div {
-      height: 100%;
-      display: grid;
-      grid-template-columns: 1fr $max-width-narrow*0.5 1fr;
-      grid-template-rows: 105vh 90vh 1fr;
-    }
-    #block-1 {
-      z-index: 2;
-      grid-column: 2 / 3;
-      grid-row: 1 / 4;
-      height: 100%;
-      background: linear-gradient(180deg, rgba($highlight, 1) 0%, rgba($highlight, 1) 55%, rgba($highlight, 0) 80%);
-      justify-self: stretch;
-      align-self: stretch;
-      display: none;
-    }
-    #block-2 {
-      grid-column: 1 / 4;
-      grid-row: 1 / 2;
-      background: linear-gradient(180deg, #697897 0%, #f4b19e 50%, #fead78 100%);
-      background-attachment: fixed;
-    }
-    #block-3 {
-      grid-column: 1 / 4;
-      grid-row: 1 / 2;
-      background: url({{ site.baseurl }}/assets/images/clouds.png);
-      mix-blend-mode: lighten; 
-      background-size: cover;
-      background-position: left bottom;
-      background-attachment: fixed;
-    }
-    #block-4 {
-      position: relative;
-      overflow: visible;
-      grid-column: 1 / 4;
-      grid-row: 2 / 4;
-      background: $page;
-      &:before {
-        content: " ";
-        @include graphic-horizon();
-        top: -10vw;
-        background: $page;
-      }
-    }
-  }
-  & + footer {
-    background: $text;
-    &:before {
-      background: $page;
-    }
-    form fieldset label {
-      color: $text;
-    }
-  }
 }
 
 
@@ -580,14 +566,18 @@ header {
 
 #layout-product {
   @include layout-block();
+  z-index: 2;
   #layout-inner {
     grid-column: 1 / 2;
-    margin: $whitespace 0;
+    margin: $whitespace 0 0;
     @media (min-width: $viewport-tablet) {
       grid-column: 2 / 6;
     }
     @include body-typography();
     #header {
+      hyphens: none;
+      -ms-hyphens: none;
+      -webkit-hyphens: none;
       @media (min-width: $viewport-tablet) {
         @include font-medium();
       }
@@ -598,46 +588,36 @@ header {
     }
     #body {
       margin: 0 auto;
-      max-width: $max-width-wide;
       @media (min-width: $viewport-tablet) {
         @include font-medium();
       }
       ol {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-gap: 0 $gutter;
-        @media (min-width: $viewport-tablet) {
-        grid-template-columns: 1fr 1fr;
-        }
         list-style: none;
+        display: grid;
+        grid-gap: $gutter;
+        grid-auto-rows: $whitespace*0.5;
         counter-reset: ol;
-        margin-bottom: $whitespace*0.5;
+        margin: $gutter*1.5 0 $whitespace*0.5;
+        @media (min-width: $viewport-tablet) {
+          grid-template-columns: 1fr 1fr;
+        }
         li {
           position: relative;
-          @include font-core();
-          margin: $indent*2 0;
+          padding: 0 $gutter $gutter;
+          border-radius: $corner-radius;
+          background: $light-shade;
+          grid-row: span 2;
           counter-increment: ol;
-          display: flex;
-          flex-direction: row;
-          align-self: center;
-          @media (min-width: $viewport-tablet) {
-            max-width: 18em;
-            grid-row: span 2;
-            &:nth-child(2) {
-              grid-column: 2 / 3;
-              grid-row: 2 / 4;
-            }
+          &:nth-child(2) {
+            grid-column: 2/ 3;
+            grid-row: 2 / 4;
           }
           &:before {
             content: counter(ol);
-            @include font-large();
-            color: $highlight;
             position: relative;
-            top: -0.125em;
-            padding-right: $indent*0.75;
-            @media (min-width: $viewport-tablet) {
-              padding-right: $indent*0.33;
-            }
+            display: block;
+            color: $highlight;
+            @include font-large();
           }
         }
       }
@@ -654,6 +634,7 @@ header {
 
 #layout-post {
   @include layout-block();
+  z-index: 2;
   #layout-inner {
     @include body-typography();
     @include text-area();
@@ -671,6 +652,7 @@ header {
 
 #layout-page {
   @include layout-block();
+  z-index: 2;
   #layout-inner {
     @include body-typography();
     @include text-area();
@@ -688,30 +670,50 @@ header {
 
 footer {
   @include layout-block();
-  overflow: hidden;
-  z-index: 30;
   #newsletter-signup {
     grid-column: 1 / 2;
     margin: $whitespace 0;
+    padding-top: $gutter;
+    border-top: 1px solid $border;
     @media (min-width: $viewport-tablet) {
+      grid-column: 1 / 7;
+    }
+    @media (min-width: $viewport-wide) {
       grid-column: 2 / 6;
     }
   }
   form {
     position: relative;
     z-index: 5;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $viewport-tablet) {
+      flex-direction: row;
+    }
     overflow: visible;
-    fieldset {
+    #actions {
+      margin-bottom: $gutter*4;
+      @media (min-width: $viewport-tablet) {
+        margin-bottom: 0;
+        padding-right: $gutter;
+      }
+      div {
+        @include cta-buttons();
+        a {
+          white-space: nowrap;
+        }
+      }
+    }
+    #signup {
+      position: relative;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap;
+      flex-grow: 1;
       label {
         width: 100%;
         padding-bottom: $gutter;
-        text-align: center;
-        color: $page;
       }
       input {
         position: relative;
@@ -727,10 +729,11 @@ footer {
           bottom: $gutter*-0.5;
           left: $gutter*-0.5;
           right: $gutter*-0.5;
-          height: $baseline + $gutter*3;
-          border-radius: $corner-radius*1.666;
+          height: $baseline + $gutter*2;
+          border-radius: $corner-radius*1.6;
           color: $highlight;
-          background: $highlight;
+          background: transparent;
+          border: $gutter*0.5 solid $highlight;
           opacity: 0;
           transition: opacity $transition;
         }
@@ -750,7 +753,7 @@ footer {
         background: $light-shade;
         border-radius: 0 $corner-radius $corner-radius 0;
         &:hover {
-          background: darken($page, 10%);
+          background: rgba($text, 0.1);
         }
         &:focus {
           outline: none;
@@ -762,15 +765,16 @@ footer {
   }
   #footer-navigation {
     grid-column: 1 / 2;
+    border-top: 1px solid $border;
     @media (min-width: $viewport-tablet) {
       grid-column: 1 / 7;
     }
-    @media (min-width: $viewport-desktop) {
+    @media (min-width: $viewport-wide) {
       grid-column: 2 / 6;
     }
     position: relative;
     z-index: 6;
-    padding: $gutter 0;
+    padding: $gutter 0 $gutter*0.5;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -782,6 +786,14 @@ footer {
       display: flex;
       flex-direction: row;
       justify-content: center;
+      img {
+        display: inline-block;
+        position: relative;
+        height: 0.9em;
+        width: auto;
+        margin-left: 0.5em;
+        top: 0.1em;
+      }
     }
     nav {
       display: flex;
@@ -805,28 +817,7 @@ footer {
       }
       a {
         white-space: nowrap;
-        text-decoration-color: inherit;
-        &:focus {
-          color: $page;
-        }
       }
     }
-  }
-  
-  &:before {
-    content: " ";
-    @include graphic-horizon();
-    z-index: 1;
-    top: 15%;
-    background: $text;
-  }
-  
-  &:after {
-    content: " ";
-    @include graphic-horizon();
-    z-index: 2;
-    top: 75%;
-    background: $highlight;
-    box-shadow: 0 0 $whitespace*0.5 #fead78;
   }
 }

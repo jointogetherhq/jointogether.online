@@ -1,7 +1,16 @@
   <div id="newsletter-signup">
     <form action="https://online.us6.list-manage.com/subscribe/post?u=96b2d2fa2d0acc9a1edc93fc3&amp;id=14dbb05ceb" method="post" target="_blank">
-      <fieldset>
-        <label for="newsletter-input">Sign up for announcements or follow&nbsp;us&nbsp;on&nbsp;<a href="https://twitter. com/jointogetherhq">Twitter</a>.</label>
+      <fieldset id="actions">
+        <h2>Actions</h2>
+        <div>
+          {% assign homepage = site.pages | where: "path", "index.markdown" | first %}
+          {% for item in homepage.buttons %}
+            <a href="{{ item.url }}">{{ item.label }}</a>
+          {% endfor %}
+        </div>
+      </fieldset>
+      <fieldset id="signup">
+        <label for="newsletter-input">Sign up for news or follow&nbsp;us&nbsp;on&nbsp;<a href="https://twitter. com/jointogetherhq">Twitter</a>.</label>
         <input id="newsletter-input" placeholder="email" type="email" name="EMAIL" />
         <div></div>
         <button type="submit">Sign up</button>
@@ -9,7 +18,7 @@
     </form>
   </div>
   <div id="footer-navigation">
-    <div><p>&copy; JoinTogether Cooperative Ltd.&nbsp;2022.</p></div>
+    <div><p>&copy; JoinTogether Cooperative Ltd.&nbsp;2022.<img src="{{ site.baseurl }}/assets/images/cuk_member.png" /></p></div>
     <nav>
       <h2>Corporate info: </h2>
       {% assign footerLinks = site.corporate-pages | sort: 'footer-order' %}
