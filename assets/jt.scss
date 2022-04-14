@@ -422,7 +422,7 @@ header {
         height: calc(100vh - #{$gutter*2});
         background: linear-gradient(160deg, $highlight 0%, pink 70%, cyan 100%);
         mask: url(images/JT-Vector-01.svg);
-        -webkit-mask: url(images/JT-Vector-02.svg);
+        -webkit-mask: url(images/JT-Vector-01.svg);
         mask-position: center center;
         -webkit-mask-position: center center;
         mask-size: contain;
