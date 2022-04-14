@@ -327,7 +327,7 @@ header {
     z-index: 2;
     .lede-block {
       position: relative;
-      z-index: 5;
+      z-index: 20;
       padding: $whitespace*0.75 0;
       &:first-child {
         padding-top: $whitespace;
@@ -414,51 +414,32 @@ header {
         right: $gutter;
         border-radius: $corner-radius;
       }
-      #graphic-inner {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        overflow: hidden;
+      #block-1 {
+        position: sticky;
+        top: $gutter;
+        margin: 0 5%;
+        width: 90%;
+        height: calc(100vh - #{$gutter*2});
+        background: linear-gradient(160deg, $highlight 0%, pink 70%, cyan 100%);
+        mask: url(images/JT-Vector-01.svg);
+        -webkit-mask: url(images/JT-Vector-01.svg);
+        mask-position: center center;
+        -webkit-mask-position: center center;
+        mask-size: contain;
+        -webkit-mask-size: contain;
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+        @media (min-width: $viewport-tablet) {
+          mask: url(images/JT-Vector-02.svg);
+          -webkit-mask: url(images/JT-Vector-02.svg);
+          mask-position: center center;
+          -webkit-mask-position: center center;
+          mask-size: contain;
+          -webkit-mask-size: contain;
+          mask-repeat: no-repeat;
+          -webkit-mask-repeat: no-repeat;
+       }
       }
-      // #block-1 {
-      //   position: absolute;
-      //   z-index: 10;
-      //   left: -25%;
-      //   right: -25%;
-      //   top: 100%;
-      //   margin-top: -30%;
-      //   width: 150%;
-      //   height: 0;
-      //   padding-top: 100%;
-      //   border-radius: 100%;
-      //   background: $text;
-      //   box-shadow: 
-      //     0 0 $whitespace $page,
-      //     inset $whitespace 0 $whitespace rgba($highlight, 0.6);
-      // }
-      // #block-2 {
-      //   position: absolute;
-      //   z-index: 5;
-      //   left: -5%;
-      //   top: 100%;
-      //   margin-top: -30%;
-      //   width: 20vw;
-      //   height: 20vw;
-      //   border-radius: 100%;
-      //   background: $highlight;
-      // }
-      // #block-3 {
-      //   position: absolute;
-      //   z-index: 1;
-      //   bottom: 0;
-      //   left: 0;
-      //   right: 0;
-      //   height: 100vh;
-      //   display: none;
-      //   background: linear-gradient(180deg, rgba($highlight, 0) 0%, rgba($highlight, 1) 100%);
-      // }
     }
   }
   section {
