@@ -305,9 +305,12 @@ header {
     text-decoration: none;
     overflow: hidden;
     svg {
-      width: 100px;
+      width: 70px;
       height: auto;
       margin-right: $gutter;
+      @media (min-width: $viewport-tablet) {
+        width: 100px;
+      }
     }
     span {
       position: absolute;
