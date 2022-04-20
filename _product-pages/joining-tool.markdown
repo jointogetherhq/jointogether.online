@@ -21,7 +21,7 @@ It shouldn’t be hard to join a union. So Join Together:
 
 Join Together features:
 
-1. Beautifully designed forms that use your brand.
+1. Beautifully designed forms that use your brand. 
 2. Mobile/tablet finger-friendly design
 3. Union specific features such as subs rate calculators and employer lookups.
 4. Integration with common union CRM systems (MS Dynamics, Salesforce, ClearCourse)

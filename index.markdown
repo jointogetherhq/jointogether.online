@@ -15,7 +15,7 @@ buttons:
     url: 'joining-tool'
 ---
 
-## Join Together helps unions get more members by:
+## Join Together helps unions get more members&nbsp;by:
 
 - Turning effective workplace organising and great campaigns into more members by making it quick and easy for people to join.
 - Giving prospective members a great first impression of joining a union.
