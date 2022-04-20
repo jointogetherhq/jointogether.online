@@ -40,4 +40,9 @@ collections:
     permalink: /:path/
     layout: product
     sort_by: order
+  posts:
+    output: true
+    permalink: /post/:path/
+    layout: post
+    sort_by: date
     

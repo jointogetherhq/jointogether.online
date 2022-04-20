@@ -1,0 +1,30 @@
+---
+layout: base
+---
+
+<main id="layout-blogindex">
+  <div id="layout-inner">
+    <div id="content">
+      {{ content }}
+    </div>
+    <div id="blog-posts">
+      <h2>All our updates</h2>
+      {% for post in site.posts %}
+      <article>
+        <h3>
+          <a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }}</a>
+        </h3>
+        <div>
+          <p>Posted: {{ post.date | date_to_long_string }}</p>
+        </div>
+        <div>
+          {{ post.excerpt }}
+        </div>
+        <div>
+          <a href="{{ site.baseurl }}{{ post.url }}   ">Continue reading this post</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</main>

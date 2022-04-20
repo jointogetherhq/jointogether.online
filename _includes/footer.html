@@ -21,6 +21,10 @@
     <div><p>&copy; JoinTogether Cooperative Ltd.&nbsp;2022. <a href="https://www.uk.coop"><img src="{{ site.baseurl }}/assets/images/JT-Logo-Coop.svg" /></a></p></div>
     <nav>
       <h2>Corporate info: </h2>
+      {% assign post_count=site.posts | size %}
+      {% if post_count > 4 %}
+        <span><a href="{{ site.baseurl }}/posts">Updates</a></span>
+      {% endif %}
       {% assign footerLinks = site.corporate-pages | sort: 'footer-order' %}
       {% for item in footerLinks %}
         <span><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></span> 
