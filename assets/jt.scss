@@ -304,12 +304,11 @@ header {
     display: inline-block;
     text-decoration: none;
     overflow: hidden;
-    svg {
-      width: 70px;
-      height: auto;
-      margin-right: $gutter;
+    img {
+      height: $measure*3;
+      width: auto;
       @media (min-width: $viewport-tablet) {
-        width: 100px;
+        height: $measure*3;
       }
     }
     span {
@@ -763,10 +762,32 @@ footer {
       img {
         display: inline-block;
         position: relative;
-        height: 0.9em;
+        height: 1.1em;
         width: auto;
-        margin-left: 0.5em;
-        top: 0.1em;
+        top: 0.2em;
+      }
+      a {
+        position: relative;
+        &:before {
+          content: " ";
+          position: absolute;
+          top: -2px;
+          left: -2px;
+          right: -2px;
+          bottom: -3px;
+          border-radius: $corner-radius*0.5;
+          background: $highlight;
+          opacity: 0;
+        }
+        &:hover,
+        &:focus {
+          img {
+            filter: invert(1);
+          }
+          &:before {
+            opacity: 1;
+          }
+        }
       }
     }
     nav {
