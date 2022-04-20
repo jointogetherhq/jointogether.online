@@ -326,6 +326,7 @@ a {
   text-decoration-thickness: 1px;
   text-underline-offset: 0.15em;
   text-decoration-color: $border;
+  position: relative;
   &:hover {
     text-decoration-thickness: 2px;
     text-decoration-color: $highlight;
@@ -366,11 +367,20 @@ header {
     display: inline-block;
     text-decoration: none;
     overflow: hidden;
+    padding: 4px 2px 0 4px;
+    border-radius: $corner-radius*0.5;
     img {
       height: $measure*3;
       width: auto;
       @media (min-width: $viewport-tablet) {
         height: $measure*3;
+      }
+    }
+    &:hover,
+    &:focus {
+      background: $highlight;
+      img {
+        filter: invert(1);
       }
     }
     span {
@@ -955,9 +965,9 @@ footer {
       img {
         display: inline-block;
         position: relative;
-        height: 1.1em;
+        height: 0.9em;
         width: auto;
-        top: 0.2em;
+        top: 0.15em;
       }
       a {
         position: relative;
