@@ -689,6 +689,7 @@ header {
           &:before {
             content: counter(ol);
             position: relative;
+            margin-left: 0;
             display: inline-block;
             color: $highlight;
             margin-bottom: $gutter;
