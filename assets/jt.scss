@@ -63,6 +63,12 @@ $max-width-wide: 31em;
 $corner-radius: 13px;
 $transition: 0.3s ease;
 
+@-webkit-keyframes homepage-graphic-ripple {
+  0% { background-position: 30% 70% }
+  50% { background-position: 80% 20% }
+  100% { background-position: 60% 45% }
+}
+
 
 
 // MIXINS
@@ -300,7 +306,7 @@ $transition: 0.3s ease;
 
 
 // BASE STYLES
-
+  
 html {
   position: relative;
   min-width: 320px;
@@ -479,7 +485,6 @@ header {
         margin: 0 5%;
         width: 90%;
         height: calc(100vh - #{$gutter*2});
-        background: linear-gradient(160deg, $highlight 0%, pink 70%, cyan 100%);
         mask: url(images/JT-Vector-01.svg);
         -webkit-mask: url(images/JT-Vector-01.svg);
         mask-position: center center;
@@ -488,6 +493,10 @@ header {
         -webkit-mask-size: contain;
         mask-repeat: no-repeat;
         -webkit-mask-repeat: no-repeat;
+        background: linear-gradient(160deg, $highlight 40%, pink 60%, cyan 65%);
+        background-size: 200% 200%;
+        background-position: 25% 25%;
+        animation: homepage-graphic-ripple 5s ease infinite alternate ;
       }
     }
   }
