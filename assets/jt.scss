@@ -176,6 +176,44 @@ $transition: 0.3s ease;
     margin-left: auto;
     margin-right: auto;
   }
+  blockquote {
+    position: relative;
+    padding-left: $indent;
+    &:before {
+      content: "\201C";
+      float: left;
+      margin-left: $indent*-1;
+      width: $indent;
+      text-align: center;
+    }
+    p:last-child::after {
+      content: "\201D";
+    }
+  }
+  cite {
+    display: block;
+    padding-left: $indent;
+    &:before {
+      content: ".";
+      float: left;
+      margin-left: $indent*-1;
+      width: $indent*0.6;
+      margin-right: $indent*0.4;
+      color: transparent;
+      overflow: hidden;
+      border-bottom: 1px solid $text;
+      height: 0.6em;
+    }
+  }
+  strong {
+    font-weight: 800;
+  }
+  em {
+    position: relative;
+    display: inline-block;
+    transform: skew(13deg);
+    letter-spacing: 0.01em;
+  }
   ul {
     list-style: none;
     li {
@@ -187,6 +225,22 @@ $transition: 0.3s ease;
         position: relative;
         margin-left: $indent *-1;
         width: $indent;
+      }
+    }
+  }
+  ol {
+    list-style: none;
+    counter-reset: ol;
+    li {
+      position: relative;
+      counter-increment: ol;
+      padding-left: $indent*1.5;
+      &:before {
+        content: counter(ol)". ";
+        position: relative;
+        float: left;
+        margin-left: $indent*-1.5;
+        min-width: $indent*1.5;
       }
     }
   }
