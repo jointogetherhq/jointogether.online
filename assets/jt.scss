@@ -262,12 +262,13 @@ $transition: 0.3s ease;
   position: relative;
   padding: $gutter;
   height: $baseline;
-  background: $light-shade;
+  color: $page;
+  background: lighten($text, 30%);
   border-radius: $corner-radius;
   text-decoration: none;
   text-align: center;
   &:hover {
-    background: rgba($text, 0.1);
+    background: $text;
   }
   &:focus {
     outline: none;
