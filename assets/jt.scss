@@ -176,6 +176,9 @@ $transition: 0.3s ease;
   h2, h2 + * {
     padding-top: $whitespace*0.5;
   }
+  h3 {
+    font-weight: 800;
+  }
   p, ol, ul, div:not(#header), 
   blockquote, quote {
     margin-bottom: $gutter;
