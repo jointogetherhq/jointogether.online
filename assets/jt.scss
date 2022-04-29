@@ -149,6 +149,31 @@ $transition: 0.3s ease;
   }
 }
 
+@mixin logo-images {
+  img {
+    display: inline-block;
+    width: auto;
+    height: $gutter*2;
+    margin-right: $gutter;
+    filter: saturate(0) contrast(120%);
+    border-bottom: 1px solid transparent;
+    padding-bottom: 5px;
+  }
+  &:hover { 
+    img {
+      border-bottom: 1px solid $highlight;
+      filter: saturate(100%) contrast(100%);
+    }
+  }
+  &:focus { 
+    img {
+      border-bottom: 2px solid $highlight;
+      padding-bottom: 4px;
+      filter: saturate(100%) contrast(100%);
+    }
+  }
+}
+
 @mixin body-typography {
   hyphens: auto;
   -ms-hyphens: auto;
@@ -276,6 +301,9 @@ $transition: 0.3s ease;
     width: 100%;
     height: auto;
     margin: $gutter*2 0;
+  }
+  p a {
+    @include logo-images();
   }
 }
 
@@ -579,28 +607,7 @@ header {
       margin: $gutter*2 0;
     }
     p a {
-      img {
-        display: inline-block;
-        width: auto;
-        height: 2em;
-        margin-right: 1em;
-        filter: saturate(0) contrast(120%);
-        border-bottom: 1px solid transparent;
-        padding-bottom: 5px;
-      }
-      &:hover { 
-        img {
-          border-bottom: 1px solid $highlight;
-          filter: saturate(100%) contrast(100%);
-        }
-      }
-      &:focus { 
-        img {
-          border-bottom: 2px solid $highlight;
-          padding-bottom: 4px;
-          filter: saturate(100%) contrast(100%);
-        }
-      }
+      @include logo-images();
     }
   }
   nav {
@@ -720,6 +727,9 @@ header {
         width: 100%;
         height: auto;
         margin: $gutter*2 0;
+      }
+      p a {
+        @include logo-images();
       }
       ol {
         list-style: none;
