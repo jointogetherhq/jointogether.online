@@ -4,38 +4,36 @@ title: Terms of use
 footer-order: "20"
 ---
 
-*These terms were last updated in April 2022.*
+## Introduction
 
-### Introduction
-
-1\. **Join Together (we, us, our)** provides digital tools for
+<span>1\. </span>**Join Together (we, us, our)** provides digital tools for
 trade unions. Learn more about [our mission and tools](/joining-tool).
 
-2\. Join Together operates the [jointogether.online](/) website (the
+<span>2\. </span>Join Together operates the [jointogether.online](/) website (the
 **Site**).
 
-3\. Use of the Site is subject to these Terms of Use (**Terms**),
+<span>3\. </span>Use of the Site is subject to these Terms of Use (**Terms**),
 which govern how you may use the Site and form the agreement between the
 user (you, user) and us.
 
-4\. The Site provides information about Join Together and allows users to
+<span>4\. </span>The Site provides information about Join Together and allows users to
 contact us, preview Union joining tools and register to receive email
 updates. If Join Together adds any features to enhance the service, then
 the features will also be dependent on these Terms.
 
-5\. If you violate any of these Terms, then Join Together may terminate
+<span>5\. </span>If you violate any of these Terms, then Join Together may terminate
 your access to the Site. Join Together’s failure to enforce or exercise
 any of these Terms does not constitute a waiver.
 
-6\. These Terms are to be read in conjunction with any other agreement that
+<span>6\. </span>These Terms are to be read in conjunction with any other agreement that
 may be in place between Join Together and you. Users are also subject to
 the Join Together [Privacy Policy](/pivacy-policy) which are
 expressly made part of these Terms and Conditions for Users.
 
-7\. The Site is provided for users over 16 years. You must be over 16 years
+<span>7\. </span>The Site is provided for users over 16 years. You must be over 16 years
 old to accept these Terms and use the Site.
 
-8\. We do not make any representations or give any warranties or undertakings
+<span>8\. </span>We do not make any representations or give any warranties or undertakings
 in relation to the quality, accuracy, completeness or fitness for purpose
 of the content of the Site. The Site includes content provided by third
 parties. As you browse through this Site you may access other websites
@@ -45,13 +43,13 @@ We do not endorse, recommend or approve of any information, products or
 services referred to on such linked sites and we assume no responsibility
 for the contents of any other website to which this Site offers links.
 
-### Your use of the Site
+## Your use of the Site
 
-9\. Users may only access, use or otherwise deal with the Site and data
+<span>9\. </span>Users may only access, use or otherwise deal with the Site and data
 presented there in good faith in accordance with these Terms. You must
 comply with all applicable laws that govern your use of this Site.
 
-10\. You may:
+<span>10\. </span>You may:
 
 <ol class="legal">
   <li>
@@ -66,7 +64,7 @@ comply with all applicable laws that govern your use of this Site.
   </li>
 </ol>
 
-11\. By using the Site you agree that you shall *not*:
+<span>11\. </span>By using the Site you agree that you shall *not*:
 
 <ol class="legal">
   <li>
@@ -146,27 +144,28 @@ comply with all applicable laws that govern your use of this Site.
   </li>
 </ol>
 
-12\. You shall notify us immediately upon the discovery of any breach of
+<span>12\. </span>You shall notify us immediately upon the discovery of any breach of
 Article 11.
 
-13\. We cannot guarantee that this Site will operate in accordance with
+<span>13\. </span>We cannot guarantee that this Site will operate in accordance with
 your expectations, will be uninterrupted or error free. All express or
 implied representations and warranties (whether statutory or otherwise)
 in respect of this Site or the Site content all are excluded, except
 where prohibited by law. You access the Site at your own risk.
 
-### Final provisions
+## Final provisions
 
-14\. Join Together may modify these Terms from time to time and will publish
+<span>14\. </span>Join Together may modify these Terms from time to time and will publish
 any modifications here.
 
-15\. We may transfer our rights under these Terms to another organisation
+<span>15\. </span>We may transfer our rights under these Terms to another organisation
 without your consent. We will notify you in writing if this happens.
 
-16\. Any questions about these Terms can be sent to
+<span>16\. </span>Any questions about these Terms can be sent to
 [hello@jointogether.online](mailto:hello@jointogether.online).
 
-17\. Any claims arising out of or relating to these Terms will be governed by
+<span>17\. </span>Any claims arising out of or relating to these Terms will be governed by
 the laws of England. Any dispute arising from these Terms shall be
 resolved in the exclusive jurisdiction of the courts in England.
 
+## These terms were last updated in April 2022.
