@@ -29,7 +29,7 @@ Join Together features:
 6. Automated “resume application” feature for people who don’t join in one sitting.
 7. Built in analytics and reporting showing conversion rates, top employers and member lifetime value.
 
-Another paragraph about how we work.
+Every union has unique members with different needs. We like to work with you and your users to tailor Join Together to work best for you.
 
 [![The Communication Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/cwu-logo.png)](https://www.cwu.org) 
 [![Bakers Food and Allied Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/bfawu-logo.png)](https://www.bfawu.org) 
