@@ -578,6 +578,30 @@ header {
       height: auto;
       margin: $gutter*2 0;
     }
+    p a {
+      img {
+        display: inline-block;
+        width: auto;
+        height: 2em;
+        margin-right: 1em;
+        filter: saturate(0) contrast(120%);
+        border-bottom: 1px solid transparent;
+        padding-bottom: 5px;
+      }
+      &:hover { 
+        img {
+          border-bottom: 1px solid $highlight;
+          filter: saturate(100%) contrast(100%);
+        }
+      }
+      &:focus { 
+        img {
+          border-bottom: 2px solid $highlight;
+          padding-bottom: 4px;
+          filter: saturate(100%) contrast(100%);
+        }
+      }
+    }
   }
   nav {
     @include cta-buttons();

@@ -21,3 +21,9 @@ buttons:
 - Reducing member attrition and increasing revenue, by making it straightforward for people to update their contact information, payment details and their subs rate.
 - Being designed and built for unions, fully hosted, secure, scalable and continually optimised to get better and better over time.
 - Being built by a team who actually get unions.
+
+[![The Communication Workers Union]({{ site.baseurl }}/assets/images/cwu-logo.png)](https://www.cwu.org) 
+[![Bakers Food and Allied Workers Union]({{ site.baseurl }}/assets/images/bfawu-logo.png)](https://www.bfawu.org) 
+[![Writers Guild of Great Britain]({{ site.baseurl }}/assets/images/wggb-logo.jpg)](https://writersguild.org.uk) 
+[![Forsa the Irish Trade Union]({{ site.baseurl }}/assets/images/forsa-logo.png)](https://www.forsa.ie) 
+[![Trade Union Congress]({{ site.baseurl }}/assets/images/tuc-logo.jpg)](https://www.tuc.org.uk) 
