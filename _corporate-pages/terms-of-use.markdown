@@ -7,7 +7,7 @@ footer-order: "20"
 ## Introduction
 
 <span>1\. </span>**Join Together (we, us, our)** provides digital tools for
-trade unions. Learn more about [our mission and tools](/joining-tool).
+trade unions. Learn more about [our mission and tools]({{ site.url }}{{ site.baseurl }}/joining-tool).
 
 <span>2\. </span>Join Together operates the [jointogether.online](/) website (the
 **Site**).
@@ -27,7 +27,7 @@ any of these Terms does not constitute a waiver.
 
 <span>6\. </span>These Terms are to be read in conjunction with any other agreement that
 may be in place between Join Together and you. Users are also subject to
-the Join Together [Privacy Policy](/pivacy-policy) which are
+the Join Together [Privacy Policy]({{ site.url }}{{ site.baseurl }}/pivacy-policy) which are
 expressly made part of these Terms and Conditions for Users.
 
 <span>7\. </span>The Site is provided for users over 16 years. You must be over 16 years

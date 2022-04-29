@@ -31,8 +31,8 @@ Join Together features:
 
 Another paragraph about how we work.
 
-[![The Communication Workers Union]({{ site.baseurl }}/assets/images/cwu-logo.png)](https://www.cwu.org) 
-[![Bakers Food and Allied Workers Union]({{ site.baseurl }}/assets/images/bfawu-logo.png)](https://www.bfawu.org) 
-[![Writers Guild of Great Britain]({{ site.baseurl }}/assets/images/wggb-logo.jpg)](https://writersguild.org.uk) 
-[![Forsa the Irish Trade Union]({{ site.baseurl }}/assets/images/forsa-logo.png)](https://www.forsa.ie) 
-[![Trade Union Congress]({{ site.baseurl }}/assets/images/tuc-logo.jpg)](https://www.tuc.org.uk) 
+[![The Communication Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/cwu-logo.png)](https://www.cwu.org) 
+[![Bakers Food and Allied Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/bfawu-logo.png)](https://www.bfawu.org) 
+[![Writers Guild of Great Britain]({{ site.url }}{{ site.baseurl }}/assets/images/wggb-logo.jpg)](https://writersguild.org.uk) 
+[![Forsa the Irish Trade Union]({{ site.url }}{{ site.baseurl }}/assets/images/forsa-logo.png)](https://www.forsa.ie) 
+[![Trade Union Congress]({{ site.url }}{{ site.baseurl }}/assets/images/tuc-logo.jpg)](https://www.tuc.org.uk) 

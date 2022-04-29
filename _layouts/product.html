@@ -12,7 +12,7 @@ layout: base
     </div>
     <nav>
       {% for item in page.buttons %}
-      <a href="{{ item.url }}">{{ item.label }}</a>
+      <a href="{{ site.url }}{{ site.baseurl }}{{ item.url }}">{{ item.label }}</a>
       {% endfor %}
     </nav>
   </div>

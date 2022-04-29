@@ -28,14 +28,14 @@
   font-family: 'JoinTogether'; 
   font-style: normal; 
   font-weight: 800;
-  src: url("{{ site.baseurl }}/assets/fonts/JoinTogether-Head.otf") format("opentype");
+  src: url(fonts/JoinTogether-Head.otf) format("opentype");
 }
 
 @font-face {
   font-family: 'JoinTogether'; 
   font-style: normal; 
   font-weight: 700;
-  src: url("{{ site.baseurl }}/assets/fonts/JoinTogether-Body.otf") format("opentype");
+  src: url(fonts/JoinTogether-Body.otf) format("opentype");
 }
 
 
@@ -158,6 +158,7 @@ $transition: 0.3s ease;
     filter: saturate(0) contrast(120%);
     border-bottom: 1px solid transparent;
     padding-bottom: 5px;
+    cursor: pointer;
   }
   &:hover { 
     img {

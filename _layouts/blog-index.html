@@ -12,7 +12,7 @@ layout: base
       {% for post in site.posts %}
       <article>
         <h3>
-          <a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }}</a>
+          <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"> {{ post.title }}</a>
         </h3>
         <div>
           <p>Posted: {{ post.date | date_to_long_string }}</p>
@@ -21,7 +21,7 @@ layout: base
           {{ post.excerpt }}
         </div>
         <div>
-          <a href="{{ site.baseurl }}{{ post.url }}   ">Continue reading this post</a>
+          <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}   ">Continue reading this post</a>
         </div>
       </article>
       {% endfor %}
