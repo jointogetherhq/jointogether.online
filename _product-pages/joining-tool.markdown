@@ -4,7 +4,7 @@ title: We’re making it easier to join a union
 order: 1
 buttons:
   - label: 'Book a call to discuss your needs'
-    url: '#'
+    url: 'https://calendly.com/join-together/hello'
 ---
 
 It shouldn’t be hard to join a union. So Join Together:

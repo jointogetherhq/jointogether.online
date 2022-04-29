@@ -9,7 +9,7 @@ paragraphs:
   - text: 'Better work for <br>everyone'
 buttons:
   - label: 'Book a call'
-    url: '#'
+    url: 'https://calendly.com/join-together/hello'
   - label: 'Union joining tools'
     url: 'joining-tool'
 ---
