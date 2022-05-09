@@ -6,4 +6,4 @@ layout: page
 
 ## Oops
 
-It looks like the linked you clicked is broken.
+It looks like the link you clicked is broken.
