@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "People are turning to unions again"
-date:   2022-05--09 19:19:13 +0000
+date:   2022-05-09 19:19:13 +0000
 ---
 
 “Join a union” is a phrase you hear a lot more of than you would have done five years ago. It’s coming from every corner
