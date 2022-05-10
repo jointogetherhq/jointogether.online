@@ -13,9 +13,10 @@ It shouldn’t be hard to join a union. So Join Together:
 - Only asks for what you need to know.
 - Only shows the steps the member needs to see.
 - Uses words anyone can understand.
-- Makes it quick and respect people’s time.
+- Makes it quick and respects people’s time.
 - Lets people pay for their membership in the way that suits them best.
 - Helps people recruit their colleagues.
+- Works as well on a phone as a computer.
 
 ---
 
