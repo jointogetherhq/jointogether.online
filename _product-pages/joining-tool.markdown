@@ -22,7 +22,7 @@ It shouldn’t be hard to join a union. So Join Together:
 
 Join Together features:
 
-1. Beautifully designed forms that use your brand. 
+1. Beautifully designed forms that use your brand.
 2. Mobile/tablet finger-friendly design
 3. Union specific features such as subs rate calculators and employer lookups.
 4. Integration with common union CRM systems (MS Dynamics, Salesforce, ClearCourse)
@@ -32,8 +32,8 @@ Join Together features:
 
 Every union has unique members with different needs. We like to work with you and your users to tailor Join Together to work best for you.
 
-[![The Communication Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/cwu-logo.png)](https://www.cwu.org) 
-[![Bakers Food and Allied Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/bfawu-logo.png)](https://www.bfawu.org) 
-[![Writers Guild of Great Britain]({{ site.url }}{{ site.baseurl }}/assets/images/wggb-logo.jpg)](https://writersguild.org.uk) 
-[![Forsa the Irish Trade Union]({{ site.url }}{{ site.baseurl }}/assets/images/forsa-logo.png)](https://www.forsa.ie) 
-[![Trade Union Congress]({{ site.url }}{{ site.baseurl }}/assets/images/tuc-logo.jpg)](https://www.tuc.org.uk) 
+[![The Communication Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/cwu-logo.png)](https://www.cwu.org)
+[![Bakers Food and Allied Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/bfawu-logo.png)](https://www.bfawu.org)
+[![Writers Guild of Great Britain]({{ site.url }}{{ site.baseurl }}/assets/images/wggb-logo.jpg)](https://writersguild.org.uk)
+[![Forsa the Irish Trade Union]({{ site.url }}{{ site.baseurl }}/assets/images/forsa-logo.png)](https://www.forsa.ie)
+[![Trade Union Congress]({{ site.url }}{{ site.baseurl }}/assets/images/tuc-logo.jpg)](https://www.tuc.org.uk)
