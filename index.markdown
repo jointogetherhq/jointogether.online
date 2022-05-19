@@ -16,11 +16,11 @@ buttons:
 
 ## Join Together helps unions get more members&nbsp;by:
 
-- Turning effective workplace organising and great campaigns into more members by making it quick and easy for people to join.
-- Giving prospective members a great first impression of joining a union.
-- Reducing member attrition and increasing revenue, by making it straightforward for people to update their contact information, payment details and their subs rate.
-- Being designed and built for unions, fully hosted, secure, scalable and continually optimised to get better and better over time.
-- Being built by a team who actually get unions.
+- Turning effective workplace organising and great campaigns into more members by making it quick and easy for people to join
+- Giving prospective members a great first impression of joining a union
+- Reducing member attrition and increasing revenue, by making it straightforward for people to update their contact information, payment details and their subs rate
+- Being designed and built for unions, fully hosted, secure, scalable and continually optimised to get better and better over time
+- Being built by a team who get unions
 
 [![The Communication Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/cwu-logo.png)](https://www.cwu.org) 
 [![Bakers Food and Allied Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/bfawu-logo.png)](https://www.bfawu.org) 
