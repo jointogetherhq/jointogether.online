@@ -19,7 +19,7 @@ Sam brings digital leadership and service design skills that have delivered join
 new members for a wide range of unions. He also leads work on the TUC’s Digital Lab. Alongside these, he’s also the
 founder of Who Targets Me, which researches how political ads impact democracy.
 
-## Tekin Suleyman
+## Tekin Süleyman
 
 **Engineer**
 
