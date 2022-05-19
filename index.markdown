@@ -11,7 +11,7 @@ buttons:
   - label: 'Book a call'
     url: 'https://calendly.com/join-together/hello'
   - label: 'Union joining tools'
-    url: 'joining-tool'
+    url: '/joining-tool'
 ---
 
 ## Join Together helps unions get more members&nbsp;by:
