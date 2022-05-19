@@ -9,28 +9,28 @@ buttons:
 
 It shouldn’t be hard to join a union. So Join Together:
 
-- Offers a really simple application process.
-- Only asks for what you need to know.
-- Only shows the steps the member needs to see.
-- Uses words anyone can understand.
-- Makes it quick and respects people’s time.
-- Lets people pay for their membership in the way that suits them best.
-- Helps people recruit their colleagues.
-- Works as well on a phone as a computer.
+- Offers a simple and accessible application process
+- Only asks for what you need to know
+- Only shows the steps the member needs to see
+- Uses words anyone can understand
+- Makes it quick and respects people’s time
+- Lets people pay for their membership in the way that suits them best
+- Helps people recruit their colleagues
+- Works as well on a phone as a computer
 
 ---
 
 Join Together features:
 
-1. Beautifully designed forms that use your brand.
-2. Mobile/tablet finger-friendly design
-3. Union specific features such as subs rate calculators and employer lookups.
-4. Integration with common union CRM systems (MS Dynamics, Salesforce, ClearCourse)
-5. Payment via Direct Debit, deduction at source and card (coming soon)
-6. Automated “resume application” feature for people who don’t join in one sitting.
-7. Built in analytics and reporting showing conversion rates, top employers and member lifetime value.
+1. Beautifully designed forms that use your brand
+2. Mobile-friendly and accessible design
+3. Union specific features such as subs rate calculators and employer lookups
+4. Integration with common union CRM systems such as MS Dynamics, Salesforce, ClearCourse
+5. Payment via Direct Debit, deduction at source and credit card
+6. Automated “resume application” feature for people who don’t complete their application in one sitting
+7. Built-in analytics and reporting showing conversion rates, top employers and member lifetime value
 
-Every union has unique members with different needs. We like to work with you and your users to tailor Join Together to work best for you.
+Every union has its own unique needs and requirements. We work with you and your team to tailor the perfect online joining experience for you and your members.
 
 [![The Communication Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/cwu-logo.png)](https://www.cwu.org)
 [![Bakers Food and Allied Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/bfawu-logo.png)](https://www.bfawu.org)
