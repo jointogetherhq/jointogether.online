@@ -6,7 +6,7 @@ footer-order: "2"
 
 ## John Chadfield
 
-**Product and Business Development**
+**Product Manager**
 
 John is a trade union organiser. He has years of product design and strategy expertise from working with clients across the public and private sectors, including trade unions, the NHS and local government.
 
