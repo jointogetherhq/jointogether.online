@@ -4,20 +4,6 @@ title: Contact
 footer-order: "1"
 ---
 
-## Name Surname
-
-We use the information that you have given us in order to send you periodic newsletters and emails about our products and services.
-
-We do not share this information with anyone else.
-
-## Name Surname
-
-We use the information that you have given us in order to send you periodic newsletters and emails about our products and services.
-
-We do not share this information with anyone else.
-
-## Name Surname
-
-We use the information that you have given us in order to send you periodic newsletters and emails about our products and services.
-
-We do not share this information with anyone else.
+If you would like to work with Join Together, contact us at 
+[hello@jointogether.online](mailto:hello@jointogether.online) or
+[book a call](https://calendly.com/join-together/hello).
