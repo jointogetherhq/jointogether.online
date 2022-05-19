@@ -1,7 +1,40 @@
 ---
 ---
 
-
+/**
+ * @license
+ * MyFonts Webfont Build ID 4866020, 2022-05-19T06:54:23-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: SequelSans-HeadlineBook by OGJ Type Design
+ * URL: https://www.myfonts.com/fonts/ogj-typedesign/sequel-sans/head-book/
+ *
+ * Webfont: SequelSans-HeadlineHeavy by OGJ Type Design
+ * URL: https://www.myfonts.com/fonts/ogj-typedesign/sequel-sans/headline-heavy/
+ *
+ *
+ * Webfonts copyright: Oliver Jeschke / OGJ Type Design
+ *
+ * © 2022 MyFonts Inc
+*/
+@import url("//hello.myfonts.net/count/4a3fe4");
+@font-face {
+  font-family: "JoinTogether";
+  font-style: normal;
+  font-weight: 800;
+  src: url('fonts/SequelSansHeadlineHeavy/font.woff2') format('woff2'), url('fonts/SequelSansHeadlineHeavy/font.woff') format('woff');
+}
+@font-face {
+  font-family: "JoinTogether";
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/SequelSansHeadlineBook/font.woff2') format('woff2'), url('fonts/SequelSansHeadlineBook/font.woff') format('woff');
+}
 
 // RESET
 
@@ -19,27 +52,6 @@
   padding: 0;
   text-decoration: none;
 }
-
-
-
-// FONT EMBEDDING
-
-@font-face {
-  font-family: 'JoinTogether'; 
-  font-style: normal; 
-  font-weight: 800;
-  src: url(fonts/JoinTogether-Head.otf) format("opentype");
-}
-
-@font-face {
-  font-family: 'JoinTogether'; 
-  font-style: normal; 
-  font-weight: 700;
-  src: url(fonts/JoinTogether-Body.otf) format("opentype");
-}
-
-
-
 
 // VARIABLES
 
