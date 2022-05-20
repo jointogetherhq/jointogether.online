@@ -1,7 +1,7 @@
 ---
 layout: page
 title: How we work
-footer-order: "2"
+footer-order: "1"
 ---
 
 Join Together is a worker-led co-operative, and a member of Co-Operatives UK.

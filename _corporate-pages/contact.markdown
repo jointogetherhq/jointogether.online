@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contact
-footer-order: "1"
+footer-order: "3"
 ---
 
 If you would like to work with Join Together on signing up new members, member retention or new member onboarding, contact us at 
