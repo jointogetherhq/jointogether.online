@@ -32,7 +32,7 @@ Join Together features:
 
 Every union has its own unique needs and requirements. We work with you and your team to tailor the perfect online joining experience for you and your members.
 
-[![The Communication Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/cwu-logo.png)](https://www.cwu.org)
+[![The Communication Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/cwu-logo.svg)](https://www.cwu.org)
 [![Bakers Food and Allied Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/bfawu-logo.png)](https://www.bfawu.org)
 [![Writers Guild of Great Britain]({{ site.url }}{{ site.baseurl }}/assets/images/wggb-logo.jpg)](https://writersguild.org.uk)
 [![Forsa the Irish Trade Union]({{ site.url }}{{ site.baseurl }}/assets/images/forsa-logo.png)](https://www.forsa.ie)

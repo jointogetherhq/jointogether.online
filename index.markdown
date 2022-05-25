@@ -22,7 +22,7 @@ buttons:
 - Being designed and built for unions, fully hosted, secure, scalable and continually optimised to get better and better over time
 - Being built by a team who get unions
 
-[![The Communication Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/cwu-logo.png)](https://www.cwu.org) 
+[![The Communication Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/cwu-logo.svg)](https://www.cwu.org) 
 [![Bakers Food and Allied Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/bfawu-logo.png)](https://www.bfawu.org) 
 [![Writers Guild of Great Britain]({{ site.url }}{{ site.baseurl }}/assets/images/wggb-logo.jpg)](https://writersguild.org.uk) 
 [![Forsa the Irish Trade Union]({{ site.url }}{{ site.baseurl }}/assets/images/forsa-logo.png)](https://www.forsa.ie) 
