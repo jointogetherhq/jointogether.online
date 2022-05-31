@@ -8,8 +8,9 @@ footer-order: "2"
 
 **Product Manager**
 
-John is a trade union organiser. He has years of product design and strategy expertise from working with clients across
-the public and private sectors, including trade unions, the NHS and local government.
+John is an active trade union organiser. He has years of product design and strategy expertise from working with clients across the public and private
+sectors, from startups and blue-chip corporates, to NGOs and healthcare. John started leading member-facing trade union projects in 2017, and has since 
+worked on tech interventions for unions with the TUC's Digital Lab.
 
 ## Sam Jeffers
 
