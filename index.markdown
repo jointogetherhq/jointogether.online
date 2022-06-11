@@ -2,6 +2,7 @@
 # Feel free to add content and custom Front Matter to this file.
 
 layout: home
+title: Diigital Tools for Trade Unions
 paragraphs: 
   - text: 'Digital tools for <br>trade&nbsp;unions'
   - text: 'We want to make joining a trade union quicker, easier and more accessible'

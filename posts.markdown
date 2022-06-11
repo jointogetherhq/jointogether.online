@@ -1,5 +1,6 @@
 ---
 layout: blog-index
+title: Blog posts and updates
 permalink: /posts
 exclude: true
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "People are turning to unions again"
+title:  People are turning to unions again
 date:   2022-05-17 11:19:13 +0000
 ---
 
