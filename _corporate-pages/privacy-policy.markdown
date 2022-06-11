@@ -1,6 +1,9 @@
 ---
 layout: page
 title: Privacy policy
+description:
+  The privacy policy of Join Together, a worker-owned co-operative specialising
+  in digital tools and services for trade unions.
 footer-order: "10"
 ---
 

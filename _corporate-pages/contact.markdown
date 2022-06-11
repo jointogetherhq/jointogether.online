@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Contact
+  Contact Join Together to learn how our digital tools and services can help
+  your union grow and maintain more membership in the digital age.
 footer-order: "3"
 ---
 
