@@ -7,7 +7,9 @@ description:
 date:   2022-06-10 10:19:13 +0000
 ---
 
-*“If you break down everything you can think of that goes into riding a bike, and then improve it by 1 percent, you will get a significant increase when you put them all together.”*  - Dave Brailsford, the coach who turned British cycling into a world-beating force.
+> If you break down everything you can think of that goes into riding a bike, and then improve it by 1 percent, you will get a significant increase when you put them all together.
+  
+_&mdash; Dave Brailsford, the coach who turned British cycling into a world-beating force._
 
 Let’s imagine a union with some fairly typical online joining stats.
 
