@@ -1,6 +1,9 @@
 ---
 layout: product
 title: We’re making it easier to join a union
+description:
+  Digital tools and services to help unions grow and maintain their membership
+  in a digital age.
 order: 1
 buttons:
   - label: 'Book a call to discuss your needs'

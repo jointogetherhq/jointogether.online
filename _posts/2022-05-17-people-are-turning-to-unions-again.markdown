@@ -1,6 +1,9 @@
 ---
 layout: post
 title:  People are turning to unions again
+description:
+  People are turning to unions again. Join Together’s mission is to make it
+  easier than ever for workers to join and stay members of trade unions.
 date:   2022-05-17 11:19:13 +0000
 ---
 

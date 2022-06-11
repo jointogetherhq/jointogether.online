@@ -1,6 +1,9 @@
 ---
 layout: page
 title: Team
+description:
+  We are Join Together, a worker-owned co-operative specialising in digital
+  tools and services for trade unions.
 footer-order: "2"
 ---
 
