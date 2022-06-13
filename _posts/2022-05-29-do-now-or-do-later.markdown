@@ -7,7 +7,9 @@ description:
 date:   2022-05-29 10:19:13 +0000
 ---
 
-*“As soon as this pub closes, the revolution starts.” - Alex Glasgow*
+> As soon as this pub closes, the revolution starts.
+>
+_&mdash;Alex Glasgow_
 
 There are lots of things we’d rather “do later”. Sometimes, all it takes is the tiniest excuse to sap your momentum, crack open YouTube and watch half an hour disappear. Other times, you’re interrupted. Something pops up and you suddenly can’t remember what you were meant to be doing in the first place.
 
