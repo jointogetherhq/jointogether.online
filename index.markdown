@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Diigital Tools for Trade Unions
+title: Digital Tools for Trade Unions
 description:
   Join Together helps unions gain and maintain more members through digital
   tools and services designed for and with unions. Supported by the TUC.
