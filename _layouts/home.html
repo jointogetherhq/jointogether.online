@@ -41,10 +41,8 @@ layout: base
       {% for post in site.posts limit:4  %}
       <article>
         <h3><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-        <div>
-          <p>{{ post.date | date_to_long_string }}</p>
-          {{ post.description | post.excerpt }}
-        </div>
+        <p>{{ post.date | date_to_long_string }}</p>
+        <p>{{ post.description | post.excerpt }}</p>
         <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">Continue reading this post</a>
       </article>
       {% endfor %}
