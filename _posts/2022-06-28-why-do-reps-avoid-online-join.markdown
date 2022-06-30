@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Why do reps avoid online join forms (and what does it mean for a union)?"
+title:  "Why reps avoid online join forms (and what it means for a union)"
 description: "Many union reps still prefer a paper membership form. Is it
 because your online form isn’t good enough?"
 date:   2022-06-28 07:19:13 +0000
