@@ -27,7 +27,8 @@ Granted, by doing it this way, you’re likely to be in less of a mess, but you�
 
 So how do we do it?
 
-First, we do provide people with a list, but only when they start typing. After they type a couple of characters, we start matching against possibilities - just like the address lookup fields you use in Google Maps. And we make sure the possibilities match in a really broad way - if you type in British Telecom or BT or B.T. you’ll get the same results. 
+First, we do provide people with a list, but only when they start typing. After they type a couple of characters, we start matching against possibilities - just like the address lookup fields you use in Google Maps. And we make sure the possibilities match in a really broad way - if you type in British Telecom or BT or B.T. you’ll get the same results.
+![employer-lookup](/assets/images/employer-lookup.png)
 
 Second, if we don’t see an obvious match, we still allow the member to type in what they think is the right answer. The risk of messiness is never zero, but that first step has reduced it a lot.
 
