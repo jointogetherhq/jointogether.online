@@ -152,10 +152,18 @@ $transition: 0.3s ease;
       margin-left: -100%;
     }
     h2 {
-      position: relative;
-      float: left;
-      width: calc(100% - #{$gutter});
-      margin-left: -100%;
+      &.date-posted {
+        position: relative;
+        float: left;
+        width: calc(100% - #{$gutter});
+        margin-left: -100%;
+        margin-top: 0;
+      }
+
+      font-size: 140%;
+      line-height: 125%;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
     }
   }
   @media (min-width: $viewport-wide) {
