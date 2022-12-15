@@ -41,7 +41,7 @@ layout: base
       <article>
         <h3><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
         <p>{{ post.date | date_to_long_string }}</p>
-        <p>{{ post.description | post.excerpt }}</p>
+        <p>{{ post.description | default: post.excerpt }}</p>
         <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">Continue reading this post</a>
       </article>
       {% endfor %}
