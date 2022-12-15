@@ -16,7 +16,7 @@ Pretty soon, you’ve got 20 people, all of whom work at the same place, and 15 
 
 Next you ask them what their job is, and the problem multiplies further.
 
-## Bad data proliferates
+### Bad data proliferates
 
 If you replicate this with a paper membership form, or with a digital form where people can type whatever they like, you’ll end up with bad employers and bad jobs - loads of them. People processing membership applications can use their experience to try and fix this, but generally, bad employers means bad data pouring into your membership systems, making it harder to find out what people do, where they do it and, as a result, to campaign, ballot or organise when the time comes. 
 
@@ -28,7 +28,7 @@ To fix this, you need an “other employer” field and a space where they can t
 
 Granted, by doing it this way, you’re likely to be in less of a mess, but you’re still probably turning away people who might otherwise have joined.
 
-## Match broadly, match quickly, and match accessibly
+### Match broadly, match quickly, and match accessibly
 
 So how do we do it?
 

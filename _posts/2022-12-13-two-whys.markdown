@@ -21,7 +21,7 @@ So how can you help people instantly become an **active** member?
 
 We think you need to ask two sets of “why?” questions: a pre-join question and a post-join question.
 
-## The first why (before joining)
+### The first why (before joining)
 
 Before people join, unions should ask why an applicant is interested in joining a union at all.
 
@@ -32,7 +32,7 @@ and think they should too?
 Asking these questions up front helps people express their expectations and gives their future branch a conversation
 starter.
 
-## The second why (after joining)
+### The second why (after joining)
 
 Once someone has completed their membership application, but before they feel as if they’ve moved on from the joining
 process, you’ll want to ask a second set of “why” questions.
