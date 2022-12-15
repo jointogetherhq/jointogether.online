@@ -19,8 +19,8 @@
     <meta http-equiv="content-language" content="en_GB" />
     <meta property="og:locale"         content="en_GB" />
 
-    <meta name="twitter:image"         content="{{ site.url }}{{ site.baseurl }}/assets/images/jt-social.jpg" />
-    <meta property="og:image"          content="{{ site.url }}{{ site.baseurl }}/assets/images/jt-social.jpg" />
+    <meta name="twitter:image"         content="{{ site.url }}{{ site.baseurl }}{{ page.og_image_path | default: "/assets/images/jt-social.jpg" }}" />
+    <meta property="og:image"          content="{{ site.url }}{{ site.baseurl }}{{ page.og_image_path | default: "/assets/images/jt-social.jpg" }}" />
 
     <meta property="og:type"           content="website" />
     <meta name="twitter:card"          content="summary_large_image" />

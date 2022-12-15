@@ -4,6 +4,7 @@ title:  "The power of compounding incrementals"
 description:
   Small incremental improvements to a trade union’s online joining process can
   have a huge impact on the bottom line.
+og_image_path: /assets/images/posts/the-power-of-compounding-incrementals-social.jpg
 date:   2022-06-10 10:19:13 +0000
 ---
 

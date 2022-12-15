@@ -2,6 +2,7 @@
 layout: post
 title: "Don't be shy (remember to ask 'why?')"
 description: "What should happen before and after a member joins online?"
+og_image_path: /assets/images/posts/two-whys-social.jpg
 date: 2022-12-13 07:19:13 +0000
 ---
 

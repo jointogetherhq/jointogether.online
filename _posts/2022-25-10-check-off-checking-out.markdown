@@ -3,6 +3,7 @@ layout: post
 title: Is check-off checking out?
 description:
   If employers (or the government) end "check-off", it could spell trouble for union finances. Here's what unions can do about it.
+og_image_path: /assets/images/posts/check-off-checking-out-social.jpg
 date: 2022-10-25 11:19:13 +0000
 ---
 

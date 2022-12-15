@@ -2,6 +2,7 @@
 layout: post
 title:  "Dealing with bad employers"
 description: "How Join Together helps improve the quality of your union's employer data"
+og_image_path: /assets/images/posts/dealing-with-bad-employers-social.jpg
 date:   2022-10-27 07:19:13 +0000
 ---
 

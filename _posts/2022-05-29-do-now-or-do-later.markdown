@@ -4,6 +4,7 @@ title:  "'Do it now' vs 'Do it later' vs 'Never do it at all'"
 description:
   There are many reasons people are put off from joining a union. Don't let a
   bad online joining experience be one of them.
+og_image_path: /assets/images/posts/do-now-or-do-later-social.jpg
 date:   2022-05-29 10:19:13 +0000
 ---
 
