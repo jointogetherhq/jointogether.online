@@ -26,6 +26,7 @@ url: "https://jointogether.online"
 
 # Build settings
 plugins:
+  - jekyll-redirect-from
   - jekyll-feed
 
 collections:
