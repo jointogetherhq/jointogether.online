@@ -4,6 +4,9 @@ title:  "Dealing with bad employers"
 description: "How Join Together helps improve the quality of your union's employer data"
 og_image_path: /assets/images/posts/dealing-with-bad-employers-social.jpg
 date:   2022-10-27 07:19:13 +0000
+redirect_from:
+  - /post/2022-27-10-dealing-with-bad-employers
+  - /post/2022-27-10-dealing-with-bad-employers/
 ---
 
 If you’re reading this, you’ll already know well that one of the main challenges for a union is dealing with bad employers. 

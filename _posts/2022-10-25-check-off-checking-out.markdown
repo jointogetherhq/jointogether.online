@@ -5,6 +5,10 @@ description:
   If employers (or the government) end "check-off", it could spell trouble for union finances. Here's what unions can do about it.
 og_image_path: /assets/images/posts/check-off-checking-out-social.jpg
 date: 2022-10-25 11:19:13 +0000
+redirect_from:
+  - /post/2022-25-10-check-off-checking-out
+  - /post/2022-25-10-check-off-checking-out/
+
 ---
 
 The deduction of member subscriptions directly from wages is great for union members and their unions. When you have it agreed with an employer, check-off makes signing up new members easy, collecting their subs automatic, means members never need to worry about renewals or failing payment methods ensures subscription fees reflect the member’s increasing wages, so they’re always paying their fair share. It also means unions can collect subs with minimal bureaucracy and cost (such as banking fees), as they get all their subs in a lump sum.
