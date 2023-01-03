@@ -8,7 +8,7 @@ date: 2023-01-03 09:00:00 +0000
 
 Every person that doesn’t get to the end of your union's online join form is a potential new member lost. But have you ever calculated what that costs the union? The maths is simple:
 
-**Average cost of monthly membership * 12 months * Average years of membership**
+**Average cost of monthly membership x 12 months x Average years of membership**
 
 For example, if members pay £13 a month and stay part of the union for 10 years, your union will lose £1,560 every time a potential new member gives up before getting to the end of your online join process. If 20 potential members fail to reach the end each month? That's £31,200 of lost membership fees every single month.
 
