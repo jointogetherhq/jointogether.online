@@ -5,8 +5,6 @@ description: "When it comes to getting prospective members to visit your join fo
 date: 2023-01-03 09:00:00 +0000
 ---
 
-# Checklist: How to get more visits to your union’s online join form
-
 Join Together builds high-converting union join forms that get you more members. If a prospective member arrives at a Join Together form, they’re more likely to end up a member. Over time, this results in many more members, and much more money for the union. If the form is bad, it’ll leak potential members, resulting in a union that’s smaller - and poorer - than it might have been. **So… start with the form**.
 
 ### Ok, so I have a great join form. What now?
