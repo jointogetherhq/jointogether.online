@@ -13,7 +13,7 @@ Well, you want to drive more traffic to your form. Ideally high-quality traffic 
 
 ### So how do I drive this traffic?
 
-Quite simply, you need to create as many opportunities as you can for people to click a link that lands them on the join page of your website. Many unions – like many organisations – are a bit too shy about selling themselves. You’re doing your work, but you’re forgetting to tell people how and why they should get involved too. Don’t be.
+Quite simply, you need to create as many opportunities as you can for people to click a link that lands them on your join page. Many unions – like many organisations – are a bit too shy about selling themselves. You’re doing your work, but you’re forgetting to tell people how and why they should join. Don’t be.
 
 So, with all that in mind, here’s a helpful checklist.
 
@@ -25,18 +25,18 @@ So, with all that in mind, here’s a helpful checklist.
 - Is it on the profile pages/bios of all of your social media accounts?
 - Post the link to your social channels regularly (organisations are often too shy about this)
 - Have you pinned/featured a post about joining the union to the top of your social media accounts?
-- Is the TUC’s Union Finder pointing people at the join page?
-- Is the URL of the join landing page and a clear call to action (”Join us today”) on all union collateral (printed and digital)?
+- Is the TUC’s Union Finder pointing people at your join page?
+- Is the URL of your join landing page and a clear call to action (”Join us today”) on all union collateral (printed and digital)?
 - On the most popular pages on your site, are there places you can weave in the “join now” call to action? For example, if you’ve got a popular page that offers some free advice, make sure people know there’s a lot of additional value if they join.
 - Are all your branch websites and social media pages featuring a “join” call to action?
 - If you have a union section or page on an employer’s intranet, is it clearly visible?
 - Is it in everyone’s email footer? And in all of your campaign emails?
 - If you’re running online campaigns (e.g. a petition), what happens when someone signs? Can you redirect them to a page with a clear “join” call to action?
-- Same for webinars. If people sign up, don’t forget to make sure they see the join link several times.
+- Same for webinars. If people sign up, don’t forget to make sure they see your join link several times.
 
 ### How you can use other people’s channels (links on other sites, PR, media appearances)
 
-- Do you provide tools where people can share a link to the join form?
+- Do you provide tools where people can share a link to your join form?
 - When you get covered in the media, do you make sure to ask the journalist to include a link to your site?
 - Identify sites which might allow you to guest post. Are there relevant blogs and websites for the jobs/industries you represent?
 - If you’re doing visual media (TV), can you get the URL in a backdrop?
