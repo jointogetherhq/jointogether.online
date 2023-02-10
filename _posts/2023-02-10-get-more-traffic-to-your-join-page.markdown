@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Checklist: Getting more visits to your union’s online join form
+title: "Checklist: Getting more visits to your union’s online join form"
 description: "When it comes to getting prospective members to visit your join form, every little helps."
 date: 2023-01-03 09:00:00 +0000
 ---
@@ -11,7 +11,7 @@ Join Together builds high-converting union join forms that get you more members.
 
 ### Ok, so I have a great join form. What now?
 
-Well, you want to drive more traffic to your form. Ideally high-quality traffic - people who work in jobs and industries you represent, who are at least somewhat aware of and sympathetic to the ways a union might help them. 
+Well, you want to drive more traffic to your form. Ideally high-quality traffic - people who work in jobs and industries you represent, who are at least somewhat aware of and sympathetic to the ways a union might help them.
 
 ### So how do I drive this traffic?
 
