@@ -17,7 +17,7 @@ Quite simply, you need to create as many opportunities as you can for people to 
 
 So, with all that in mind, here’s a helpful checklist.
 
-## How you can use your owned channels (your site, social media, emails)
+### How you can use your owned channels (your site, social media, emails)
 
 - Is there a clear “join” call to action on your website?
 - Is it visible, above the fold, on every page? Is it in your website footer?
@@ -34,7 +34,7 @@ So, with all that in mind, here’s a helpful checklist.
 - If you’re running online campaigns (e.g. a petition), what happens when someone signs? Can you redirect them to a page with a clear “join” call to action?
 - Same for webinars. If people sign up, don’t forget to make sure they see the join link several times.
 
-## How you can use other people’s channels (links on other sites, PR, media appearances)
+### How you can use other people’s channels (links on other sites, PR, media appearances)
 
 - Do you provide tools where people can share a link to the join form?
 - When you get covered in the media, do you make sure to ask the journalist to include a link to your site?
@@ -46,6 +46,6 @@ So, with all that in mind, here’s a helpful checklist.
 - Have you done any work on your website SEO?
 - Is there any content you can create that serves frequently-asked member questions? Remember to include a join link.
 
-## Remember!
+### And remember&hellip;
 
 You might be able to do everything on the checklist, but if your join form converts only 50% of the people it should, you’re losing out. Get in touch for a demo and chat about how Join Together can help you get more members and subs.
