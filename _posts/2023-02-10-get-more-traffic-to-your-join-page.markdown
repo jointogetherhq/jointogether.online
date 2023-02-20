@@ -2,6 +2,7 @@
 layout: post
 title: "Checklist: Getting more visits to your union’s online join form"
 description: "When it comes to getting prospective members to visit your join form, every little helps."
+og_image_path: /assets/images/posts/how-to-get-more-visits-to-your-form.png
 date: 2023-01-03 09:00:00 +0000
 ---
 
