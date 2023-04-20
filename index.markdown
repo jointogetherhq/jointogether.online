@@ -66,6 +66,5 @@ Join Together Co-operative is four technologists with a passion for the union mo
 
 [![The Communication Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/cwu-logo.svg)](https://www.cwu.org)
 [![Bakers Food and Allied Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/bfawu-logo.png)](https://www.bfawu.org)
-[![Writers Guild of Great Britain]({{ site.url }}{{ site.baseurl }}/assets/images/wggb-logo.jpg)](https://writersguild.org.uk)
 [![Forsa the Irish Trade Union]({{ site.url }}{{ site.baseurl }}/assets/images/forsa-logo.png)](https://www.forsa.ie)
 [![Trade Union Congress]({{ site.url }}{{ site.baseurl }}/assets/images/tuc-logo.jpg)](https://www.tuc.org.uk)
