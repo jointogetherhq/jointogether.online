@@ -9,10 +9,8 @@ paragraphs:
   - text: 'Stop losing members to a bad joining experience'
   - text: 'Get more members with online join that’s a delight, not a pain'
 buttons:
-  - label: 'Book a call'
+  - label: 'Book a call to discuss your online join'
     url: 'https://calendly.com/join-together/hello'
-  - label: 'Union joining tools'
-    url: '/joining-tool'
 ---
 
 ## What makes Join Together so special?
