@@ -182,13 +182,13 @@ $transition: 0.3s ease;
     padding-bottom: 5px;
     cursor: pointer;
   }
-  &:hover { 
+  &:hover {
     img {
       border-bottom: 1px solid $highlight;
       filter: saturate(100%) contrast(100%);
     }
   }
-  &:focus { 
+  &:focus {
     img {
       border-bottom: 2px solid $highlight;
       padding-bottom: 4px;
@@ -379,7 +379,7 @@ $transition: 0.3s ease;
 
 
 // BASE STYLES
-  
+
 html {
   position: relative;
   min-width: 320px;
@@ -468,6 +468,10 @@ header {
 // LAYOUT - HOMEPAGE
 
 #layout-homepage {
+  strong {
+    font-weight: 800;
+  }
+  h2 { margin-top: 1.5em }
   #layout-inner {
     @include layout-block();
     position: relative;
@@ -598,7 +602,7 @@ header {
     }
     z-index: 10;
     h1, h2, h3, h4, h5, h6,
-    p, ol, ul, div, 
+    p, ol, ul, div,
     blockquote, quote {
       margin-bottom: $gutter;
     }
