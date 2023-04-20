@@ -7,6 +7,10 @@ description:
 footer-order: "2"
 ---
 
+We started Join Together as a co-operative with a focus on helping unions address the technology challenges we've seen them face over the years. And though we’re not “organisers” in the traditional sense (well, one of us is!) , we’ve come to see ourselves playing a similar role.
+
+Our mission is to make it easier to join – and stay a member of – unions. We created software that gives people a better online joining experience to help unions recruit more members, get bigger – and win.
+
 ## John Chadfield
 
 **Product Manager**
