@@ -28,4 +28,4 @@ This is the point of Join Together - to specialise, maximally, on the verb that 
 
 To learn more about Join Together’s product and results, [book a demo](https://calendly.com/join-together/hello). 
 
-* We know.
+\*We know.
