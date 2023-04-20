@@ -471,6 +471,7 @@ header {
   strong {
     font-weight: 800;
   }
+  h2 { margin-top: 1.5em }
   #layout-inner {
     @include layout-block();
     position: relative;
