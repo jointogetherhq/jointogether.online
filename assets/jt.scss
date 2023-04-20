@@ -468,6 +468,9 @@ header {
 // LAYOUT - HOMEPAGE
 
 #layout-homepage {
+  strong {
+    font-weight: 800;
+  }
   #layout-inner {
     @include layout-block();
     position: relative;
