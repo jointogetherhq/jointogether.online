@@ -26,6 +26,6 @@ But a good online join service is a dynamic user journey - a series of well-fram
 
 This is the point of Join Together - to specialise, maximally, on the verb that takes people from “not a member” to “a member”. 
 
-To learn more about Join Together’s product and results, book a demo. 
+To learn more about Join Together’s product and results, [book a demo](https://calendly.com/join-together/hello). 
 
 * We know.
