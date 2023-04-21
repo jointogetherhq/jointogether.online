@@ -17,7 +17,7 @@ buttons:
 
 Put simply, we're **100% focused on building the gold standard online joining experience for unions**. Every union has its own unique needs and requirements. We work with you and your team to tailor the perfect online joining experience for you and your members.
 
-## Ten reasons to use Join Together
+Here are ten reasons your union needs a Join Together online join:
 
 ### 1. Online join that is optimised to get you more members
 
