@@ -101,6 +101,13 @@ $transition: 0.3s ease;
   }
 }
 
+@mixin font-medium-small {
+  font-size: $measure *1.2;
+  line-height: $baseline *1.5;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
 @mixin font-medium {
   font-size: $measure *1.5;
   line-height: $baseline *1.5;
@@ -621,6 +628,11 @@ header {
       @include font-medium();
       font-weight: 800;
     }
+    h3 {
+      @include font-medium-small();
+      font-weight: 800;
+    }
+
     ul {
       list-style: none;
       li {
