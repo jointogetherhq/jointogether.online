@@ -33,7 +33,7 @@ Join Together lives in harmony alongside your existing membership system, and is
 
 ### 4. Works alongside your website
 
-The Join Together system can be fully customised to fit with your existing brand and website, guaranteeing a smooth user experience for visitors joining your union – from your logo to brand colours, fonts and more.
+The Join Together system can be fully customised to fit with your existing brand and website, guaranteeing a smooth user experience for visitors joining your union — from your logo to brand colours, fonts and more.
 
 ### 5. Built to work beautifully on mobile and desktop
 
@@ -41,7 +41,7 @@ With as many as 50% of applicants using a mobile device, you cannot afford to of
 
 ### 6. Accessible and inclusive by default
 
-Our forms are designed to meet the W3C Web Accessibility guidelines, ensuring everyone – no matter their particular access needs – is able to join your union online.
+Our forms are designed to meet the W3C Web Accessibility guidelines, ensuring everyone — no matter their particular access needs — is able to join your union online.
 
 ### 7. Data ethics & security as standard
 
