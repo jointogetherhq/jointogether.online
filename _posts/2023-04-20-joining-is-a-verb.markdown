@@ -33,3 +33,5 @@ But a good online join service is a dynamic user journey - a series of well-fram
 To learn more about Join Together’s product and results, [book a demo](https://calendly.com/join-together/hello). 
 
 \*We know.
+
+\** Due credit to [this Government Digital Service blog post](https://designnotes.blog.gov.uk/2015/06/22/good-services-are-verbs-2/) for the inspiration.
