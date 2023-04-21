@@ -10,7 +10,12 @@ Let’s talk about grammer*.
 
 ## ‘Website’ and ‘CRM’ are nouns
 
-Unions have websites, powered by Content Management Systems. These generally act as a **public store of content** for two things - 1) things about the union and 2) things members (and sometimes workers more generally) will find useful. Note that the word “website” is a noun.
+Unions have websites, powered by Content Management Systems. These generally act as a **public store of content** for two things:
+
+1. things about the union
+2. things members (and sometimes workers more generally) will find useful
+
+Note that the word “website” is a noun.
 
 In the case of a website, unions usually hire a web design firm to help them choose a CMS, produce a design and build out the initial content. The union then takes over management of the content store, adding, editing and removing pages over time.
 
