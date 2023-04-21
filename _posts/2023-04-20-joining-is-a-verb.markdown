@@ -2,7 +2,7 @@
 layout: post
 title:  Websites and CRMs are nouns. Joining is a verb.
 description:
-  A good online join service is a dynamic user journey - a series of well-framed, highly-relevant questions that prospective members find incredibly easy to answer, until suddenly they find themselves a union member a few clicks and taps later.
+  A good online join service is a dynamic user journey — a series of well-framed, highly-relevant questions that prospective members find incredibly easy to answer, until suddenly they find themselves a union member a few clicks and taps later.
 date:   2023-04-20 11:19:13 +0000
 ---
 
@@ -22,15 +22,15 @@ When choosing a membership database, unions follow a similar process to building
 
 Now let’s talk about a different type of word. Joining a union takes you from a place (“not a member”) to a different place (“a member”). Joining is a service, not a store. **Joining is a verb**.
 
-The problem is that many unions hire firms who are experts at creating stores (nouns) to manage their online join experience (verbs). 
+The problem is that many unions hire firms who are experts at creating stores (nouns) to manage their online join experience (verbs).
 
 Website designers are mostly good at designing static content, not services. On the other hand CRM product builders are good at making things that fit the database, but worry less about the user experience. Their systems aren’t designed for members to use directly.
 
-But a good online join service is a dynamic user journey - a series of well-framed, highly-relevant questions that prospective members find incredibly easy to answer, until suddenly they find themselves a union member a few clicks and taps later.
+But a good online join service is a dynamic user journey — a series of well-framed, highly-relevant questions that prospective members find incredibly easy to answer, until suddenly they find themselves a union member a few frictionless clicks and taps later.
 
-**This is the point of Join Together - to specialise, maximally, on the verb that takes people from “not a member” to “a member”.**
+**This is the point of Join Together — to specialise, maximally, on the verb that takes people from “not a member” to “a member”.**
 
-To learn more about Join Together’s product and results, [book a demo](https://calendly.com/join-together/hello). 
+To learn more about Join Together’s product and results, [book a demo](https://calendly.com/join-together/hello).
 
 \*We know.
 
