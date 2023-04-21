@@ -12,13 +12,13 @@ Every person that doesn’t get to the end of your union's online join form is a
 
 For example, if members pay £13 a month and stay part of the union for 10 years, your union will lose £1,560 every time a potential new member gives up before getting to the end of your online join process. If 20 potential members fail to reach the end each month? That's £31,200 of lost membership fees every single month.
 
-### How much more money could your union make by improving the online join experience?
+## How much more money could your union make by improving the online join experience?
 
 We can frame this question another way: What would a small improvement in our online join process mean for your union’s income?
 
 Using the same maths, if improvements to your online join process can lead to an extra 20 members joining each month, that'll mean an extra £31,200 of lifetime subs generated every single month!
 
-### Thinking in completion rates
+## Thinking in completion rates
 
 A useful way to measure how well your online join process performs is with its completion rate. What percentage of applicants who start an online application actually get to the end? You should be measuring this with analytics tooling like [Google Analytics](https://analytics.google.com) or even better, the more privacy-friendly [Plausible](https://plausible.io).
 
