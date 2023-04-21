@@ -6,7 +6,7 @@ description:
 date:   2023-04-20 11:19:13 +0000
 ---
 
-Let’s talk about grammr*.
+Let’s talk about grammar*.
 
 ## ‘Website’ and ‘CRM’ are nouns
 
