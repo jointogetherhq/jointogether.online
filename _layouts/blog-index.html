@@ -15,7 +15,7 @@ layout: base
           <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"> {{ post.title }}</a>
         </h3>
         <div>
-          <p>Posted: {{ post.date | date_to_long_string }}</p>
+          <p>Posted: <time datetime="{{ post.date }}" itemprop="datePublished">{{ post.date | date_to_long_string }}</time></p>
         </div>
         <div>
           {{ post.excerpt }}
