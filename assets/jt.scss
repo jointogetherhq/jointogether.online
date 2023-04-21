@@ -143,7 +143,20 @@ $transition: 0.3s ease;
 @mixin text-area {
   grid-column: 1 / 2;
   position: relative;
+
   @media (min-width: $viewport-tablet) {
+
+    .date-posted {
+      position: relative;
+      float: left;
+      width: calc(100% - #{$gutter});
+      margin-left: -100%;
+      margin-top: 0;
+
+      font-size: 140%;
+      line-height: 125%;
+    }
+
     grid-column: 1 / 7;
     padding-left: 50%;
     #header {
@@ -152,14 +165,6 @@ $transition: 0.3s ease;
       margin-left: -100%;
     }
     h2 {
-      &.date-posted {
-        position: relative;
-        float: left;
-        width: calc(100% - #{$gutter});
-        margin-left: -100%;
-        margin-top: 0;
-      }
-
       font-size: 140%;
       line-height: 125%;
       margin-top: 2rem;
