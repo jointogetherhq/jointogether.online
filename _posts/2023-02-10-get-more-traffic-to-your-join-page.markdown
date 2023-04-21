@@ -14,7 +14,7 @@ Well, you want to drive more traffic to your form. Ideally high-quality traffic 
 
 ## So how do I drive this traffic?
 
-Quite simply, you need to create as many opportunities as you can for people to click a link that lands them on your join page. Many unions – like many organisations – are a bit too shy about selling themselves. You’re doing your work, but you’re forgetting to tell people how and why they should join. Don’t be.
+Quite simply, you need to create as many opportunities as you can for people to click a link that lands them on your join page. Many unions — like many organisations — are a bit too shy about selling themselves. You’re doing your work, but you’re forgetting to tell people how and why they should join. Don’t be.
 
 So, with all that in mind, here’s a helpful checklist.
 

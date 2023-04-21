@@ -42,7 +42,7 @@ Second, if we don’t see an obvious match, we still allow the member to type in
 
 Third, we never provide suggested employers where there have been only a few previous applications in that workplace. We don’t want employers typing in their own company name and finding out whether there are existing union members in the workplace, particularly if there are only a few of them. We need to protect their privacy.
 
-Fourth, we make the user experience fully accessible, meaning you can fill in the form field without touching your mouse – or if you use a screen reader, or if you’re using it on a tiny mobile screen.
+Fourth, we make the user experience fully accessible, meaning you can fill in the form field without touching your mouse — or if you use a screen reader, or if you’re using it on a tiny mobile screen.
 
 These components help us solve this problem in a way that seeks to keep data clean and tidy, while being as member-friendly as possible.
 
