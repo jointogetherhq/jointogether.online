@@ -3,7 +3,7 @@ layout: post
 title:  Websites and CRMs are nouns. Joining is a verb.
 description:
   A good online join service is a dynamic user journey — a series of well-framed, highly-relevant questions that prospective members find incredibly easy to answer, until suddenly they find themselves a union member a few clicks and taps later.
-og_image_path: /assets/images/posts/websites-are-nouns.jpg
+og_image_path: /assets/images/posts/joining-is-a-verb.jpg
 date:   2023-04-20 11:19:13 +0000
 ---
 
