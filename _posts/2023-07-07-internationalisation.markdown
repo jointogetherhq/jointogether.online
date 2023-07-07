@@ -3,7 +3,7 @@ layout: post
 title:  The internationalisation features of Join Together
 description:
   Joining a union online should be easy for anyone - wherever they live, whatever language they speak. Here's how we do it.
-og_image_path: 
+og_image_path: /assets/images/posts/internationalisation-features.png
 date:   2023-07-07 11:19:13 +0000
 ---
 
