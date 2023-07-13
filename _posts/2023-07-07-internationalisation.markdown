@@ -25,7 +25,7 @@ serve them really adds up.
 All text used in Join Together's online join forms is driven by a number of locale files. This makes it easy for
 us to offer support in any language. For unions who want to offer recruitment in Welsh or Irish, or recruit in
 industries where many workers don't speak English as a first language, we can work with the union, members or a
-translation service to create the appropriate locales, then add them to the join form. The correct language will be
+translation service to create the appropriate translations, then add them to the join form. The correct language will be
 selected and displayed by the applicant's browser settings, whether on their computer or phone. If applicants prefer,
 they can simply switch the language of the form.
 
@@ -38,9 +38,8 @@ someone else — it works for them, in their own local context.
 
 ## Why do this?
 
-Internationalisation being built into the platform by default has enormous advantages for unions. Most CRMs and CMSes
-don't offer these features by default, meaning expensive customisation (or, more likely, a "we don't offer that"). The
-ability to use the fact we've already done this work, and that it's either on by default, or can be switched on
-immediately, is another example of the ways we're working to ensure that every last drop of performance can be squeezed
-from a union's online joining experience.
-
+Offering a user experience that is tailored to any given user's needs or circumstances is key to a successful join
+service, and internationalisation is one part of this. Most CRMs and CMSes don't offer these features, meaning expensive
+customisation (or, more likely, a "we don't offer that"). The fact we've already done this work, and that it's either on
+by default or can be switched on immediately, is another example of how help ensure the best possible experience for
+members, whilst squeezing every last drop of performance from a union's online joining experience.
