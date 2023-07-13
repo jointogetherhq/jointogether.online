@@ -41,5 +41,5 @@ someone else — it works for them, in their own local context.
 Offering a user experience that is tailored to any given user's needs or circumstances is key to a successful join
 service, and internationalisation is one part of this. Most CRMs and CMSes don't offer these features, meaning expensive
 customisation (or, more likely, a "we don't offer that"). The fact we've already done this work, and that it's either on
-by default or can be switched on immediately, is another example of how help ensure the best possible experience for
+by default or can be switched on immediately, is another example of how we help ensure the best possible experience for
 members, whilst squeezing every last drop of performance from a union's online joining experience.
