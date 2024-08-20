@@ -61,7 +61,7 @@ We charge a one-time initial design and implementation fee, then a fixed monthly
 
 ### Brought to you by a team that cares about unions
 
-Join Together Co-operative is four technologists with a passion for the union movement, and a combined eight decades' experience delivering world class online web services.
+Join Together Co-operative are technologists with a passion for the union movement, and decades of collective experience delivering world class digital services.
 [Learn more about the team](/team).
 
 [![The Communication Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/cwu-logo.svg)](https://join.cwu.org)
