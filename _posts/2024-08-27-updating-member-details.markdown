@@ -1,50 +1,57 @@
 ---
 layout: post
-title:  A better way to update union member details
+title:  A better way to keep member data up-to-date
 description:
-  Making it easy for members to update their details can result in better retention, more revenue and happier members. Here's how Join Together can help you do this.
-og_image_path: 
+  Making it easy for members to update their details can result in better retention, more revenue and happier, more engaged members. Here's how Join Together can help you do this.
+og_image_path:
 date:   2024-08-27 11:19:13 +0000
 ---
 
-We’ve worked with unions for years, and heard all sorts of horror stories about the difficulties of staying in touch with members. To try and fix this, we’ve seen unions taking a variety of approaches. These include:
+Out-of-date member data is one of major pains that unions face:
 
-- Asking for updated details by post or phone
-- Collecting information via forms or spreadsheets, usually just before a ballot takes place
-- Getting members to log in to a membership portal on the union website
+- Not having correct addresses impacts the ability to ballot effectively
+- Inaccurate/out-of-date subs not only costs the union money, but also leads to disappointed members when they cannot receive the support they need because they've been paying the wrong rate
+- Incorrect workplace information makes organising more difficult
+- Not being able to stay in touch with members leads to lower engagement and ultimately lower retention
 
-Each of these has different challenges and costs. Calls and letters are expensive to make or send, get low response rates and often interrupt what members are doing at a particular moment (”I’ll do that later” and “who’s that number calling me?”). 
+We’ve worked with many unions over the years and heard about this pain, as well as the difficulties they have trying to keep their member data up-to-date. We’ve seen them try a variety of approaches, including:
 
-Collecting information via spreadsheets leads to enormous data protection risks, as well as problems with data entry, as files are passed from person to person, computer to computer, usually ending with a messy import or copy/paste/fix the mistakes process, slowing the whole thing down.
+- Paper forms through the post
+- Direct phone calls
+- Online forms that save the data to spreadsheets
+- Asking members to log-in to a membership portal to update their info
 
-Finally, union membership portals are challenging for their users. The typical experience involves using data members probably don’t know (their membership number or a password they never use, leading to a password reset or an email to the membership team) before logging into a piece of software they’re unfamiliar with to perform a task they can’t be sure they’ll be able to complete.
+Each of these methods comes with challenges. Calls and paper forms are expensive to make/send, get low response rates, and in the case of paper forms require a lot of manual and often error-prone processing.
 
-### How could it be better?
+Collecting information via spreadsheets often lead to enormous data protection risks, as well as problems with data entry, as files are passed from person to person, computer to computer, usually ending with a messy import or copy/paste/fix-the-mistakes process, slowing the whole thing down.
 
-Join Together has created a solution for members to update their own details that:
+Finally, membership portals are rarely a smooth ride for members, requiring them to recall information like membership numbers and passwords that they probably won't have to hand, and if they do, the user experience in these portals is rarely smooth and simple, and it's no surprise that so few members overcome the hurdles and actually update their details.
 
-1. Needs no login, but is still completely secure
-2. Is cheap and easy to get members to use
-3. Is intuitive, only taking members a few seconds to complete
-4. Can recalculate subscription rates based on the members’ current salary or circumstances
-5. Updates your membership database/CRM automatically
+It's not a surprise that so unions struggle with keeping member data updated.
 
-Once you’ve got an improved ‘update your details’ service in place, you just need to send occasional emails or texts to members to remind them to keep their information updated (we recommend you do it about once a year). You can also include links on your website and other materials so members can update their record whenever convenient.
+## There's a better way
 
-### Try it for yourself
+Join Together has created a solution for unions that lets members update their own details that:
 
-We’ve put together a [demo](https://https://jtreview-pr-1167.herokuapp.com) so you can see how it works. Just add your email (your details won’t be stored) to get started, then try the update process for yourself.
+1. needs no login, but is still completely secure
+2. is cheap and easy to get members to use
+3. is intuitive, taking members less than a minute to complete
+4. can recalculate subscription rates when member's circumstances change
+5. updates member records in the CRM automatically, without the need for manual entry
 
-**[Try the demo](https://https://jtreview-pr-1167.herokuapp.com)**
+Once a union has our ‘update your details’ service in place, they can send periodic or targetted emails and texts to members reminding them to keep their information updated (we recommend you do it about once a year).
 
-### Why should unions do this?
+## Try it for yourself
 
-The Join Together approach to improving your ‘update your details’ process will lead to:
+We’ve put together a **[demo version](https://demo-update.jointogether.online)** so you can see the experience for yourself. Just enter your email and check your inbox to get started.
 
-- Better, more frequent contact and engagement with members
+The Join Together ‘update your details’ system will make it easy to maintain up-to-date information for your members, leading to:
+
+- More effective balloting
 - Higher revenue from more accurate member subs
+- Better engagement with members
 - Improved member retention
-- Happier members, because they can complete this task more easily
+- Happier members
 - Better data protection and security
 
 Like the sound of that? Then [get in touch](mailto:hello@jointogether.online) to set up a call to discuss how we can help.
