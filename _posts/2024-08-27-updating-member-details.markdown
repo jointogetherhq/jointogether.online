@@ -7,12 +7,12 @@ og_image_path:
 date:   2024-08-27 11:19:13 +0000
 ---
 
-Out-of-date member data means unions are forced to deal with:
+Out-of-date member data is a major headache for unions. It means having to deal with:
 
-- not having correct addresses, impacting the ability to ballot effectively
-- inaccurate/out-of-date subs not only costing the union money, but also leading to disappointed members when they cannot receive the support they need because they've been paying the wrong rate
+- incorrect addresses, impacting the ability to ballot effectively
+- inaccurate subs payments costing the union money, but also leading to disappointed members when they cannot receive the support they need because they've been paying the wrong rate
 - incorrect workplace information, making organising more difficult
-- not being able to stay in touch with members, leading to lower engagement – and ultimately, lower retention
+- not being able to contact members, leading to lower engagement – and ultimately, lower retention
 
 ## How unions try to fix it
 
