@@ -1,6 +1,8 @@
 ---
 ---
 
+@use 'sass:color';
+
 /**
  * @license
  * MyFonts Webfont Build ID 4866020, 2022-05-19T06:54:23-0400
@@ -129,14 +131,16 @@ $transition: 0.3s ease;
 }
 
 @mixin layout-block {
-  width: 100%;
-  box-sizing: border-box;
-  position: relative;
-  margin: 0 auto;
-  padding: $gutter;
-  display: grid;
-  grid-gap: 0 $gutter;
-  grid-template-columns: 1fr;
+  & {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    padding: $gutter;
+    display: grid;
+    grid-gap: 0 $gutter;
+    grid-template-columns: 1fr;
+  }
   @media (min-width: $viewport-tablet) {
     padding: $gutter $gutter*2;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -148,11 +152,13 @@ $transition: 0.3s ease;
 }
 
 @mixin text-area {
-  grid-column: 1 / 2;
-  position: relative;
-
+  & {
+    grid-column: 1 / 2;
+    position: relative;
+  }
   @media (min-width: $viewport-tablet) {
-
+    grid-column: 1 / 7;
+    padding-left: 50%;
     .date-posted {
       position: relative;
       float: left;
@@ -163,9 +169,6 @@ $transition: 0.3s ease;
       font-size: 140%;
       line-height: 125%;
     }
-
-    grid-column: 1 / 7;
-    padding-left: 50%;
     #header {
       position: relative;
       width: 200%;
@@ -353,7 +356,7 @@ $transition: 0.3s ease;
   padding: $gutter;
   height: $baseline;
   color: $page;
-  background: lighten($text, 30%);
+  background: color.scale($text, $lightness: 30%);
   border-radius: $corner-radius;
   text-decoration: none;
   text-align: center;
@@ -373,8 +376,8 @@ $transition: 0.3s ease;
   justify-content: center;
   padding-top: $gutter;
   a {
-    @include button();
     margin: $gutter*0.5 0;
+    @include button();
   }
   @media (min-width: $viewport-tablet) {
     flex-direction: row;
@@ -404,8 +407,8 @@ html {
   background: $highlight;
   background: linear-gradient(0deg, $page 0%, $page 49.9%, $text 50%);
   color: $text;
-  @include font-core();
   -webkit-font-smoothing: antialiased;
+  @include font-core();
 }
 
 body {
@@ -449,10 +452,6 @@ header {
     @include layout-block();
   }
   a {
-    grid-column: 1 / 2;
-    @media (min-width: $viewport-tablet) {
-      grid-column: 2 / 6;
-    }
     position: relative;
     justify-self: start;
     display: inline-block;
@@ -460,6 +459,10 @@ header {
     overflow: hidden;
     padding: 4px 2px 0 4px;
     border-radius: $corner-radius*0.5;
+    grid-column: 1 / 2;
+    @media (min-width: $viewport-tablet) {
+      grid-column: 2 / 6;
+    }
     img {
       height: $measure*3;
       width: auto;
@@ -491,9 +494,9 @@ header {
   }
   h2 { margin-top: 1.5em }
   #layout-inner {
-    @include layout-block();
     position: relative;
     z-index: 2;
+    @include layout-block();
     .lede-block {
       position: relative;
       z-index: 20;
@@ -607,18 +610,20 @@ header {
   }
   section {
     @include layout-block();
-    margin-top: $gutter*2;
-    z-index: 2;
+    & {
+      margin-top: $gutter*2;
+      z-index: 2;
+    }
   }
   #homepage-detail {
     grid-column: 1 / 2;
+    z-index: 10;
     @media (min-width: $viewport-tablet) {
       grid-column: 2 / 6;
     }
     @media (min-width: $viewport-wide) {
       grid-column: 2 / 5;
     }
-    z-index: 10;
     h1, h2, h3, h4, h5, h6,
     p, ol, ul, div,
     blockquote, quote {
@@ -632,7 +637,6 @@ header {
       @include font-medium-small();
       font-weight: 800;
     }
-
     ul {
       list-style: none;
       li {
@@ -661,8 +665,10 @@ header {
     }
   }
   nav {
-    @include cta-buttons();
     grid-column: 1 / 2;
+    position: relative;
+    z-index: 10;
+    @include cta-buttons();
     @media (min-width: $viewport-tablet) {
       grid-column: 2 / 6;
       padding-top: $gutter*0.5;
@@ -670,13 +676,11 @@ header {
     @media (min-width: $viewport-wide) {
       grid-column: 2 / 6;
     }
-    position: relative;
-    z-index: 10;
   }
   #blog-posts {
-    @include layout-block();
     grid-column: 1 / -1;
     padding: 0;
+    @include layout-block();
     @media (min-width: $viewport-tablet) {
       padding: 0;
     }
@@ -744,23 +748,23 @@ header {
 // LAYOUT - PRODUCT
 
 #layout-product {
-  @include layout-block();
   z-index: 2;
+  @include layout-block();
   #layout-inner {
     grid-column: 1 / 2;
     margin: $whitespace 0 0;
+    @include body-typography();
     @media (min-width: $viewport-tablet) {
       grid-column: 2 / 6;
     }
-    @include body-typography();
     #header {
       hyphens: none;
       -ms-hyphens: none;
       -webkit-hyphens: none;
+      margin: 0 auto $whitespace;
       @media (min-width: $viewport-tablet) {
         @include font-medium();
       }
-      margin: 0 auto $whitespace;
       h1 {
         @include font-large();
       }
@@ -811,13 +815,13 @@ header {
             display: inline-block;
             color: $highlight;
             margin-bottom: $gutter;
-            @include font-large();
             width: 1.2em;
             height: 1.2em;
             line-height: 1.15em;
             text-align: center;
             border: 1px solid;
             border-radius: 100%;
+            @include font-large();
           }
           img {
             position: relative;
@@ -844,8 +848,8 @@ header {
 // LAYOUT - POSTS INDEX
 
 #layout-blogindex {
-  @include layout-block();
   z-index: 2;
+  @include layout-block();
   #layout-inner {
     margin: $whitespace 0 0;
     @media (min-width: $viewport-tablet) {
@@ -854,11 +858,11 @@ header {
     #content {
       @include body-typography();
       h1 {
-        @include font-large();
         margin-bottom: $whitespace;
         hyphens: none;
         -ms-hyphens: none;
         -webkit-hyphens: none;
+        @include font-large();
       }
     }
   }
@@ -874,9 +878,9 @@ header {
         border-top: 1px solid $border;
       }
       h3 {
-        @include font-medium();
         font-weight: 800;
         margin-bottom: $gutter;
+        @include font-medium();
       }
       div:nth-child(2) {
         margin-bottom: $gutter;
@@ -916,8 +920,8 @@ header {
 // LAYOUT - POSTS
 
 #layout-post {
-  @include layout-block();
   z-index: 2;
+  @include layout-block();
   #layout-inner {
     @include body-typography();
     @include text-area();
@@ -935,8 +939,8 @@ header {
 // LAYOUT - PAGES
 
 #layout-page {
-  @include layout-block();
   z-index: 2;
+  @include layout-block();
   #layout-inner {
     @include body-typography();
     @include text-area();
@@ -977,10 +981,10 @@ footer {
     z-index: 5;
     display: flex;
     flex-direction: column;
+    overflow: visible;
     @media (min-width: $viewport-tablet) {
       flex-direction: row;
     }
-    overflow: visible;
     #actions {
       margin-bottom: $gutter*4;
       @media (min-width: $viewport-tablet) {
@@ -1054,20 +1058,20 @@ footer {
     }
   }
   #footer-navigation {
-    grid-column: 1 / 2;
     border-top: 1px solid $border;
-    @media (min-width: $viewport-tablet) {
-      grid-column: 1 / 7;
-    }
-    @media (min-width: $viewport-wide) {
-      grid-column: 2 / 6;
-    }
     position: relative;
     z-index: 6;
     padding: $gutter 0 $gutter*0.5;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    grid-column: 1 / 2;
+    @media (min-width: $viewport-tablet) {
+      grid-column: 1 / 7;
+    }
+    @media (min-width: $viewport-wide) {
+      grid-column: 2 / 6;
+    }
     @media (min-width: $viewport-tablet) {
       flex-direction: row;
       justify-content: space-between;
