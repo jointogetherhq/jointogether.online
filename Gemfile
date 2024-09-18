@@ -11,6 +11,13 @@ gem "jekyll"
 gem "webrick"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.5"
+
+# Deprecation silencers for gems that aren't updating
+gem "base64"   # safe_yaml hasn't updated to use this as a gem as at 1.0.5
+gem "ostruct"  # json still loading this (from stdlib??)
+gem "logger"   # No clue what is loading this, try removing later
+gem "csv"      # No clue what is loading this, try removing later
+
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
