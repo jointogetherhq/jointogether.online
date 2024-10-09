@@ -64,7 +64,8 @@ We charge a one-time initial design and implementation fee, then a fixed monthly
 Join Together Co-operative are technologists with a passion for the union movement, and decades of collective experience delivering world class digital services.
 [Learn more about the team](/team).
 
-[![The Communication Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/cwu-logo.svg)](https://join.cwu.org)
+[![National Education Union]({{ site.url }}{{ site.baseurl }}/assets/images/neu-logo.svg)](https://neu.org.uk)
+[![Communication Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/cwu-logo.svg)](https://join.cwu.org)
 [![Bakers Food and Allied Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/bfawu-logo.png)](https://join.bfawu.org)
 [![Forsa the Irish Trade Union]({{ site.url }}{{ site.baseurl }}/assets/images/forsa-logo.png)](https://www.forsa.ie)
 [![Writers Guild of Great Britain]({{ site.url }}{{ site.baseurl }}/assets/images/wggb-logo.jpg)](https://writersguild.org.uk)
