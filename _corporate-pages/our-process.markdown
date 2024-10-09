@@ -1,9 +1,7 @@
 ---
 layout: page
 title: Our process
-description:
-  Join Together is a worker-led co-operative and a member of Co-Operatives UK
-  that specialises in digital tools and services to help trade unions grow.
+description: An overview of what a typical Join Together project looks like.
 footer-order: 2
 ---
 
