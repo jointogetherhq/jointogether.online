@@ -211,9 +211,6 @@ $transition: 0.3s ease;
 }
 
 @mixin body-typography {
-  hyphens: auto;
-  -ms-hyphens: auto;
-  -webkit-hyphens: auto;
   #header {
     margin-top: $whitespace;
     margin-bottom: $whitespace*0.5;
