@@ -4,7 +4,7 @@ title: Team
 description:
   We are Join Together, a worker-owned co-operative specialising in digital
   tools and services for trade unions.
-footer-order: "4"
+footer-order: 4
 ---
 
 We started Join Together as a co-operative with a focus on helping unions address the technology challenges we've seen them face over the years. And though we’re not “organisers” in the traditional sense (well, one of us is!) , we’ve come to see ourselves playing a similar role.

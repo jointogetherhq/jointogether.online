@@ -4,7 +4,7 @@ title: Terms of use
 description:
   The Terms of use for the website of Join Together, a worker-owned co-operative
   specialising in digital tools and services for trade unions.
-footer-order: "20"
+footer-order: 20
 ---
 
 ## Introduction

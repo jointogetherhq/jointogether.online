@@ -4,7 +4,7 @@ title: About us
 description:
   Join Together is a worker-led co-operative and a member of Co-Operatives UK
   that specialises in digital tools and services to help trade unions grow.
-footer-order: "1"
+footer-order: 1
 ---
 
 Join Together is a worker-led co-operative, and a member of Co-Operatives UK.

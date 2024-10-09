@@ -3,7 +3,7 @@ layout: page
 title: Information security
 description:
   Keeping your data and the data of your members secure is at the very core of the Join Together platform. From our infrastructure to our software design, through to our working practices, security and data safety is central to every thing we do.
-footer-order: "3"
+footer-order: 3
 ---
 
 Keeping your data and the data of your members secure is at the very core of the Join Together platform. From our infrastructure to our software design, through to our working practices, security and data safety is central to every thing we do.
