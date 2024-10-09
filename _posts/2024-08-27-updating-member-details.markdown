@@ -3,7 +3,7 @@ layout: post
 title:  A better way to keep your member data up to date
 description:
   Making it easy for members to update their details can result in better retention, more revenue, and happier, more engaged members. Here's how Join Together can help you do this.
-og_image_path: /assets/images/posts/update-your-details.png
+og_image_path: /assets/images/posts/update-your-details.jpg
 date:   2024-08-27 11:19:13 +0000
 ---
 
