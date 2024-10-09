@@ -3,7 +3,7 @@ layout: post
 title:  Over 50,000 people have joined a union through our forms
 description:
 og_image_path: /assets/images/posts/50k-new-members.png
-date: 2024-10-09 12:00:00 +0000
+date: 2024-10-09 11:19:13 +0000
 ---
 
 As of today over 50,000 people have joined a union using one of our online joining forms 🎉. That number is rising
