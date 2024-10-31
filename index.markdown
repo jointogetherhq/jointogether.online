@@ -15,60 +15,57 @@ buttons:
 
 ## What makes Join Together so special?
 
-Put simply, we're **100% focused on building the gold standard online joining experience for unions**. Every union has its own unique needs and requirements. We work with you and your team to tailor the perfect online joining experience for you and your members.
+Our tools are **the gold standard for unions who want to help members join easily, then keep their details up to date
+over time**. More members and better quality data = stronger unions.
 
-Here are ten reasons your union needs a Join Together online join:
+Here are five reasons your union should use the Join Together platform:
 
-### 1. Online join that is optimised to get you more members
+### 1. Membership services that help you recruit and retain more members
 
-We sweat the details so that your online join gets you more members: 60% of applicants that start a Join Together join form go on to submit their application. How many extra members would your union have with a form that converted that well?
+We work with you to sweat the details so your online join gets you more members: 60% of applicants that start a Join
+Together join form go on to submit their application. How many extra members would your union have with a form that
+converted that well?
 
-### 2. Bespoke forms that handle all the complexities of joining your union
+Our **“update your details”** service is a passwordless process that allows members to update their job, salary, address
+and more in just a few seconds, ensuring better member data and rate accuracy, higher engagement and better member
+retention.
 
-Whether it’s employer/sector-specific questions, complex rate calculation rules, deduction at source, or Direct Debit, the Join Together platform adapts to meet all the specific joining needs of your union.
+We handle everything unions need: employer-specific questions and lookups, subs rate calculations, deduction at
+source and Direct Debits - and our platform adapts to your requirements.
 
-### 3. Seamless integration with your existing CRM and processes
+### 2. Seamless integration with your existing CRM, processes and website
 
-Join Together lives in harmony alongside your existing membership system, and is able to automatically feed new applications directly into your CRM ready for your membership team to process. Including Salesforce, Dynamics365, APT Stratum, Wild Apricot and more.
+Join Together lives in harmony with your existing membership system, and feeds new applications directly into your CRM
+ready for your membership team to process. Includes Salesforce, Dynamics365, APT Stratum and more.
 
-### 4. Works alongside your website
+Our tools are customised to fit with your brand and website, ensuring a seamless experience for members. They also work
+perfectly across mobile and desktop and are **accessible** and **inclusive by default**.
 
-The Join Together system can be fully customised to fit with your existing brand and website, guaranteeing a smooth user experience for visitors joining your union — from your logo to brand colours, fonts and more.
+### 3. Fast, hosted, and maintained, with data ethics and security as standard
 
-### 5. Built to work beautifully on mobile and desktop
+We support and maintain the Join Together platform so you don’t have to, ensuring it’s always **up to date, secure, and
+available** when your members need it. Automatic encryption and banking-grade security keeps application data safe
+in a secure, access-managed location. [Learn more about our security](/information-security).
 
-With as many as 50% of applicants using a mobile device, you cannot afford to offer a substandard experience to mobile users. Join Together’s forms work perfectly across all devices.
+Not only is the Join Together platform designed and built to be secure, but it’s also **lightning fast** to use,
+automatically scaling up to remain online and responsive, even during busy periods.
 
-### 6. Accessible and inclusive by default
+### 4. Fair, transparent, union-friendly pricing
 
-Our forms are designed to meet the W3C Web Accessibility guidelines, ensuring everyone — no matter their particular access needs — is able to join your union online.
+We charge a one-time initial design and implementation fee, then a fixed monthly subscription to cover ongoing
+operations and support. Pricing is based on the expected number of monthly applications: smaller unions with fewer
+resources pay less; larger ones who use more, pay more, just like they would in a union!
 
-### 7. Data ethics & security as standard
+### 5. Brought to you by a team that cares about unions
 
-Designed from the ground up to minimise the spread and retention of personal data, Join Together protects your data. Automatic encryption and banking-grade security keeps application data safe in a secure, access-managed location. [Learn more about our security](/information-security).
-
-### 8. A fully hosted and maintained service
-
-We support and maintain the Join Together platform so you don't have to, ensuring it's always up to date, secure, and available when your members need it.
-
-### 9. Fast and scalable
-
-Not only is the Join Together platform designed and built to be lightning fast, it automatically scales up to remain online and responsive, even during busy periods.
-
-### 10. Fair and transparent union-friendly pricing
-
-We charge a one-time initial design and implementation fee, then a fixed monthly subscription to cover ongoing operations and support. Pricing is based on the expected number of monthly applications: smaller unions with fewer resources pay less; larger ones who use more, pay more, just like they would in a union!
-
-### Brought to you by a team that cares about unions
-
-Join Together Co-operative are technologists with a passion for the union movement, and decades of collective experience delivering world class digital services.
-[Learn more about the team](/team).
+Join Together Co-operative are technologists with a passion for the union movement, with decades of collective
+experience delivering world class digital services. [Learn more about the team](/team).
 
 ## Proudly working with unions across the UK and Ireland
 
 [![National Education Union]({{ site.url }}{{ site.baseurl }}/assets/images/neu-logo.svg)](https://neu.org.uk)
-[![Communication Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/cwu-logo.svg)](https://join.cwu.org)
-[![Bakers Food and Allied Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/bfawu-logo.png)](https://join.bfawu.org)
+[![Communication Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/cwu-logo.svg)](https://cwu.org)
+[![Bakers Food and Allied Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/bfawu-logo.png)](https://bfawu.org)
 [![Forsa the Irish Trade Union]({{ site.url }}{{ site.baseurl }}/assets/images/forsa-logo.png)](https://www.forsa.ie)
 [![Writers Guild of Great Britain]({{ site.url }}{{ site.baseurl }}/assets/images/wggb-logo.jpg)](https://writersguild.org.uk)
 [![Trade Union Congress]({{ site.url }}{{ site.baseurl }}/assets/images/tuc-logo.jpg)](https://www.tuc.org.uk)
