@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Over 50,000 people have joined a union through our forms
-description: Join Together-powered join forms have created over 50,00 new union members, with 36,000 this year alone!
+description: Join Together-powered join forms have created over 50,000 new union members, with 36,000 this year alone!
 og_image_path: /assets/images/posts/50k-new-members.jpg
 date: 2024-10-09 11:19:13 +0000
 ---
