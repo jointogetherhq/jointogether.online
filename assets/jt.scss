@@ -499,7 +499,7 @@ header {
       &:first-child {
         padding-top: $whitespace;
       }
-      &.last-child {
+      &:last-child {
         padding-bottom: $whitespace;
       }
       p {
@@ -563,7 +563,7 @@ header {
         &:nth-child(10) {
           grid-row: 10 / 11;
         }
-        &.last-child {
+        &:last-child {
           justify-self: center;
         }
       }

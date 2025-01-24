@@ -5,7 +5,7 @@ layout: base
 <main id="layout-homepage">
   <div id="layout-inner">
     {% for item in page.paragraphs %}
-    <div class="lede-block {% if forloop.last == true %}last-child{% endif %}">
+    <div class="lede-block">
       <p>{{ item.text }}
       {% if forloop.last == true %}
         <span class="icon-1"></span>
