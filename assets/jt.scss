@@ -649,12 +649,6 @@ header {
         }
       }
     }
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-      margin: $gutter*2 0;
-    }
     p a {
       @include logo-images();
     }
