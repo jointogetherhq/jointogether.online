@@ -67,5 +67,4 @@ experience delivering world class digital services. [Learn more about the team](
 [![Communication Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/cwu-logo.svg)](https://cwu.org)
 [![Bakers Food and Allied Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/bfawu-logo.png)](https://bfawu.org)
 [![Forsa the Irish Trade Union]({{ site.url }}{{ site.baseurl }}/assets/images/forsa-logo.png)](https://www.forsa.ie)
-[![Writers Guild of Great Britain]({{ site.url }}{{ site.baseurl }}/assets/images/wggb-logo.jpg)](https://writersguild.org.uk)
 [![Trade Union Congress]({{ site.url }}{{ site.baseurl }}/assets/images/tuc-logo.jpg)](https://www.tuc.org.uk)
