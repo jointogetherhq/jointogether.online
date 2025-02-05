@@ -89,16 +89,6 @@ automatically scaling up to remain online and responsive, even during busy perio
   <figcaption>Seán McElhinney, Director of Membership, <a href="https://www.forsa.ie">Fórsa</a></figcaption>
 </figure>
 
-<!-- Social proof again — we should make these logos full colour and also larger -->
-## Trusted by unions across the UK and Ireland
-
-<div class="union-logos">
-  <a href="https://neu.org.uk"><img alt="National Education Union" src="/assets/images/logos/neu-logo.svg"></a>
-  <a href="https://cwu.org"><img alt="Communication Workers Union" src="/assets/images/logos/cwu-logo.svg"></a>
-  <a href="https://bfawu.org"><img alt="Bakers Food and Allied Workers Union" src="/assets/images/logos/bfawu-logo.png"></a>
-  <a href="https://www.forsa.ie"><img alt="Forsa the Irish Trade Union" src="/assets/images/logos/forsa-logo.png"></a>
-</div>
-
 ## Fair, transparent, union-friendly pricing
 
 We charge a one-time initial design and implementation fee, then a fixed monthly subscription to cover ongoing
@@ -117,6 +107,16 @@ resources pay less; larger ones who use more, pay more, just like they would in 
 
 Join Together Co-operative are technologists with a passion for the union movement, with decades of collective
 experience delivering world class digital services. [Learn more about the team](/team).
+
+<!-- Social proof again — we should make these logos full colour and also larger -->
+## Trusted by unions across the UK and Ireland
+
+<div class="union-logos">
+  <a href="https://neu.org.uk"><img alt="National Education Union" src="/assets/images/logos/neu-logo.svg"></a>
+  <a href="https://cwu.org"><img alt="Communication Workers Union" src="/assets/images/logos/cwu-logo.svg"></a>
+  <a href="https://bfawu.org"><img alt="Bakers Food and Allied Workers Union" src="/assets/images/logos/bfawu-logo.png"></a>
+  <a href="https://www.forsa.ie"><img alt="Forsa the Irish Trade Union" src="/assets/images/logos/forsa-logo.png"></a>
+</div>
 
 <!-- Final heading and call to action... -->
 ## Stop losing members to a bad online joining experience
