@@ -184,32 +184,6 @@ $transition: 0.3s ease;
   }
 }
 
-@mixin logo-images {
-  img {
-    display: inline-block;
-    width: auto;
-    height: $gutter*2;
-    margin: $gutter $gutter $gutter 0;
-    filter: saturate(0) contrast(120%);
-    border-bottom: 1px solid transparent;
-    padding-bottom: 5px;
-    cursor: pointer;
-  }
-  &:hover {
-    img {
-      border-bottom: 1px solid $highlight;
-      filter: saturate(100%) contrast(100%);
-    }
-  }
-  &:focus {
-    img {
-      border-bottom: 2px solid $highlight;
-      padding-bottom: 4px;
-      filter: saturate(100%) contrast(100%);
-    }
-  }
-}
-
 @mixin body-typography {
   #header {
     margin-top: $whitespace;
@@ -340,9 +314,6 @@ $transition: 0.3s ease;
     width: 100%;
     height: auto;
     margin: $gutter*2 0;
-  }
-  p a {
-    @include logo-images();
   }
 }
 
@@ -649,9 +620,6 @@ header {
         }
       }
     }
-    p a {
-      @include logo-images();
-    }
   }
   nav {
     grid-column: 1 / 2;
@@ -769,9 +737,6 @@ header {
         width: 100%;
         height: auto;
         margin: $gutter*2 0;
-      }
-      p a {
-        @include logo-images();
       }
       ol {
         list-style: none;
@@ -1182,4 +1147,30 @@ img.avatar {
 video {
   background-color: white;
   margin: 2em 0;
+}
+
+.union-logos {
+  img {
+    display: inline-block;
+    width: auto;
+    height: $gutter*2;
+    margin: $gutter $gutter $gutter 0;
+    filter: saturate(0) contrast(120%);
+    border-bottom: 1px solid transparent;
+    padding-bottom: 5px;
+    cursor: pointer;
+  }
+  :hover {
+    img:hover {
+      border-bottom: 1px solid $highlight;
+      filter: saturate(100%) contrast(100%);
+    }
+  }
+  :focus {
+    img {
+      border-bottom: 2px solid $highlight;
+      padding-bottom: 4px;
+      filter: saturate(100%) contrast(100%);
+    }
+  }
 }
