@@ -7,7 +7,7 @@ layout: base
     {% for item in page.paragraphs %}
     <div class="lede-block">
       <p>{{ item.text }}
-      {% if forloop.last == true %}
+      {% if forloop.first == true %}
         <span class="icon-1"></span>
         <span class="icon-2"></span>
         <span class="icon-3"></span>

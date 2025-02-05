@@ -2,63 +2,95 @@
 layout: home-update
 title: Digital Tools for Trade Unions
 description:
-  Join Together helps unions gain and maintain more members through digital
-  tools and services designed for and with unions. Supported by the TUC.
+  Join Together designs and builds member-centric digital tools and services
+  that help trade union gain and retain more members.
 paragraphs:
-  - text: 'Online join for <br>trade&nbsp;unions'
-  - text: 'Don’t lose members to a bad joining experience'
-  - text: 'Get more members with online join that’s a delight, not a pain'
+  - text: 'Maximise your union’s growth with member-centric services that work'
+  - text: 'Recruit more members with the best online join'
+  - text: 'Retain more members with Update:Upgrade'
 ---
 
-## What makes Join Together so special?
+<!-- Start with focus on our current headline feature: drastic improvement in conversion -->
+## Conversion-optimised online join for your union
 
-Our tools are **the gold standard for unions who want to help members join easily, then keep their details up to date
-over time**. More members and better quality data = stronger unions.
+We design, develop and deliver the gold standard in online join forms for our union partners and the results speak for
+themselves:
 
-Here are five reasons your union should use the Join Together platform:
+<!-- First bit of social proof. Actual quote and photo needs signing off from Scarlet -->
+<figure class="quote">
+  <img class="avatar" src="/assets/images/people/scarlet-harris.jpg" alt="">
 
-### 1. Membership services that help you recruit and retain more members
+  <blockquote>There's been a 60% improvement in completion rates for our online join. We couldn't be happier.</blockquote>
+  <figcaption>Scarlet Harris, Recruitment and Retention Strategy Manager, <a href="https://neu.org.uk">NEU</a></figcaption>
+</figure>
 
-We work with you to sweat the details so your online join gets you more members: 60% of applicants that start a Join
-Together join form go on to submit their application. How many extra members would your union have with a form that
-converted that well?
+<!-- Talk a bit about being user and user-experience focused -->
+How do we do this? By designing and building **forms so simple applicants glide to the end without ever having to
+think**. And we do this whilst still capturing all the information you need to onboard your new members.
 
-Our **“update your details”** service is a passwordless process that allows members to update their job, salary, address
-and more in just a few seconds, ensuring better member data and rate accuracy, higher engagement and better member
-retention.
+<!-- Make it clear we that it doesn't come at the expense of the union's data capture/calculation needs -->
+Whether it’s employer or sector-specific questions, complex rate calculation rules, political levies, deduction at
+source, or Direct Debit, our **Join platform is designed to adapt to the precise needs of your union**.
 
-We handle everything unions need: employer-specific questions and lookups, subs rate calculations, deduction at
-source and Direct Debits - and our platform adapts to your requirements.
+<!-- CRM/process integration is another key thing to sell/convince on -->
+## Seamless integration with your CRM and processes
 
-### 2. Seamless integration with your existing CRM, processes and website
+The membership database sits at the heart of a union and it's organising and servicing functions. At Join Together we
+understand this, and have designed our Join platform to **work in perfect harmony with existing CRMs**, so you maintain
+all your existing processes and data management policies. Whether you're using **Salesforce**, **Dynamics365**, **APT
+Stratum**, **iMIS** or something completely different,... [MORE WORDS].
 
-Join Together lives in harmony with your existing membership system, and feeds new applications directly into your CRM
-ready for your membership team to process. Includes Salesforce, Dynamics365, APT Stratum and more.
+And when it comes time to migrate to another CRM, the Join Together system is ready to migrate with you, without the
+need for a risky, costly and complex rebuild of the form.
 
-Our tools are customised to fit with your brand and website, ensuring a seamless experience for members. They also work
-perfectly across mobile and desktop and are **accessible** and **inclusive by default**.
+<!-- Social proof from a union that has gone through a CRM migration, again to be signed-off -->
+<figure class="quote">
+  <img class="avatar" src="/assets/images/people/dave-ward.jpg" alt="">
 
-### 3. Fast, hosted, and maintained, with data ethics and security as standard
+  <blockquote>Join Together were critical in making our CRM migration a success. We were able to keep accepting and
+  processing online applications with minimal headaches.</blockquote>
+  <figcaption>Dave Ward, General Secretary, <a href="https://www.cwu.org">CWU</a></figcaption>
+</figure>
 
-We support and maintain the Join Together platform so you don’t have to, ensuring it’s always **up to date, secure, and
+<!-- Talk about how great the experience is for all -->
+## Online join that delights members, whatever their needs
+
+As well as working **perfectly across mobile and desktop**, our forms are designed to **meet the highest standard of web
+accessibility guidelines**, ensuring *everyone* is able to join your union online, no matter what their particular access
+needs are.
+
+They also look beautiful, and are fully customised to fit with your brand and website, ensuring a seamless onboarding
+experience for your new members.
+
+<!-- Show the thing: a video showing the form in action that auto-plays on a loop -->
+<video width="100%" autoplay muted>
+  <source src="assets/videos/show-the-thing-2.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<!-- A bit of a grab bag about security, performance and hosting... -->
+## A fully hosted, maintained and secure service
+
+We support and maintain the Join platform so you don’t have to, ensuring it’s always **up to date, secure, and
 available** when your members need it. Automatic encryption and banking-grade security keeps application data safe
-in a secure, access-managed location. [Learn more about our security](/information-security).
+in a secure, access-managed location.
 
-Not only is the Join Together platform designed and built to be secure, but it’s also **lightning fast** to use,
+Not only is the Join platform designed and built to be secure, but it’s also **lightning fast** to use,
 automatically scaling up to remain online and responsive, even during busy periods.
 
-### 4. Fair, transparent, union-friendly pricing
+**[Learn more about our security and data policies](/information-security)**
 
-We charge a one-time initial design and implementation fee, then a fixed monthly subscription to cover ongoing
-operations and support. Pricing is based on the expected number of monthly applications: smaller unions with fewer
-resources pay less; larger ones who use more, pay more, just like they would in a union!
+<!-- More social proof (tbc) — do we need this to have a specific focus? -->
+<figure class="quote">
+  <img class="avatar" src="/assets/images/people/sean-mcElhinney.jpg" alt="">
 
-### 5. Brought to you by a team that cares about unions
+  <blockquote>Join Together have played a pivotal role in helping the union grow over the last few years, and continue
+  to be a key partner for us.</blockquote>
+  <figcaption>Seán McElhinney, Director of Membership, <a href="https://www.forsa.ie">Fórsa</a></figcaption>
+</figure>
 
-Join Together Co-operative are technologists with a passion for the union movement, with decades of collective
-experience delivering world class digital services. [Learn more about the team](/team).
-
-## Proudly working with unions across the UK and Ireland
+<!-- Social proof again — we should make these logos full colour and also larger -->
+## Trusted by unions across the UK and Ireland
 
 [![National Education Union]({{ site.url }}{{ site.baseurl }}/assets/images/logos/neu-logo.svg)](https://neu.org.uk)
 [![Communication Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/logos/cwu-logo.svg)](https://cwu.org)
@@ -66,6 +98,37 @@ experience delivering world class digital services. [Learn more about the team](
 [![Forsa the Irish Trade Union]({{ site.url }}{{ site.baseurl }}/assets/images/logos/forsa-logo.png)](https://www.forsa.ie)
 [![Trade Union Congress]({{ site.url }}{{ site.baseurl }}/assets/images/logos/tuc-logo.jpg)](https://www.tuc.org.uk)
 
+## Fair, transparent, union-friendly pricing
+
+We charge a one-time initial design and implementation fee, then a fixed monthly subscription to cover ongoing
+operations and support. Pricing is based on the expected number of monthly applications: smaller unions with fewer
+resources pay less; larger ones who use more, pay more, just like they would in a union!
+
+<!-- Final bit of social proof, content tbc -->
+<figure class="quote">
+  <img class="avatar" src="/assets/images/people/adrian-stewart.jpg" alt="">
+
+  <blockquote>ANOTHER QUOTE THAT IS REASSURING AND GIVES SOCIAL PROOF.</blockquote>
+  <figcaption>Adrian Stewart, Finance Controller, <a href="https://www.bfawu.org">BFAWU</a></figcaption>
+</figure>
+
+## Brought to you by a team that cares about unions
+
+Join Together Co-operative are technologists with a passion for the union movement, with decades of collective
+experience delivering world class digital services. [Learn more about the team](/team).
+
+<!-- Final heading and call to action... -->
+## Stop losing members to a bad online joining experience
+
+[SOME STATEMENT TO CLOSE WITH AND LEAD INTO THE CTA BUTTON]... Whatever the state of your current online join,
+Join Together can work with you to design and deliver the an online join experience that both delights members and
+increases your union's growth.
+
 <nav>
-  <a href="https://calendly.com/join-together/hello">Book a call to discuss your online join</a>
+  <a href="https://calendly.com/join-together/hello">Book a call to find out more</a>
 </nav>
+
+<!--
+  Here we would talk about "Update:Upgrade", i.e. our what we might call our update-your-details service.
+  We can talk concretely about it today as this is what student upgrades is.
+-->
