@@ -30,7 +30,7 @@ layout: base
         Blog
         {% assign post_count=site.posts | size %}
         {% if post_count > 4 %}
-          <a href="{{ site.url }}{{ site.baseurl }}/posts">See archive</a>
+          <a href="{{ site.url }}{{ site.baseurl }}/posts">More posts</a>
         {% endif %}
       </h2>
       {% for post in site.posts limit:4  %}
