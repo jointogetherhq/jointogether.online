@@ -92,11 +92,13 @@ automatically scaling up to remain online and responsive, even during busy perio
 <!-- Social proof again — we should make these logos full colour and also larger -->
 ## Trusted by unions across the UK and Ireland
 
-[![National Education Union]({{ site.url }}{{ site.baseurl }}/assets/images/logos/neu-logo.svg)](https://neu.org.uk)
-[![Communication Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/logos/cwu-logo.svg)](https://cwu.org)
-[![Bakers Food and Allied Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/logos/bfawu-logo.png)](https://bfawu.org)
-[![Forsa the Irish Trade Union]({{ site.url }}{{ site.baseurl }}/assets/images/logos/forsa-logo.png)](https://www.forsa.ie)
-[![Trade Union Congress]({{ site.url }}{{ site.baseurl }}/assets/images/logos/tuc-logo.jpg)](https://www.tuc.org.uk)
+<div class="union-logos">
+  <a href="https://neu.org.uk"><img alt="National Education Union" src="/assets/images/logos/neu-logo.svg"></a>
+  <a href="https://cwu.org"><img alt="Communication Workers Union" src="/assets/images/logos/cwu-logo.svg"></a>
+  <a href="https://bfawu.org"><img alt="Bakers Food and Allied Workers Union" src="/assets/images/logos/bfawu-logo.png"></a>
+  <a href="https://www.forsa.ie"><img alt="Forsa the Irish Trade Union" src="/assets/images/logos/forsa-logo.png"></a>
+  <a href="https://www.tuc.org.uk"><img alt="Trade Union Congress" src="/assets/images/logos/tuc-logo.jpg"></a>
+</div>
 
 ## Fair, transparent, union-friendly pricing
 
