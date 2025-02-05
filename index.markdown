@@ -8,9 +8,6 @@ paragraphs:
   - text: 'Online join for <br>trade&nbsp;unions'
   - text: 'Don’t lose members to a bad joining experience'
   - text: 'Get more members with online join that’s a delight, not a pain'
-buttons:
-  - label: 'Book a call to discuss your online join'
-    url: 'https://calendly.com/join-together/hello'
 ---
 
 ## What makes Join Together so special?
@@ -68,3 +65,7 @@ experience delivering world class digital services. [Learn more about the team](
 [![Bakers Food and Allied Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/logos/bfawu-logo.png)](https://bfawu.org)
 [![Forsa the Irish Trade Union]({{ site.url }}{{ site.baseurl }}/assets/images/logos/forsa-logo.png)](https://www.forsa.ie)
 [![Trade Union Congress]({{ site.url }}{{ site.baseurl }}/assets/images/logos/tuc-logo.jpg)](https://www.tuc.org.uk)
+
+<nav>
+  <a href="https://calendly.com/join-together/hello">Book a call to discuss your online join</a>
+</nav>
