@@ -1127,3 +1127,59 @@ footer {
     }
   }
 }
+
+
+/**
+ * Blockquotes
+ * Adapted from https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/
+ **/
+ figure.quote {
+  margin: 2em 0;
+}
+ blockquote {
+  font-size: 105%;
+  font-weight: 800;
+  text-indent: -0.45em;
+ }
+ @supports ( hanging-punctuation: first) {
+  blockquote {
+    text-indent: 0;
+    hanging-punctuation: first;
+  }
+}
+
+blockquote::before {
+  content: open-quote;
+}
+blockquote::after {
+  content: close-quote;
+}
+blockquote {
+  quotes: "“" "”" "‘" "’";
+}
+
+.quote {
+  margin: 0;
+  background: $light-shade;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+.quote figcaption,
+.quote blockquote {
+  margin: 1em;
+}
+.quote figcaption a { font-weight: 800; }
+
+img.avatar {
+  // shape-outside: circle();
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 1em;
+  border-radius: 50%;
+}
+
+video {
+  background-color: white;
+  margin: 2em 0;
+}
