@@ -97,7 +97,6 @@ automatically scaling up to remain online and responsive, even during busy perio
   <a href="https://cwu.org"><img alt="Communication Workers Union" src="/assets/images/logos/cwu-logo.svg"></a>
   <a href="https://bfawu.org"><img alt="Bakers Food and Allied Workers Union" src="/assets/images/logos/bfawu-logo.png"></a>
   <a href="https://www.forsa.ie"><img alt="Forsa the Irish Trade Union" src="/assets/images/logos/forsa-logo.png"></a>
-  <a href="https://www.tuc.org.uk"><img alt="Trade Union Congress" src="/assets/images/logos/tuc-logo.jpg"></a>
 </div>
 
 ## Fair, transparent, union-friendly pricing

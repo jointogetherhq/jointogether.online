@@ -1150,27 +1150,29 @@ video {
 }
 
 .union-logos {
+  display: flex;
+  justify-content: space-between;
+
   img {
     display: inline-block;
     width: auto;
-    height: $gutter*2;
-    margin: $gutter $gutter $gutter 0;
-    filter: saturate(0) contrast(120%);
+    height: $baseline*2;
     border-bottom: 1px solid transparent;
     padding-bottom: 5px;
-    cursor: pointer;
+    @media (min-width: $viewport-tablet) {
+      height: $baseline*3;
+    }
+
   }
   :hover {
     img:hover {
       border-bottom: 1px solid $highlight;
-      filter: saturate(100%) contrast(100%);
     }
   }
   :focus {
     img {
       border-bottom: 2px solid $highlight;
       padding-bottom: 4px;
-      filter: saturate(100%) contrast(100%);
     }
   }
 }
