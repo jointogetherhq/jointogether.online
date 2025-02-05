@@ -351,12 +351,12 @@ $transition: 0.3s ease;
   padding: $gutter;
   height: $baseline;
   color: $page;
-  background: lighten($text, 30%);
+  background: lighten($highlight, 5%);
   border-radius: $corner-radius;
   text-decoration: none;
   text-align: center;
   &:hover {
-    background: $text;
+    background: lighten($text, 30%);
   }
   &:focus {
     outline: none;
