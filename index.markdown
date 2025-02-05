@@ -65,7 +65,6 @@ experience delivering world class digital services. [Learn more about the team](
   <a href="https://cwu.org"><img alt="Communication Workers Union" src="/assets/images/logos/cwu-logo.svg"></a>
   <a href="https://bfawu.org"><img alt="Bakers Food and Allied Workers Union" src="/assets/images/logos/bfawu-logo.png"></a>
   <a href="https://www.forsa.ie"><img alt="Forsa the Irish Trade Union" src="/assets/images/logos/forsa-logo.png"></a>
-  <a href="https://www.tuc.org.uk"><img alt="Trade Union Congress" src="/assets/images/logos/tuc-logo.jpg"></a>
 </div>
 
 <nav>
