@@ -98,10 +98,10 @@ resources pay less; larger ones who use more, pay more, just like they would in 
 
 <!-- Final bit of social proof, content tbc -->
 <figure class="quote">
-  <img class="avatar" src="/assets/images/people/adrian-stewart.jpg" alt="">
+  <img class="avatar" src="/assets/images/people/sarah-woolley.jpg" alt="">
 
   <blockquote>ANOTHER QUOTE THAT IS REASSURING AND GIVES SOCIAL PROOF.</blockquote>
-  <figcaption>Adrian Stewart, Finance Controller, <a href="https://www.bfawu.org">BFAWU</a></figcaption>
+  <figcaption>Sarah Woolley, General Secretary, <a href="https://www.bfawu.org">BFAWU</a></figcaption>
 </figure>
 
 ## Brought to you by a team that cares about unions
