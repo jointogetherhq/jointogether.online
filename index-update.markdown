@@ -32,6 +32,23 @@ think**. And we do this whilst still capturing all the information you need to o
 Whether it’s employer or sector-specific questions, complex rate calculation rules, political levies, deduction at
 source, or Direct Debit, our **Join platform is designed to adapt to the precise needs of your union**.
 
+<!-- Talk about how great the experience is for all -->
+## Online join that delights members, whatever their needs
+
+As well as working **perfectly across mobile and desktop**, our forms are designed to **meet the highest standard of web
+accessibility guidelines**, ensuring *everyone* is able to join your union online, no matter what their particular access
+needs are.
+
+They also look beautiful, and are fully customised to fit with your brand and website, ensuring a seamless onboarding
+experience for your new members.
+
+<!-- Show the thing: a video showing the form in action that auto-plays on a loop -->
+<video width="100%" autoplay muted>
+  <source src="assets/videos/show-the-thing-2.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
 <!-- CRM/process integration is another key thing to sell/convince on -->
 ## Seamless integration with your CRM and processes
 
@@ -51,22 +68,6 @@ need for a risky, costly and complex rebuild of the form.
   processing online applications with minimal headaches.</blockquote>
   <figcaption>Dave Ward, General Secretary, <a href="https://www.cwu.org">CWU</a></figcaption>
 </figure>
-
-<!-- Talk about how great the experience is for all -->
-## Online join that delights members, whatever their needs
-
-As well as working **perfectly across mobile and desktop**, our forms are designed to **meet the highest standard of web
-accessibility guidelines**, ensuring *everyone* is able to join your union online, no matter what their particular access
-needs are.
-
-They also look beautiful, and are fully customised to fit with your brand and website, ensuring a seamless onboarding
-experience for your new members.
-
-<!-- Show the thing: a video showing the form in action that auto-plays on a loop -->
-<video width="100%" autoplay muted>
-  <source src="assets/videos/show-the-thing-2.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 
 <!-- A bit of a grab bag about security, performance and hosting... -->
 ## A fully hosted, maintained and secure service
