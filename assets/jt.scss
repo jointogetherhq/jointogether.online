@@ -1098,21 +1098,17 @@ footer {
  * Blockquotes
  * Adapted from https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/
  **/
- figure.quote {
-  margin: 2em 0;
-}
- blockquote {
+blockquote {
   font-size: 105%;
   font-weight: 800;
   text-indent: -0.45em;
- }
- @supports ( hanging-punctuation: first) {
+}
+@supports ( hanging-punctuation: first) {
   blockquote {
     text-indent: 0;
     hanging-punctuation: first;
   }
 }
-
 blockquote::before {
   content: open-quote;
 }
@@ -1122,12 +1118,12 @@ blockquote::after {
 blockquote {
   quotes: "“" "”" "‘" "’";
 }
-
 .quote {
-  margin: 0;
+  margin: 2em 0;
   background: $light-shade;
   padding: 0.5em;
   border-radius: 0.5em;
+  overflow: auto;
 }
 .quote figcaption,
 .quote blockquote {
@@ -1136,11 +1132,10 @@ blockquote {
 .quote figcaption a { font-weight: 800; }
 
 img.avatar {
-  // shape-outside: circle();
   width: 100px;
   height: 100px;
   float: left;
-  margin: 1em;
+  margin: 0.5em 1em;
   border-radius: 50%;
 }
 
