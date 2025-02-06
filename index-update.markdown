@@ -133,3 +133,47 @@ integrate with your existing systems. Get in touch to discuss how we can tailor 
   Here we would talk about "Update:Upgrade", i.e. our what we might call our update-your-details service.
   We can talk concretely about it today as this is what student upgrades is.
 -->
+
+<div class="callout">
+  <h2>Out of date member data is holding your union back</h2>
+  <p>
+    Outdated member data is a costly headache for unions.
+    It wastes time, drains resources, and makes organising harder.
+    Ballots go undelivered, reducing turnout and wasting money.
+    Poor communication frustrates members, weakens engagement, and increases the risk of them leaving.
+
+    Meanwhile, staff spend unnecessary hours chasing updates instead of focusing on organising and servicing. On top of that, incorrect records mean lost revenue from members paying the wrong subs — or sometimes not paying at all. Keeping member data up to date isn’t just admin, it’s essential for a stronger, more effective union.
+  </p>
+
+  <h2>Update:Upgrade — The easy and cost effective way to keep member data current</h2>
+
+  <p>
+     Join Together built <strong>Update:Upgrade</strong> to take the hassle out of keeping member data up to date.
+     It’s a simple, secure and easy-to-use web service that lets members update their own details in seconds: no
+     chasing, no wasted time. Less admin for your team, better engagement with your members, and stronger, more
+     effective organising.
+  </p>
+
+  <p>
+    <strong>Update:Upgrade</strong> is helping the NEU to get up-to-date information from student members as they
+    transition into teaching, helping them retain more members.
+  </p>
+
+  <figure class="quote">
+    <img class="avatar" src="/assets/images/people/scarlet-harris.jpg" alt="">
+    <blockquote>The upgrade service Join Together built for us helps us retain more members and has reduced costs.</blockquote>
+    <figcaption>Scarlet Harris, Recruitment and Retention Strategy Manager, <a href="https://neu.org.uk">NEU</a></figcaption>
+  </figure>
+
+  <h2>Try the demo and get in touch</h2>
+
+  <p>
+    We’ve put together a
+    <a href="https://demo-update.jointogether.online/"><strong>demo update form</strong></a>
+    so you can see the experience for yourself. Just enter your email and check your inbox to get started.
+  </p>
+
+  <nav>
+    <a href="https://calendly.com/join-together/hello">Book a call to find out more</a>
+  </nav>
+</div>
