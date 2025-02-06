@@ -1173,3 +1173,12 @@ video {
     }
   }
 }
+
+#layout-homepage div.callout {
+  margin: 3em 0;
+  padding: $baseline*0.5 $baseline $baseline;
+  background: $light-shade;
+  border-radius: 1em;
+
+  h2:first-child { margin-top: $baseline*0.5; }
+}
