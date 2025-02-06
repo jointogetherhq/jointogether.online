@@ -52,13 +52,13 @@ experience for your new members.
 <!-- CRM/process integration is another key thing to sell/convince on -->
 ## Seamless integration with your CRM and processes
 
-The membership database sits at the heart of a union and it's organising and servicing functions. At Join Together we
-understand this, and have designed our Join platform to **work in perfect harmony with existing CRMs**, so you maintain
-all your existing processes and data management policies. Whether you're using **Salesforce**, **Dynamics365**, **APT
-Stratum**, **iMIS** or something completely different,... [MORE WORDS].
+Your membership database is the backbone of your union’s organising and servicing. That’s why we built the **Join**
+platform to **seamlessly integrate with your existing CRM**, so you can keep your current processes and data management
+policies intact. Whether you use **Salesforce**, **Dynamics 365**, **APT Stratum**, **iMIS**, or another system,
+**Join** will work in sync with it to ensure accurate data capture and smooth processing of applications.
 
-And when it comes time to migrate to another CRM, the Join Together system is ready to migrate with you, without the
-need for a risky, costly and complex rebuild of the form.
+And if you ever switch CRMs, there’s no need for a costly, complex rebuild. The **Join** platform moves with you,
+keeping your data flowing smoothly, without the risk or hassle of starting over.
 
 <!-- Social proof from a union that has gone through a CRM migration, again to be signed-off -->
 <figure class="quote">
@@ -70,14 +70,14 @@ need for a risky, costly and complex rebuild of the form.
 </figure>
 
 <!-- A bit of a grab bag about security, performance and hosting... -->
-## A fully hosted, maintained and secure service
+## A secure, fully hosted, and hassle-free service
 
-We support and maintain the Join platform so you don’t have to, ensuring it’s always **up to date, secure, and
+We support and maintain the **Join** platform so you don’t have to, ensuring it’s always **up to date, secure, and
 available** when your members need it. Automatic encryption and banking-grade security keeps application data safe
 in a secure, access-managed location.
 
-Not only is the Join platform designed and built to be secure, but it’s also **lightning fast** to use,
-automatically scaling up to remain online and responsive, even during busy periods.
+Designed for both **speed and reliability**, the Join platform scales automatically to handle high demand, ensuring a
+seamless experience even during peak times.
 
 **[Learn more about our security and data policies](/information-security)**
 
@@ -120,11 +120,10 @@ experience delivering world class digital services. [Learn more about the team](
 </div>
 
 <!-- Final heading and call to action... -->
-## Stop losing members to a bad online joining experience
+## Grow your union smarter with Join Together
 
-[SOME STATEMENT TO CLOSE WITH AND LEAD INTO THE CTA BUTTON]... Whatever the state of your current online join,
-Join Together can work with you to design and deliver the an online join experience that both delights members and
-increases your union's growth.
+Discover how Join Together's proven platform can simplify onboarding, boost completion rates and seamlessly
+integrate with your existing systems. Get in touch to discuss how we can tailor a solution for your union's unique needs.
 
 <nav>
   <a href="https://calendly.com/join-together/hello">Book a call to find out more</a>
