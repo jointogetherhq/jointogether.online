@@ -605,23 +605,6 @@ header {
       @include font-medium-small();
       font-weight: 800;
     }
-    ul {
-      list-style: none;
-      li {
-        position: relative;
-        padding-left: $gutter;
-        &+li {
-          margin-top: $gutter*0.5;
-        }
-        &:before {
-          content: "•";
-          display: inline-block;
-          position: relative;
-          margin-left: $gutter*-1;
-          width: $gutter;
-        }
-      }
-    }
   }
   nav {
     grid-column: 1 / 2;
@@ -1182,3 +1165,44 @@ video {
 
   h2:first-child { margin-top: $baseline*0.5; }
 }
+
+.emoji-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.emoji-list li {
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+  margin-top: $gutter*0.5;
+}
+
+.list-1 li:before { content: '✅ '; }
+.list-1 li:nth-child(2):before { content: '💰 '; }
+.list-1 li:nth-child(3):before { content: '🏦 '; }
+.list-1 li:nth-child(4):before { content: '🏛️ '; }
+
+.list-2 li:before { content: '🚀 '; }
+.list-2 li:nth-child(2):before { content: '📱 '; }
+.list-2 li:nth-child(3):before { content: '🌍 '; }
+.list-2 li:nth-child(4):before { content: '🎨 '; }
+
+.list-3 li:before { content: '🔄 '; }
+.list-3 li:nth-child(2):before { content: '⚡ '; }
+.list-3 li:nth-child(3):before { content: '🔗 '; }
+
+.list-4 li:before { content: '🔐 '; }
+.list-4 li:nth-child(2):before { content: '📜 '; }
+.list-4 li:nth-child(3):before { content: '🛠 '; }
+.list-4 li:nth-child(4):before { content: '🔑 '; }
+.list-4 li:nth-child(4):before { content: '🌍 '; }
+
+.list-5 li:before { content: '📬 '; }
+.list-5 li:nth-child(2):before { content: '📢 '; }
+.list-5 li:nth-child(3):before { content: '⏳ '; }
+.list-5 li:nth-child(4):before { content: '💸 '; }
+
+.list-6 li:before { content: '🔄 '; }
+.list-6 li:nth-child(2):before { content: '📈 '; }
+.list-6 li:nth-child(3):before { content: '💰 '; }
