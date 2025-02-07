@@ -6,14 +6,14 @@ description:
   that help trade union gain and retain more members.
 paragraphs:
   - text: 'Maximise your union’s growth with member-centric services that work'
-  - text: 'Recruit more members with the best online join'
+  - text: 'Recruit more members with the best online join experience'
   - text: 'Retain more members with Update:Upgrade'
 ---
 
 <!-- Start with focus on our current headline feature: drastic improvement in conversion -->
 ## Conversion-optimised online join for your union
 
-We design, develop and deliver the gold standard in online join forms for our union partners and the results speak for
+We design, develop, and deliver high-performing online join forms that help unions grow. The results speak for
 themselves:
 
 <!-- First bit of social proof. Actual quote and photo needs signing off from Scarlet -->
@@ -25,22 +25,40 @@ themselves:
 </figure>
 
 <!-- Talk a bit about being user and user-experience focused -->
-How do we do this? By designing and building **forms so simple applicants glide to the end without ever having to
-think**. And we do this whilst still capturing all the information you need to onboard your new members.
+How do we achieve this? By crafting frictionless forms that guide applicants effortlessly to completion while still
+capturing all the essential information your union needs.
 
-<!-- Make it clear we that it doesn't come at the expense of the union's data capture/calculation needs -->
-Whether it’s employer or sector-specific questions, complex rate calculation rules, political levies, deduction at
-source, or Direct Debit, our **Join platform is designed to adapt to the precise needs of your union**.
+The **Join** platform adapts to your specific needs, whether that includes:
+
+-	✅ **Conditional questions and branching logic** — tailoring the journey to each applicant
+-	💰 **Complex rate calculations** — ensuring accurate membership fees based on rules you define
+-	🏦 **Direct Debit and Deduction at Source** — offering appropriate and secure payment options for members
+-	🏛️ **Political levies** — handling optional opt-ins with ease
+
+Whatever the particular peculiarities of your union, **Join** can handle them without a sweat.
+
+
+<!-- More social proof (tbc) — do we need this to have a specific focus? -->
+<figure class="quote">
+  <img class="avatar" src="/assets/images/people/sean-mcElhinney.jpg" alt="">
+
+  <blockquote>Join Together have played a pivotal role in helping the union grow over the last few years, and continue
+  to be a key partner for us.</blockquote>
+  <figcaption>Seán McElhinney, Director of Membership, <a href="https://www.forsa.ie">Fórsa</a></figcaption>
+</figure>
 
 <!-- Talk about how great the experience is for all -->
-## Online join that delights members, whatever their needs
+## A seamless online join experience for all members
 
-As well as working **perfectly across mobile and desktop**, our forms are designed to **meet the highest standard of web
-accessibility guidelines**, ensuring *everyone* is able to join your union online, no matter what their particular access
-needs are.
+Our forms aren’t just functional, they’re designed to delight:
 
-They also look beautiful, and are fully customised to fit with your brand and website, ensuring a seamless onboarding
-experience for your new members.
+-	🚀 **Optimised for speed and simplicity** — guiding users effortlessly from start to finish
+-	📱 **Mobile-friendly and desktop-ready** — ensuring a smooth experience on any device
+-	🌍 **Fully accessible** — meeting web accessibility standards so everyone can join
+-	🎨 **Beautifully branded** — seamlessly integrating with your website for a consistent look
+
+A better join form means more members and less admin. By removing friction, more people complete their applications,
+helping your union grow. At the same time, smarter forms capture more accurate data, reducing processing time and costs.
 
 <!-- Show the thing: a video showing the form in action that auto-plays on a loop -->
 <video width="100%" autoplay muted>
@@ -50,15 +68,14 @@ experience for your new members.
 
 
 <!-- CRM/process integration is another key thing to sell/convince on -->
-## Seamless integration with your CRM and processes
+## Works in harmony with your CRM and processes
 
-Your membership database is the backbone of your union’s organising and servicing. That’s why we built the **Join**
-platform to **seamlessly integrate with your existing CRM**, so you can keep your current processes and data management
-policies intact. Whether you use **Salesforce**, **Dynamics 365**, **APT Stratum**, **iMIS**, or another system,
-**Join** will work in sync with it to ensure accurate data capture and smooth processing of applications.
+Your membership database is the backbone of your union’s organising and servicing. That’s why the **Join** platform
+integrates seamlessly with your existing CRM, keeping your processes intact.
 
-And if you ever switch CRMs, there’s no need for a costly, complex rebuild. The **Join** platform moves with you,
-keeping your data flowing smoothly, without the risk or hassle of starting over.
+-	🔄 **Works with your current system** — integrates with Salesforce, Dynamics 365, APT Stratum, iMIS, and more
+-	⚡ **Real-time data syncing** — ensuring accurate records and smooth processing of applications
+-	🔗 **Future-proof flexibility** — if you switch CRMs, Join moves with you, no costly rebuilds needed
 
 <!-- Social proof from a union that has gone through a CRM migration, again to be signed-off -->
 <figure class="quote">
@@ -70,31 +87,21 @@ keeping your data flowing smoothly, without the risk or hassle of starting over.
 </figure>
 
 <!-- A bit of a grab bag about security, performance and hosting... -->
-## A secure, fully hosted, and hassle-free service
+## Security and data protection at its core
 
-We support and maintain the **Join** platform so you don’t have to, ensuring it’s always **up to date, secure, and
-available** when your members need it. Automatic encryption and banking-grade security keeps application data safe
-in a secure, access-managed location.
+We know unions handle sensitive member data and have strict legal obligations. That’s why the **Join** platform is
+built from the ground up to help unions meet their data protection responsibilities with confidence.
 
-Designed for both **speed and reliability**, the Join platform scales automatically to handle high demand, ensuring a
-seamless experience even during peak times.
+- 🔐 **GDPR-compliant by design** — ensuring lawful, fair, and transparent data processing
+- 📜 **Full control** — clear retention policies and automated redaction to protect member privacy
+- 🛠 **Privacy-first architecture** — secure storage, controlled access, and security audits
+- 🔑 **End-to-end encryption** — application data is encrypted in transit and at rest for maximum security
+- 🌍 **EU-based hosting** — all data is stored on secure EU servers, ensuring compliance with data residency requirements
+
+With **Join** your union can be confident that every application is handled securely, responsibly, and in compliance
+with data protection laws.
 
 **[Learn more about our security and data policies](/information-security)**
-
-<!-- More social proof (tbc) — do we need this to have a specific focus? -->
-<figure class="quote">
-  <img class="avatar" src="/assets/images/people/sean-mcElhinney.jpg" alt="">
-
-  <blockquote>Join Together have played a pivotal role in helping the union grow over the last few years, and continue
-  to be a key partner for us.</blockquote>
-  <figcaption>Seán McElhinney, Director of Membership, <a href="https://www.forsa.ie">Fórsa</a></figcaption>
-</figure>
-
-## Fair, transparent, union-friendly pricing
-
-We charge a one-time initial design and implementation fee, then a fixed monthly subscription to cover ongoing
-operations and support. Pricing is based on the expected number of monthly applications: smaller unions with fewer
-resources pay less; larger ones who use more, pay more, just like they would in a union!
 
 <!-- Final bit of social proof, content tbc -->
 <figure class="quote">
@@ -104,13 +111,10 @@ resources pay less; larger ones who use more, pay more, just like they would in 
   <figcaption>Sarah Woolley, General Secretary, <a href="https://www.bfawu.org">BFAWU</a></figcaption>
 </figure>
 
-## Brought to you by a team that cares about unions
+## Built by experts, trusted by unions
 
-Join Together Co-operative are technologists with a passion for the union movement, with decades of collective
-experience delivering world class digital services. [Learn more about the team](/team).
-
-<!-- Social proof again — we should make these logos full colour and also larger -->
-## Trusted by unions across the UK and Ireland
+Join Together Co-operative is a team of technologists with a passion for the union movement. With decades of experience delivering world-class digital services, we understand the unique challenges unions face and we build solutions that
+help them grow.
 
 <div class="union-logos">
   <a href="https://neu.org.uk"><img alt="National Education Union" src="/assets/images/logos/neu-logo.svg"></a>
@@ -123,40 +127,59 @@ experience delivering world class digital services. [Learn more about the team](
 ## Grow your union smarter with Join Together
 
 Discover how Join Together's proven platform can simplify onboarding, boost completion rates and seamlessly
-integrate with your existing systems. Get in touch to discuss how we can tailor a solution for your union's unique needs.
+integrate with your existing systems.
+
+[Get in touch](https://calendly.com/join-together/hello) to discuss how we can tailor a solution for your union's unique
+needs.
 
 <nav>
   <a href="https://calendly.com/join-together/hello">Book a call to find out more</a>
 </nav>
 
-<!--
-  Here we would talk about "Update:Upgrade", i.e. our what we might call our update-your-details service.
-  We can talk concretely about it today as this is what student upgrades is.
--->
-
 <div class="callout">
-  <h2>Out of date member data is holding your union back</h2>
-  <p>
-    Outdated member data is a costly headache for unions.
-    It wastes time, drains resources, and makes organising harder.
-    Ballots go undelivered, reducing turnout and wasting money.
-    Poor communication frustrates members, weakens engagement, and increases the risk of them leaving.
+  <h2>Update:Upgrade — the simpler way to keep member data up-to-date</h2>
 
-    Meanwhile, staff spend unnecessary hours chasing updates instead of focusing on organising and servicing. On top of that, incorrect records mean lost revenue from members paying the wrong subs — or sometimes not paying at all. Keeping member data up to date isn’t just admin, it’s essential for a stronger, more effective union.
+  <p>
+    Outdated and inaccurate member data is a costly headache for unions. It wastes time, drains resources, and makes organising harder:
   </p>
 
-  <h2>Update:Upgrade — The easy and cost effective way to keep member data current</h2>
+  <ul>
+    <li>📬 <strong>Ballots go undelivered</strong> — reducing turnout and wasting money</li>
+    <li>📢 <strong>Poor communication frustrates members</strong> — weakening engagement and increasing the risk of churn</li>
+    <li>⏳ <strong>Staff waste hours chasing updates</strong> — instead of focusing on organising and servicing members</li>
+    <li>💸 <strong>Incorrect records mean lost revenue</strong> — from members paying the wrong subs or not paying at all</li>
+  </ul>
 
   <p>
-     Join Together built <strong>Update:Upgrade</strong> to take the hassle out of keeping member data up to date.
-     It’s a simple, secure and easy-to-use web service that lets members update their own details in seconds: no
-     chasing, no wasted time. Less admin for your team, better engagement with your members, and stronger, more
-     effective organising.
+    Keeping member data up-to-date isn’t just admin — it’s essential for a stronger, more effective union.
+  </p>
+
+  <h3>Member Portals Don’t Work</h3>
+
+  <p>
+    Many unions have member portals or login areas, but they often go unused. They’re clunky, slow, and frustrating, leaving members disengaged.
   </p>
 
   <p>
-    <strong>Update:Upgrade</strong> is helping the NEU to get up-to-date information from student members as they
-    transition into teaching, helping them retain more members.
+    One union we work with found that <em>“forgot password”</em> was the <strong>second most visited page</strong> on their website—a clear sign of frustration. Worse, when unions urgently need accurate data (such as before a ballot), they scramble to update records with mass emails, calls, and spreadsheets, overloading staff and delaying critical work.
+  </p>
+
+  <h3>Meet Update:Upgrade — The hassle-free and cost-effective way to maintain up-to-date member data</h3>
+
+  <p>
+    We built <strong>Update:Upgrade</strong> to make keeping member data up-to-date effortless. It’s a simple, secure, and easy-to-use web service that lets members update their own details in seconds.
+  </p>
+
+  <ul>
+    <li>🔄 <strong>Members update their own details in seconds</strong> — updates happen instantly, reducing admin for your team</li>
+    <li>📈 <strong>Better engagement, stronger organising</strong> — keeping your records fresh and accurate</li>
+    <li>💰 <strong>Lower costs, higher retention</strong> — minimising wasted resources and lost revenue</li>
+  </ul>
+
+  <p>
+    The NEU is using <strong>Update:Upgrade</strong> to enable student members to automatically update their records
+    and upgrade their membership as they move into teaching, helping them retain more members while drastically cutting
+    costs and manual processing.
   </p>
 
   <figure class="quote">
@@ -165,11 +188,11 @@ integrate with your existing systems. Get in touch to discuss how we can tailor 
     <figcaption>Scarlet Harris, Recruitment and Retention Strategy Manager, <a href="https://neu.org.uk">NEU</a></figcaption>
   </figure>
 
-  <h2>Try the demo and get in touch</h2>
+  <h3>Try the demo and get in touch</h3>
 
   <p>
     We’ve put together a
-    <a href="https://demo-update.jointogether.online/"><strong>demo update form</strong></a>
+    <a href="https://demo-update.jointogether.online/"><strong>demo Update:Upgrade form</strong></a>
     so you can see the experience for yourself. Just enter your email and check your inbox to get started.
   </p>
 
