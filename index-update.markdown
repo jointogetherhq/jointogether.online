@@ -65,7 +65,7 @@ helping your union grow. At the same time, smarter forms capture more accurate d
 
 <!-- Show the thing: a video showing the form in action that auto-plays on a loop -->
 <video width="100%" autoplay muted>
-  <source src="assets/videos/show-the-thing-2.mp4" type="video/mp4">
+  <source src="assets/videos/show-the-thing.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
