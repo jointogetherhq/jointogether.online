@@ -64,11 +64,10 @@ A better join form means more members and less admin. By removing friction, more
 helping your union grow. At the same time, smarter forms capture more accurate data, reducing processing time and costs.
 
 <!-- Show the thing: a video showing the form in action that auto-plays on a loop -->
-<video width="100%" autoplay muted>
+<video width="100%" autoplay muted playsinline>
   <source src="assets/videos/show-the-thing.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-
 
 <!-- CRM/process integration is another key thing to sell/convince on -->
 ## Works in harmony with your CRM and processes
