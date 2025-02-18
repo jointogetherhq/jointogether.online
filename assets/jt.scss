@@ -27,6 +27,8 @@
 @import url("//hello.myfonts.net/count/4a3fe4");
 @import url("//hello.myfonts.net/count/4a4a37");
 
+@import "./sprite";
+
 @font-face {
   font-family: "JoinTogether";
   font-style: normal;
@@ -92,7 +94,7 @@ $transition: 0.3s ease;
 @mixin font-core {
   font-family: JoinTogether, sans-serif;
   font-size: $measure*0.9;
-  line-height: $baseline*0.95;
+  line-height: $baseline*0.97;
   font-weight: 700;
   letter-spacing: 0.01em;
   @media (min-width: $viewport-tablet) {
@@ -1166,43 +1168,90 @@ video {
   h2:first-child { margin-top: $baseline*0.5; }
 }
 
-.emoji-list {
+dl {
+  margin: 2em $gutter;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-row-gap: $gutter;              // space between dt and dd pairs
+  grid-column-gap: calc($gutter / 3); // space between dt and dd
+
+  dt {
+    font-weight: 800;
+    padding-left: 2.5em; // leave room for the icon
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      margin-left: -2.5em;
+      top: 0.2em;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  dd {
+  }
+
+  &.list-1 {
+    dt:nth-of-type(1) { &::before { @extend .svg-chart-tree; } }
+    dt:nth-of-type(2) { &::before { @extend .svg-pound;} }
+    dt:nth-of-type(3) { &::before { @extend .svg-bank;} }
+    dt:nth-of-type(4) { &::before { @extend .svg-coins;} }
+  }
+
+  &.list-2 {
+    dt:nth-of-type(1) { &::before { @extend .svg-rocket-lunch; } }
+    dt:nth-of-type(2) { &::before { @extend .svg-mobile-hand;} }
+    dt:nth-of-type(3) { &::before { @extend .svg-users-alt;} }
+    dt:nth-of-type(4) { &::before { @extend .svg-palette;} }
+  }
+
+  &.list-3 {
+    dt:nth-of-type(1) { &::before { @extend .svg-system-cloud; } }
+    dt:nth-of-type(2) { &::before { @extend .svg-auto-sync;} }
+    dt:nth-of-type(3) { &::before { @extend .svg-paper-plane-launch;} }
+  }
+
+  &.list-4 {
+    dt:nth-of-type(1) { &::before { @extend .svg-scale-comparison-alt; } }
+    dt:nth-of-type(2) { &::before { @extend .svg-remote-control-hand;} }
+    dt:nth-of-type(3) { &::before { @extend .svg-user-lock;} }
+    dt:nth-of-type(4) { &::before { @extend .svg-binary-lock;} }
+    dt:nth-of-type(5) { &::before { @extend .svg-european-union;} }
+  }
+
+  &.list-6 {
+    dt:nth-of-type(1) { &::before { @extend .svg-time-fast; } }
+    dt:nth-of-type(2) { &::before { @extend .svg-people-carry-box;} }
+    dt:nth-of-type(3) { &::before { @extend .svg-chart-line-up;} }
+  }
+}
+
+
+ul.flaticon-list {
   list-style: none;
+  margin: $gutter;
   padding: 0;
-  margin: 0;
+  position: relative;
+
+  li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+  }
+
+  li {
+    padding-left: 2em; // leave room for the icon
+    margin-bottom: $measure;
+  }
+
+  &.list-5 {
+    li:nth-of-type(1) { &::before { @extend .svg-fail; } }
+    li:nth-of-type(2) { &::before { @extend .svg-face-confused;} }
+    li:nth-of-type(3) { &::before { @extend .svg-duration-alt;} }
+    li:nth-of-type(4) { &::before { @extend .svg-chart-arrow-down;} }
+  }
 }
-
-.emoji-list li {
-  padding-left: 1.5rem;
-  text-indent: -1.5rem;
-  margin-top: $gutter*0.5;
-}
-
-.list-1 li:before { content: '✅ '; }
-.list-1 li:nth-child(2):before { content: '💰 '; }
-.list-1 li:nth-child(3):before { content: '🏦 '; }
-.list-1 li:nth-child(4):before { content: '🏛️ '; }
-
-.list-2 li:before { content: '🚀 '; }
-.list-2 li:nth-child(2):before { content: '📱 '; }
-.list-2 li:nth-child(3):before { content: '🌍 '; }
-.list-2 li:nth-child(4):before { content: '🎨 '; }
-
-.list-3 li:before { content: '🔄 '; }
-.list-3 li:nth-child(2):before { content: '⚡ '; }
-.list-3 li:nth-child(3):before { content: '🔗 '; }
-
-.list-4 li:before { content: '🔐 '; }
-.list-4 li:nth-child(2):before { content: '📜 '; }
-.list-4 li:nth-child(3):before { content: '🛠 '; }
-.list-4 li:nth-child(4):before { content: '🔑 '; }
-.list-4 li:nth-child(4):before { content: '🌍 '; }
-
-.list-5 li:before { content: '📬 '; }
-.list-5 li:nth-child(2):before { content: '📢 '; }
-.list-5 li:nth-child(3):before { content: '⏳ '; }
-.list-5 li:nth-child(4):before { content: '💸 '; }
-
-.list-6 li:before { content: '🔄 '; }
-.list-6 li:nth-child(2):before { content: '📈 '; }
-.list-6 li:nth-child(3):before { content: '💰 '; }
