@@ -25,19 +25,23 @@ themselves:
 </figure>
 
 <!-- Talk a bit about being user and user-experience focused -->
-How do we achieve this? By crafting frictionless forms that guide applicants effortlessly to completion while still
-capturing all the essential information your union needs.
+How do we achieve this? The **Join** platform delivers frictionless forms that are crafted to guide applicants 
+to completion with minimal effort – while still capturing all the essential information your union needs:
 
-The **Join** platform adapts to your specific needs, whether that includes:
+Conditional questions
+: Tailor the journey to each applicant with branching logic
 
-<ul class="emoji-list list-1">
-  <li><strong>Conditional questions and branching logic</strong> — tailoring the journey to each applicant</li>
-  <li><strong>Complex rate calculations</strong> — ensuring accurate membership fees based on rules you define</li>
-  <li><strong>Direct Debit and Deduction at Source</strong> — offering appropriate and secure payment options for members</li>
-  <li><strong>Political levies</strong> — handling optional opt-ins with ease</li>
-</ul>
+Perfect rate calculations
+: Take accurate membership fees based on **your** rules
 
-Whatever the particular peculiarities of your union, **Join** can handle them without a sweat.
+Flexible payment methods
+: Offer appropriate and secure payment options for members with Direct Debit & Deduction at Source  
+
+Political levies
+: Handle opt-ins with ease
+{:.list-1}
+
+Your union is unique. Whatever your rules, rates and requirements, **Join** handles them effortlessly.
 
 <!-- More social proof (tbc) — do we need this to have a specific focus? -->
 <figure class="quote">
@@ -51,14 +55,20 @@ Whatever the particular peculiarities of your union, **Join** can handle them wi
 <!-- Talk about how great the experience is for all -->
 ## A seamless online join experience for all members
 
-Our forms aren’t just functional, they’re designed to delight:
+Our forms aren’t just functional, they’re designed to delight.
 
-<ul class="emoji-list list-2">
-  <li><strong>Optimised for speed and simplicity</strong> — guiding users effortlessly from start to finish</li>
-  <li><strong>Mobile-friendly and desktop-ready</strong> — ensuring a smooth experience on any device</li>
-  <li><strong>Fully accessible</strong> — because everyone should be able to join your union, regardless of their accessibility needs</li>
-  <li><strong>Beautifully branded</strong> — seamlessly integrating with your website for a consistent look</li>
-</ul>
+Fast and simple
+: Simplify applications for your members. One thing per page. More finished applications
+
+Mobile-first, desktop-ready
+: Give your members a smooth, reliable experience on any device
+
+Fully accessible
+: Meet web accessibility standards – _everyone_ can **Join**
+
+Beautifully branded
+: Integrate seamlessly with your website for a consistent look
+{:.list-2}
 
 A better join form means more members and less admin. By removing friction, more people complete their applications,
 helping your union grow. At the same time, smarter forms capture more accurate data, reducing processing time and costs.
@@ -76,11 +86,15 @@ helping your union grow. At the same time, smarter forms capture more accurate d
 Your membership database is the backbone of your union’s organising and servicing. That’s why the **Join** platform
 integrates seamlessly with your existing CRM, keeping your processes intact.
 
-<ul class="emoji-list list-3">
-  <li><strong>Works with your current system</strong> — integrates with Salesforce, Dynamics 365, APT Stratum, iMIS, and more</li>
-  <li><strong>Real-time data syncing</strong> — ensuring accurate records and smooth processing of applications</li>
-  <li><strong>Future-proof flexibility</strong> — if you switch CRMs, <strong>Join</strong> moves with you, no costly rebuilds needed</li>
-</ul>
+Works with your current system
+: Integrate with Salesforce, Dynamics 365, APT Stratum, iMIS, and more
+
+Real-time data syncing
+: Ensure accurate records and smooth processing of applications
+
+Future-proof flexibility
+: Switching CRMs? **Join** moves with you. No costly rebuilds
+{:.list-3}
 
 <!-- Social proof from a union that has gone through a CRM migration, again to be signed-off -->
 <figure class="quote">
@@ -94,21 +108,28 @@ integrates seamlessly with your existing CRM, keeping your processes intact.
 <!-- A bit of a grab bag about security, performance and hosting... -->
 ## Security and data protection at its core
 
-We know unions handle sensitive member data and have strict legal obligations. That’s why the **Join** platform is
+We know unions handle sensitive member data and have strict legal obligations. That’s why **Join** is
 built from the ground up to help unions meet their data protection responsibilities with confidence.
 
-<ul class="emoji-list list-4">
-  <li><strong>GDPR-compliant by design</strong> — ensuring lawful, fair, and transparent data processing</li>
-  <li><strong>Full control</strong> — clear retention policies and automated redaction to protect member privacy</li>
-  <li><strong>Privacy-first architecture</strong> — secure storage, controlled access, and security audits</li>
-  <li><strong>End-to-end encryption</strong> — application data is encrypted in transit and at rest for maximum security</li>
-  <li><strong>EU-based hosting</strong> — all data is stored on secure EU servers, ensuring compliance with data residency requirements</li>
-</ul>
+GDPR-compliant
+: Lawful, fair, and transparent data processing
 
-With **Join** your union can be confident that every application is handled securely, responsibly, and in compliance
-with data protection laws.
+Full control
+: Clear retention policies and automated redaction to protect member privacy
 
-**[Learn more about our security and data policies](/information-security)**
+Privacy-first design
+: Secure storage, controlled access, and security audits
+
+End-to-end encryption
+: Data encrypted in transit and at rest for maximum security
+
+EU-based hosting
+: Data stored on secure EU servers, ensuring compliance with data residency requirements
+{:.list-4}
+
+
+With **Join** your union can be confident that every application is handled 
+[securely, responsibly, and **in compliance with data protection laws**](/information-security).
 
 <!-- Final bit of social proof, content tbc -->
 <figure class="quote">
@@ -146,21 +167,21 @@ needs.
 </nav>
 
 <div class="callout">
-  <h2>Update:Upgrade — the simpler way to keep member data up-to-date</h2>
+  <h2>Update:Upgrade — the simpler way to keep member data up to date</h2>
 
   <p>
     Outdated and inaccurate member data is a costly headache for unions. It wastes time, drains resources, and makes organising harder:
   </p>
 
-  <ul class="emoji-list list-5">
-    <li><strong>Ballots go undelivered</strong> — reducing turnout and wasting money</li>
-    <li><strong>Poor communication frustrates members</strong> — weakening engagement and increasing the risk of churn</li>
-    <li><strong>Staff waste hours chasing updates</strong> — instead of focusing on organising and servicing members</li>
-    <li><strong>Incorrect records mean lost revenue</strong> — from members paying the wrong subs or not paying at all</li>
+  <ul class="flaticon-list list-5">
+    <li><strong>Ballots go undelivered</strong>, reducing turnout and wasting money</li>
+    <li><strong>Poor communication frustrates members</strong>, weakening engagement and increasing churn</li> 
+    <li><strong>Staff waste hours chasing updates</strong>, instead of focusing on organising and servicing members</li>
+    <li><strong>Incorrect records mean lost revenue</strong>, from members paying the wrong subs or not paying at all</li>
   </ul>
 
   <p>
-    Keeping member data up-to-date isn’t just admin — it’s essential for a stronger, more effective union.
+    Keeping member data up to date isn’t just admin — it’s essential for a stronger, more effective union.
   </p>
 
   <h3>Member Portals Don’t Work</h3>
@@ -173,18 +194,21 @@ needs.
     One union we work with found that <em>“forgot password”</em> was the <strong>second most visited page</strong> on their website—a clear sign of frustration. Worse, when unions urgently need accurate data (such as before a ballot), they scramble to update records with mass emails, calls, and spreadsheets, overloading staff and delaying critical work.
   </p>
 
-  <h3>Meet Update:Upgrade — The hassle-free and cost-effective way to maintain up-to-date member data</h3>
+  <h3>Meet Update:Upgrade, the hassle-free and cost-effective way to maintain up-to-date member data</h3>
 
   <p>
     We built <strong>Update:Upgrade</strong> to make keeping member data up-to-date effortless. It’s a simple, secure,
     and easy-to-use web service that lets members update their own details in seconds.
   </p>
 
-  <ul class="emoji-list list-6">
-    <li><strong>Members update their own details in seconds</strong> — updates happen securely and instantly, reducing admin for your team</li>
-    <li><strong>Better engagement, stronger organising</strong> — keeping your records fresh and accurate</li>
-    <li><strong>Lower costs, higher retention</strong> — minimising wasted resources and lost revenue</li>
-  </ul>
+  <dl class="list-6">
+    <dt>Members update their own details in seconds</dt>
+    <dd>Reduce team admin. Updates are instant and secure</dd>
+    <dt>Better engagement, stronger organising</dt>
+    <dd>Stay accurate. Reduce member frustration</dd>
+    <dt>Lower costs, higher retention</dt>
+    <dd>Minimise wasted resources and lost revenue</dd>
+  </dl>
 
   <p>
     The NEU is using <strong>Update:Upgrade</strong> to enable student members to automatically update their records
