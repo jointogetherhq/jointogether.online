@@ -56,7 +56,7 @@ Our forms aren’t just functional, they’re designed to delight:
 <ul class="emoji-list list-2">
   <li><strong>Optimised for speed and simplicity</strong> — guiding users effortlessly from start to finish</li>
   <li><strong>Mobile-friendly and desktop-ready</strong> — ensuring a smooth experience on any device</li>
-  <li><strong>Fully accessible</strong> — meeting web accessibility standards so everyone can join</li>
+  <li><strong>Fully accessible</strong> — because everyone should be able to join your union, regardless of their accessibility needs</li>
   <li><strong>Beautifully branded</strong> — seamlessly integrating with your website for a consistent look</li>
 </ul>
 
@@ -79,7 +79,7 @@ integrates seamlessly with your existing CRM, keeping your processes intact.
 <ul class="emoji-list list-3">
   <li><strong>Works with your current system</strong> — integrates with Salesforce, Dynamics 365, APT Stratum, iMIS, and more</li>
   <li><strong>Real-time data syncing</strong> — ensuring accurate records and smooth processing of applications</li>
-  <li><strong>Future-proof flexibility</strong> — if you switch CRMs, Join moves with you, no costly rebuilds needed</li>
+  <li><strong>Future-proof flexibility</strong> — if you switch CRMs, <strong>Join</strong> moves with you, no costly rebuilds needed</li>
 </ul>
 
 <!-- Social proof from a union that has gone through a CRM migration, again to be signed-off -->
@@ -120,8 +120,9 @@ with data protection laws.
 
 ## Built by experts, trusted by unions
 
-Join Together Co-operative is a team of technologists with a passion for the union movement. With decades of experience delivering world-class digital services, we understand the unique challenges unions face and we build solutions that
-help them grow.
+Join Together Co-operative is a [team of technologists](/team/) with a passion for the union movement. With decades of
+experience delivering world-class digital services, we understand the unique challenges unions face and we build
+solutions that help them grow.
 
 <div class="union-logos">
   <a href="https://neu.org.uk"><img alt="National Education Union" src="/assets/images/logos/neu-logo.svg"></a>
@@ -134,7 +135,7 @@ help them grow.
 ## Grow your union smarter with Join Together
 
 Discover how Join Together's proven platform can simplify onboarding, boost completion rates and seamlessly
-integrate with your existing systems.
+integrate with your existing systems and processes.
 
 [Get in touch](https://calendly.com/join-together/hello) to discuss how we can tailor a solution for your union's unique
 needs.
@@ -174,11 +175,12 @@ needs.
   <h3>Meet Update:Upgrade — The hassle-free and cost-effective way to maintain up-to-date member data</h3>
 
   <p>
-    We built <strong>Update:Upgrade</strong> to make keeping member data up-to-date effortless. It’s a simple, secure, and easy-to-use web service that lets members update their own details in seconds.
+    We built <strong>Update:Upgrade</strong> to make keeping member data up-to-date effortless. It’s a simple, secure,
+    and easy-to-use web service that lets members update their own details in seconds.
   </p>
 
   <ul class="emoji-list list-6">
-    <li><strong>Members update their own details in seconds</strong> — updates happen instantly, reducing admin for your team</li>
+    <li><strong>Members update their own details in seconds</strong> — updates happen securely and instantly, reducing admin for your team</li>
     <li><strong>Better engagement, stronger organising</strong> — keeping your records fresh and accurate</li>
     <li><strong>Lower costs, higher retention</strong> — minimising wasted resources and lost revenue</li>
   </ul>
