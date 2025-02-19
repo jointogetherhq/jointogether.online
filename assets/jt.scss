@@ -184,32 +184,6 @@ $transition: 0.3s ease;
   }
 }
 
-@mixin logo-images {
-  img {
-    display: inline-block;
-    width: auto;
-    height: $gutter*2;
-    margin: $gutter $gutter $gutter 0;
-    filter: saturate(0) contrast(120%);
-    border-bottom: 1px solid transparent;
-    padding-bottom: 5px;
-    cursor: pointer;
-  }
-  &:hover {
-    img {
-      border-bottom: 1px solid $highlight;
-      filter: saturate(100%) contrast(100%);
-    }
-  }
-  &:focus {
-    img {
-      border-bottom: 2px solid $highlight;
-      padding-bottom: 4px;
-      filter: saturate(100%) contrast(100%);
-    }
-  }
-}
-
 @mixin body-typography {
   #header {
     margin-top: $whitespace;
@@ -341,9 +315,6 @@ $transition: 0.3s ease;
     height: auto;
     margin: $gutter*2 0;
   }
-  p a {
-    @include logo-images();
-  }
 }
 
 @mixin button {
@@ -351,12 +322,12 @@ $transition: 0.3s ease;
   padding: $gutter;
   height: $baseline;
   color: $page;
-  background: lighten($text, 30%);
+  background: lighten($highlight, 5%);
   border-radius: $corner-radius;
   text-decoration: none;
   text-align: center;
   &:hover {
-    background: $text;
+    background: lighten($text, 30%);
   }
   &:focus {
     outline: none;
@@ -499,7 +470,7 @@ header {
       &:first-child {
         padding-top: $whitespace;
       }
-      &.last-child {
+      &:last-child {
         padding-bottom: $whitespace;
       }
       p {
@@ -563,7 +534,7 @@ header {
         &:nth-child(10) {
           grid-row: 10 / 11;
         }
-        &.last-child {
+        &:last-child {
           justify-self: center;
         }
       }
@@ -631,32 +602,6 @@ header {
     h3 {
       @include font-medium-small();
       font-weight: 800;
-    }
-    ul {
-      list-style: none;
-      li {
-        position: relative;
-        padding-left: $gutter;
-        &+li {
-          margin-top: $gutter*0.5;
-        }
-        &:before {
-          content: "•";
-          display: inline-block;
-          position: relative;
-          margin-left: $gutter*-1;
-          width: $gutter;
-        }
-      }
-    }
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-      margin: $gutter*2 0;
-    }
-    p a {
-      @include logo-images();
     }
   }
   nav {
@@ -775,9 +720,6 @@ header {
         width: 100%;
         height: auto;
         margin: $gutter*2 0;
-      }
-      p a {
-        @include logo-images();
       }
       ol {
         list-style: none;
@@ -1133,3 +1075,132 @@ footer {
     }
   }
 }
+
+
+/**
+ * Blockquotes
+ * Adapted from https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/
+ **/
+blockquote {
+  font-size: 105%;
+  font-weight: 800;
+  text-indent: -0.45em;
+}
+@supports ( hanging-punctuation: first) {
+  blockquote {
+    text-indent: 0;
+    hanging-punctuation: first;
+  }
+}
+blockquote::before {
+  content: open-quote;
+}
+blockquote::after {
+  content: close-quote;
+}
+blockquote {
+  quotes: "“" "”" "‘" "’";
+}
+.quote {
+  margin: 2em 0;
+  background: $light-shade;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  overflow: auto;
+}
+.quote figcaption,
+.quote blockquote {
+  margin: 1em;
+}
+.quote figcaption a { font-weight: 800; }
+
+img.avatar {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 0.5em 1em;
+  border-radius: 50%;
+}
+
+video {
+  background-color: white;
+  margin: 2em 0;
+}
+
+.union-logos {
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    display: inline-block;
+    width: auto;
+    height: $baseline*2;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 5px;
+    @media (min-width: $viewport-tablet) {
+      height: $baseline*3;
+    }
+
+  }
+  :hover {
+    img:hover {
+      border-bottom: 1px solid $highlight;
+    }
+  }
+  :focus {
+    img {
+      border-bottom: 2px solid $highlight;
+      padding-bottom: 4px;
+    }
+  }
+}
+
+#layout-homepage div.callout {
+  margin: 3em 0;
+  padding: $baseline*0.5 $baseline $baseline;
+  background: $light-shade;
+  border-radius: 1em;
+
+  h2:first-child { margin-top: $baseline*0.5; }
+}
+
+.emoji-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.emoji-list li {
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+  margin-top: $gutter*0.5;
+}
+
+.list-1 li:before { content: '✅ '; }
+.list-1 li:nth-child(2):before { content: '💰 '; }
+.list-1 li:nth-child(3):before { content: '🏦 '; }
+.list-1 li:nth-child(4):before { content: '🏛️ '; }
+
+.list-2 li:before { content: '🚀 '; }
+.list-2 li:nth-child(2):before { content: '📱 '; }
+.list-2 li:nth-child(3):before { content: '🌍 '; }
+.list-2 li:nth-child(4):before { content: '🎨 '; }
+
+.list-3 li:before { content: '🔄 '; }
+.list-3 li:nth-child(2):before { content: '⚡ '; }
+.list-3 li:nth-child(3):before { content: '🔗 '; }
+
+.list-4 li:before { content: '🔐 '; }
+.list-4 li:nth-child(2):before { content: '📜 '; }
+.list-4 li:nth-child(3):before { content: '🛠 '; }
+.list-4 li:nth-child(4):before { content: '🔑 '; }
+.list-4 li:nth-child(4):before { content: '🌍 '; }
+
+.list-5 li:before { content: '📬 '; }
+.list-5 li:nth-child(2):before { content: '📢 '; }
+.list-5 li:nth-child(3):before { content: '⏳ '; }
+.list-5 li:nth-child(4):before { content: '💸 '; }
+
+.list-6 li:before { content: '🔄 '; }
+.list-6 li:nth-child(2):before { content: '📈 '; }
+.list-6 li:nth-child(3):before { content: '💰 '; }

@@ -8,9 +8,6 @@ paragraphs:
   - text: 'Online join for <br>trade&nbsp;unions'
   - text: 'Don’t lose members to a bad joining experience'
   - text: 'Get more members with online join that’s a delight, not a pain'
-buttons:
-  - label: 'Book a call to discuss your online join'
-    url: 'https://calendly.com/join-together/hello'
 ---
 
 ## What makes Join Together so special?
@@ -63,9 +60,13 @@ experience delivering world class digital services. [Learn more about the team](
 
 ## Proudly working with unions across the UK and Ireland
 
-[![National Education Union]({{ site.url }}{{ site.baseurl }}/assets/images/neu-logo.svg)](https://neu.org.uk)
-[![Communication Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/cwu-logo.svg)](https://cwu.org)
-[![Bakers Food and Allied Workers Union]({{ site.url }}{{ site.baseurl }}/assets/images/bfawu-logo.png)](https://bfawu.org)
-[![Forsa the Irish Trade Union]({{ site.url }}{{ site.baseurl }}/assets/images/forsa-logo.png)](https://www.forsa.ie)
-[![Writers Guild of Great Britain]({{ site.url }}{{ site.baseurl }}/assets/images/wggb-logo.jpg)](https://writersguild.org.uk)
-[![Trade Union Congress]({{ site.url }}{{ site.baseurl }}/assets/images/tuc-logo.jpg)](https://www.tuc.org.uk)
+<div class="union-logos">
+  <a href="https://neu.org.uk"><img alt="National Education Union" src="/assets/images/logos/neu-logo.svg"></a>
+  <a href="https://cwu.org"><img alt="Communication Workers Union" src="/assets/images/logos/cwu-logo.svg"></a>
+  <a href="https://bfawu.org"><img alt="Bakers Food and Allied Workers Union" src="/assets/images/logos/bfawu-logo.png"></a>
+  <a href="https://www.forsa.ie"><img alt="Forsa the Irish Trade Union" src="/assets/images/logos/forsa-logo.png"></a>
+</div>
+
+<nav>
+  <a href="https://calendly.com/join-together/hello">Book a call to discuss your online join</a>
+</nav>
