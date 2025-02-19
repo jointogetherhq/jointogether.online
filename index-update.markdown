@@ -114,7 +114,8 @@ with data protection laws.
 <figure class="quote">
   <img class="avatar" src="/assets/images/people/sarah-woolley.jpg" alt="">
 
-  <blockquote>ANOTHER QUOTE THAT IS REASSURING AND GIVES SOCIAL PROOF.</blockquote>
+  <blockquote>Partnering with Join Together has transformed how people join BFAWU. Their intuitive online join form
+    makes the process easy, fast and accessible for our members.</blockquote>
   <figcaption>Sarah Woolley, General Secretary, <a href="https://www.bfawu.org">BFAWU</a></figcaption>
 </figure>
 
