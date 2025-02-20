@@ -17,7 +17,7 @@ We design, develop, and deliver high-performing online join forms that help unio
 themselves:
 
 <!-- First bit of social proof. Actual quote and photo needs signing off from Scarlet -->
-<figure class="quote">
+<figure class="quote neu">
   <img class="avatar" src="/assets/images/people/scarlet-harris.jpg" alt="">
 
   <blockquote>There's been a 60% improvement in completion rates for our online join. We couldn't be happier.</blockquote>
@@ -44,7 +44,7 @@ Political levies
 Your union is unique. Whatever your rules, rates and requirements, **Join** handles them effortlessly.
 
 <!-- More social proof (tbc) — do we need this to have a specific focus? -->
-<figure class="quote">
+<figure class="quote forsa">
   <img class="avatar" src="/assets/images/people/sean-mcElhinney.jpg" alt="">
 
   <blockquote>Join Together have played a pivotal role in helping the union grow over the last few years, and continue
@@ -97,7 +97,7 @@ Future-proof flexibility
 {:.list-3}
 
 <!-- Social proof from a union that has gone through a CRM migration, again to be signed-off -->
-<figure class="quote">
+<figure class="quote cwu">
   <img class="avatar" src="/assets/images/people/dave-ward.jpg" alt="">
 
   <blockquote>Join Together were critical in making our CRM migration a success. We were able to keep accepting and
@@ -132,7 +132,7 @@ With **Join** your union can be confident that every application is handled
 [securely, responsibly, and **in compliance with data protection laws**](/information-security).
 
 <!-- Final bit of social proof, content tbc -->
-<figure class="quote">
+<figure class="quote bfawu">
   <img class="avatar" src="/assets/images/people/sarah-woolley.jpg" alt="">
 
   <blockquote>Partnering with Join Together has transformed how people join BFAWU. Their intuitive online join form
@@ -216,7 +216,7 @@ needs.
     costs and manual processing.
   </p>
 
-  <figure class="quote">
+  <figure class="quote neu">
     <img class="avatar" src="/assets/images/people/scarlet-harris.jpg" alt="">
     <blockquote>The upgrade service Join Together built for us helps us retain more members and has reduced costs.</blockquote>
     <figcaption>Scarlet Harris, Recruitment and Retention Strategy Manager, <a href="https://neu.org.uk">NEU</a></figcaption>
