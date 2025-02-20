@@ -81,6 +81,13 @@ $max-width-wide: 31em;
 $corner-radius: 13px;
 $transition: 0.3s ease;
 
+// Tenant-specific colours
+
+$bfawu-primary: #DE333A;
+$cwu-primary:   #ff0076;
+$forsa-primary: #3d8a94;
+$neu-primary:   #8f8bb7;
+
 @-webkit-keyframes homepage-graphic-ripple {
   0% { background-position: 30% 70% }
   50% { background-position: 80% 20% }
@@ -367,7 +374,11 @@ $transition: 0.3s ease;
   }
 }
 
-
+@mixin union-quote($color) {
+  border-left: 0.5em solid $color;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0
+}
 
 // BASE STYLES
 
@@ -1117,6 +1128,17 @@ blockquote {
   margin: 1em;
 }
 .quote figcaption a { font-weight: 800; }
+
+.quote {
+  &.bfawu { @include union-quote($bfawu-primary) }
+  &.neu   { @include union-quote($neu-primary) }
+  &.forsa { @include union-quote($forsa-primary) }
+  &.cwu   { @include union-quote($cwu-primary) }
+}
+
+.callout .quote {
+  background-color: white;
+}
 
 img.avatar {
   width: 100px;
