@@ -124,6 +124,21 @@ $neu-primary:   #8f8bb7;
   letter-spacing: 0;
 }
 
+@mixin font-medium-large {
+  font-size: $measure * 1.5;
+  line-height: $baseline * 1.5;
+  font-weight: 700;
+  letter-spacing: 0;
+  @media (min-width: $viewport-tablet) {
+    font-size: $measure * 2;
+    line-height: $baseline * 2;
+  }
+  @media (min-width: $viewport-wide) {
+    font-size: $measure * 2.5;
+    line-height: $baseline * 2.2;
+  }
+}
+
 @mixin font-large {
   font-size: 10vw;
   line-height: 1;
@@ -609,7 +624,7 @@ header {
       margin-bottom: $gutter;
     }
     h2 {
-      @include font-medium();
+      @include font-medium-large();
       font-weight: 800;
     }
     h3 {
