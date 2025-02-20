@@ -146,12 +146,11 @@ Join Together Co-operative is a [team of technologists](/team/) with a passion f
 experience delivering world-class digital services, we understand the unique challenges unions face and we build
 solutions that help them grow.
 
-<div class="union-logos">
-  <a href="https://neu.org.uk"><img alt="National Education Union" src="/assets/images/logos/neu-logo.svg"></a>
-  <a href="https://cwu.org"><img alt="Communication Workers Union" src="/assets/images/logos/cwu-logo.svg"></a>
-  <a href="https://bfawu.org"><img alt="Bakers Food and Allied Workers Union" src="/assets/images/logos/bfawu-logo.png"></a>
-  <a href="https://www.forsa.ie"><img alt="Forsa the Irish Trade Union" src="/assets/images/logos/forsa-logo.png"></a>
-</div>
+- [![National Education Union](/assets/images/logos/neu-logo.svg){:.larger} ](https://neu.org.uk)
+- [![Communication Workers Union](/assets/images/logos/cwu-logo.svg)](https://cwu.org)
+- [![Bakers Food and Allied Workers Union](/assets/images/logos/bfawu-logo.png)](https://bfawu.org)
+- [![Forsa the Irish Trade Union](/assets/images/logos/forsa-logo.png){:.larger} ](https://www.forsa.ie)
+{:.union-logos}
 
 <!-- Final heading and call to action... -->
 ## Grow your union smarter with Join Together

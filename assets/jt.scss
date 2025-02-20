@@ -1158,7 +1158,9 @@ video {
   margin: 2em 0;
 }
 
-.union-logos {
+ul.union-logos {
+  list-style-type: none;
+  margin-top: $measure * 2;
   display: flex;
   justify-content: space-between;
 
@@ -1171,7 +1173,9 @@ video {
     @media (min-width: $viewport-tablet) {
       height: $baseline*3;
     }
-
+    &.larger {
+      height: $baseline*3.2;
+    }
   }
   :hover {
     img:hover {
