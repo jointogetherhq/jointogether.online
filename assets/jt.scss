@@ -1206,69 +1206,9 @@ ul.union-logos {
   h2:first-child { margin-top: $baseline*0.5; }
 }
 
-dl {
-  margin: 2em $gutter;
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-row-gap: $gutter;              // space between dt and dd pairs
-  grid-column-gap: calc($gutter / 3); // space between dt and dd
-
-  dt {
-    font-weight: 800;
-    padding-left: 2.5em; // leave room for the icon
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      margin-left: -2.5em;
-      top: 0.2em;
-      width: 24px;
-      height: 24px;
-    }
-  }
-
-  dd {
-  }
-
-  &.list-1 {
-    dt:nth-of-type(1) { &::before { @extend .svg-chart-tree; } }
-    dt:nth-of-type(2) { &::before { @extend .svg-pound;} }
-    dt:nth-of-type(3) { &::before { @extend .svg-bank;} }
-    dt:nth-of-type(4) { &::before { @extend .svg-coins;} }
-  }
-
-  &.list-2 {
-    dt:nth-of-type(1) { &::before { @extend .svg-rocket-lunch; } }
-    dt:nth-of-type(2) { &::before { @extend .svg-mobile-hand;} }
-    dt:nth-of-type(3) { &::before { @extend .svg-users-alt;} }
-    dt:nth-of-type(4) { &::before { @extend .svg-palette;} }
-  }
-
-  &.list-3 {
-    dt:nth-of-type(1) { &::before { @extend .svg-system-cloud; } }
-    dt:nth-of-type(2) { &::before { @extend .svg-auto-sync;} }
-    dt:nth-of-type(3) { &::before { @extend .svg-paper-plane-launch;} }
-  }
-
-  &.list-4 {
-    dt:nth-of-type(1) { &::before { @extend .svg-scale-comparison-alt; } }
-    dt:nth-of-type(2) { &::before { @extend .svg-remote-control-hand;} }
-    dt:nth-of-type(3) { &::before { @extend .svg-user-lock;} }
-    dt:nth-of-type(4) { &::before { @extend .svg-binary-lock;} }
-    dt:nth-of-type(5) { &::before { @extend .svg-european-union;} }
-  }
-
-  &.list-6 {
-    dt:nth-of-type(1) { &::before { @extend .svg-time-fast; } }
-    dt:nth-of-type(2) { &::before { @extend .svg-people-carry-box;} }
-    dt:nth-of-type(3) { &::before { @extend .svg-chart-line-up;} }
-  }
-}
-
-
-ul.flaticon-list {
+#layout-homepage #homepage-detail ul.flaticon-list {
   list-style: none;
-  margin: $gutter;
+  margin: $gutter * 2 $gutter;
   padding: 0;
   position: relative;
 
@@ -1286,10 +1226,51 @@ ul.flaticon-list {
     margin-bottom: $measure;
   }
 
+  &.list-1 {
+    li:nth-of-type(1) { &::before { @extend .svg-chart-tree; } }
+    li:nth-of-type(2) { &::before { @extend .svg-pound;} }
+    li:nth-of-type(3) { &::before { @extend .svg-bank;} }
+    li:nth-of-type(4) { &::before { @extend .svg-coins;} }
+  }
+
+  &.list-2 {
+    li:nth-of-type(1) { &::before { @extend .svg-rocket-lunch; } }
+    li:nth-of-type(2) { &::before { @extend .svg-mobile-hand;} }
+    li:nth-of-type(3) { &::before { @extend .svg-users-alt;} }
+    li:nth-of-type(4) { &::before { @extend .svg-palette;} }
+  }
+
+  &.list-3 {
+    li:nth-of-type(1) { &::before { @extend .svg-system-cloud; } }
+    li:nth-of-type(2) { &::before { @extend .svg-auto-sync;} }
+    li:nth-of-type(3) { &::before { @extend .svg-paper-plane-launch;} }
+  }
+
+  &.list-4 {
+    li:nth-of-type(1) { &::before { @extend .svg-scale-comparison-alt; } }
+    li:nth-of-type(2) { &::before { @extend .svg-remote-control-hand;} }
+    li:nth-of-type(3) { &::before { @extend .svg-user-lock;} }
+    li:nth-of-type(4) { &::before { @extend .svg-binary-lock;} }
+    li:nth-of-type(5) { &::before { @extend .svg-european-union;} }
+  }
+
   &.list-5 {
     li:nth-of-type(1) { &::before { @extend .svg-fail; } }
     li:nth-of-type(2) { &::before { @extend .svg-face-confused;} }
     li:nth-of-type(3) { &::before { @extend .svg-duration-alt;} }
     li:nth-of-type(4) { &::before { @extend .svg-chart-arrow-down;} }
+  }
+
+  &.list-6 {
+    li:nth-of-type(1) { &::before { @extend .svg-time-fast; } }
+    li:nth-of-type(2) { &::before { @extend .svg-people-carry-box;} }
+    li:nth-of-type(3) { &::before { @extend .svg-chart-line-up;} }
+  }
+
+  @media (min-width: $viewport-tablet) {
+    margin: $gutter * 2 $gutter * 3 $gutter * 2 $gutter * 3;
+  }
+  @media (min-width: $viewport-wide) {
+    margin: $gutter * 2 $gutter * 4 $gutter * 2 $gutter * 4;
   }
 }
