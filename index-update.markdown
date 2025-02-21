@@ -28,18 +28,11 @@ themselves:
 How do we achieve this? The **Join** platform delivers frictionless forms that are crafted to guide applicants 
 to completion with minimal effort – while still capturing all the essential information your union needs:
 
-Conditional questions
-: Tailor the journey to each applicant with branching logic
-
-Perfect rate calculations
-: Take accurate membership fees based on **your** rules
-
-Flexible payment methods
-: Offer appropriate and secure payment options for members with Direct Debit & Deduction at Source  
-
-Political levies
-: Handle opt-ins with ease
-{:.list-1}
+- **Conditional questions** – tailor the journey to each applicant with branching logic
+- **Perfect rate calculations** - take accurate membership fees based on **your** rules
+- **Flexible payment methods** - offer appropriate and secure payment options for members with Direct Debit & Deduction at Source
+- **Political levies** - handle opt-ins with ease
+{:.flaticon-list.list-1}
 
 Your union is unique. Whatever your rules, rates and requirements, **Join** handles them effortlessly.
 
@@ -57,18 +50,11 @@ Your union is unique. Whatever your rules, rates and requirements, **Join** hand
 
 Our forms aren’t just functional, they’re designed to delight.
 
-Fast and simple
-: Simplify applications for your members. One thing per page. More finished applications
-
-Mobile-first, desktop-ready
-: Give your members a smooth, reliable experience on any device
-
-Fully accessible
-: Meet web accessibility standards – _everyone_ can **Join**
-
-Beautifully branded
-: Integrate seamlessly with your website for a consistent look
-{:.list-2}
+- **Fast and simple** – simplify applications for your members. One thing per page. More finished applications
+- **Mobile-first, desktop-ready** – give your members a smooth, reliable experience on any device
+- **Fully accessible** – meet web accessibility standards – _everyone_ can **Join**
+- **Beautifully branded** – integrate seamlessly with your website for a consistent look
+{:.flaticon-list.list-2}
 
 A better join form means more members and less admin. By removing friction, more people complete their applications,
 helping your union grow. At the same time, smarter forms capture more accurate data, reducing processing time and costs.
@@ -86,15 +72,10 @@ helping your union grow. At the same time, smarter forms capture more accurate d
 Your membership database is the backbone of your union’s organising and servicing. That’s why the **Join** platform
 integrates seamlessly with your existing CRM, keeping your processes intact.
 
-Works with your current system
-: Integrate with Salesforce, Dynamics 365, APT Stratum, iMIS, and more
-
-Real-time data syncing
-: Ensure accurate records and smooth processing of applications
-
-Future-proof flexibility
-: Switching CRMs? **Join** moves with you. No costly rebuilds
-{:.list-3}
+- **Works with your current system** – integrate with Salesforce, Dynamics 365, APT Stratum, iMIS, and more
+- **Real-time data syncing** – ensure accurate records and smooth processing of applications
+- **Future-proof flexibility** – switching CRMs? **Join** moves with you. No costly rebuilds
+{:.flaticon-list.list-3}
 
 <!-- Social proof from a union that has gone through a CRM migration, again to be signed-off -->
 <figure class="quote cwu">
@@ -111,21 +92,12 @@ Future-proof flexibility
 We know unions handle sensitive member data and have strict legal obligations. That’s why **Join** is
 built from the ground up to help unions meet their data protection responsibilities with confidence.
 
-GDPR-compliant
-: Lawful, fair, and transparent data processing
-
-Full control
-: Clear retention policies and automated redaction to protect member privacy
-
-Privacy-first design
-: Secure storage, controlled access, and security audits
-
-End-to-end encryption
-: Data encrypted in transit and at rest for maximum security
-
-EU-based hosting
-: Data stored on secure EU servers, ensuring compliance with data residency requirements
-{:.list-4}
+- **GDPR-compliant** – lawful, fair, and transparent data processing
+- **Full control** – clear retention policies and automated redaction to protect member privacy
+- **Privacy-first design** – secure storage, controlled access, and security audits
+- **End-to-end encryption** – data encrypted in transit and at rest for maximum security
+- **EU-based hosting** – data stored on secure EU servers, ensuring compliance with data residency requirements
+{:.flaticon-list.list-4}
 
 
 With **Join** your union can be confident that every application is handled 
@@ -200,14 +172,11 @@ needs.
     and easy-to-use web service that lets members update their own details in seconds.
   </p>
 
-  <dl class="list-6">
-    <dt>Members update their own details in seconds</dt>
-    <dd>Reduce team admin. Updates are instant and secure</dd>
-    <dt>Better engagement, stronger organising</dt>
-    <dd>Stay accurate. Reduce member frustration</dd>
-    <dt>Lower costs, higher retention</dt>
-    <dd>Minimise wasted resources and lost revenue</dd>
-  </dl>
+  <ul class="flaticon-list list-6">
+    <li><strong>Members update their own details in seconds</strong> – reduce team admin. Updates are instant and secure</li>
+    <li><strong>Better engagement, stronger organising</strong> – stay accurate. Reduce member frustration</li>
+    <li><strong>Lower costs, higher retention</strong>– minimise wasted resources and lost revenue</li>
+  </ul>
 
   <p>
     The NEU is using <strong>Update:Upgrade</strong> to enable student members to automatically update their records
