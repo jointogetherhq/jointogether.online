@@ -628,6 +628,11 @@ header {
     h2 {
       @include font-medium-large();
       font-weight: 800;
+
+      // An alternative to <sections> for the homepage
+      &:not(:first-of-type) {
+        margin-top: $measure * 3.5;
+      }
     }
     h3 {
       @include font-medium-small();
