@@ -5,9 +5,9 @@ description:
   Join Together designs and builds member-centric digital tools and services
   that help trade union gain and retain more members.
 paragraphs:
-  - text: 'Maximise your union’s growth with member-centric services that work'
-  - text: 'Recruit more members with the best online join experience'
-  - text: 'Retain more members with Update:Upgrade'
+  - text: 'Unlock your union’s growth with smarter, member-first services'
+  - text: 'Get more members with the best online join experience'
+  - text: 'Keep more members with Update:Upgrade'
 ---
 
 <!-- Start with focus on our current headline feature: drastic improvement in conversion -->
