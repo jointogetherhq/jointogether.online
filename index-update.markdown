@@ -5,9 +5,9 @@ description:
   Join Together designs and builds member-centric digital tools and services
   that help trade union gain and retain more members.
 paragraphs:
-  - text: 'Maximise your union’s growth with member-centric services that work'
-  - text: 'Recruit more members with the best online join experience'
-  - text: 'Retain more members with Update:Upgrade'
+  - text: 'Unlock your union’s growth with smarter, member-first services'
+  - text: 'Get more members with the best online join experience'
+  - text: 'Keep more members with Update:Upgrade'
 ---
 
 <!-- Start with focus on our current headline feature: drastic improvement in conversion -->
@@ -17,7 +17,7 @@ We design, develop, and deliver high-performing online join forms that help unio
 themselves:
 
 <!-- First bit of social proof. Actual quote and photo needs signing off from Scarlet -->
-<figure class="quote">
+<figure class="quote neu">
   <img class="avatar" src="/assets/images/people/scarlet-harris.jpg" alt="">
 
   <blockquote>There's been a 60% improvement in completion rates for our online join. We couldn't be happier.</blockquote>
@@ -25,22 +25,19 @@ themselves:
 </figure>
 
 <!-- Talk a bit about being user and user-experience focused -->
-How do we achieve this? By crafting frictionless forms that guide applicants effortlessly to completion while still
-capturing all the essential information your union needs.
+How do we achieve this? The **Join** platform delivers frictionless forms that are crafted to guide applicants 
+to completion with minimal effort – while still capturing all the essential information your union needs:
 
-The **Join** platform adapts to your specific needs, whether that includes:
+- **Conditional questions** – tailor the journey to each applicant with branching logic
+- **Perfect rate calculations** - take accurate membership fees based on **your** rules
+- **Flexible payment methods** - offer appropriate and secure payment options for members with Direct Debit & Deduction at Source
+- **Political levies** - handle opt-ins with ease
+{:.flaticon-list.list-1}
 
-<ul class="emoji-list list-1">
-  <li><strong>Conditional questions and branching logic</strong> — tailoring the journey to each applicant</li>
-  <li><strong>Complex rate calculations</strong> — ensuring accurate membership fees based on rules you define</li>
-  <li><strong>Direct Debit and Deduction at Source</strong> — offering appropriate and secure payment options for members</li>
-  <li><strong>Political levies</strong> — handling optional opt-ins with ease</li>
-</ul>
-
-Whatever the particular peculiarities of your union, **Join** can handle them without a sweat.
+Your union is unique. Whatever your rules, rates and requirements, **Join** handles them effortlessly.
 
 <!-- More social proof (tbc) — do we need this to have a specific focus? -->
-<figure class="quote">
+<figure class="quote forsa">
   <img class="avatar" src="/assets/images/people/sean-mcElhinney.jpg" alt="">
 
   <blockquote>Join Together have played a pivotal role in helping the union grow over the last few years, and continue
@@ -51,14 +48,13 @@ Whatever the particular peculiarities of your union, **Join** can handle them wi
 <!-- Talk about how great the experience is for all -->
 ## A seamless online join experience for all members
 
-Our forms aren’t just functional, they’re designed to delight:
+Our forms aren’t just functional, they’re designed to delight.
 
-<ul class="emoji-list list-2">
-  <li><strong>Optimised for speed and simplicity</strong> — guiding users effortlessly from start to finish</li>
-  <li><strong>Mobile-friendly and desktop-ready</strong> — ensuring a smooth experience on any device</li>
-  <li><strong>Fully accessible</strong> — because everyone should be able to join your union, regardless of their accessibility needs</li>
-  <li><strong>Beautifully branded</strong> — seamlessly integrating with your website for a consistent look</li>
-</ul>
+- **Fast and simple** – simplify applications for your members. One thing per page. More finished applications
+- **Mobile-first, desktop-ready** – give your members a smooth, reliable experience on any device
+- **Fully accessible** – meet web accessibility standards – _everyone_ can **Join**
+- **Beautifully branded** – integrate seamlessly with your website for a consistent look
+{:.flaticon-list.list-2}
 
 A better join form means more members and less admin. By removing friction, more people complete their applications,
 helping your union grow. At the same time, smarter forms capture more accurate data, reducing processing time and costs.
@@ -76,14 +72,13 @@ helping your union grow. At the same time, smarter forms capture more accurate d
 Your membership database is the backbone of your union’s organising and servicing. That’s why the **Join** platform
 integrates seamlessly with your existing CRM, keeping your processes intact.
 
-<ul class="emoji-list list-3">
-  <li><strong>Works with your current system</strong> — integrates with Salesforce, Dynamics 365, APT Stratum, iMIS, and more</li>
-  <li><strong>Real-time data syncing</strong> — ensuring accurate records and smooth processing of applications</li>
-  <li><strong>Future-proof flexibility</strong> — if you switch CRMs, <strong>Join</strong> moves with you, no costly rebuilds needed</li>
-</ul>
+- **Works with your current system** – integrate with Salesforce, Dynamics 365, APT Stratum, iMIS, and more
+- **Real-time data syncing** – ensure accurate records and smooth processing of applications
+- **Future-proof flexibility** – switching CRMs? **Join** moves with you. No costly rebuilds
+{:.flaticon-list.list-3}
 
 <!-- Social proof from a union that has gone through a CRM migration, again to be signed-off -->
-<figure class="quote">
+<figure class="quote cwu">
   <img class="avatar" src="/assets/images/people/dave-ward.jpg" alt="">
 
   <blockquote>Join Together were critical in making our CRM migration a success. We were able to keep accepting and
@@ -94,24 +89,22 @@ integrates seamlessly with your existing CRM, keeping your processes intact.
 <!-- A bit of a grab bag about security, performance and hosting... -->
 ## Security and data protection at its core
 
-We know unions handle sensitive member data and have strict legal obligations. That’s why the **Join** platform is
+We know unions handle sensitive member data and have strict legal obligations. That’s why **Join** is
 built from the ground up to help unions meet their data protection responsibilities with confidence.
 
-<ul class="emoji-list list-4">
-  <li><strong>GDPR-compliant by design</strong> — ensuring lawful, fair, and transparent data processing</li>
-  <li><strong>Full control</strong> — clear retention policies and automated redaction to protect member privacy</li>
-  <li><strong>Privacy-first architecture</strong> — secure storage, controlled access, and security audits</li>
-  <li><strong>End-to-end encryption</strong> — application data is encrypted in transit and at rest for maximum security</li>
-  <li><strong>EU-based hosting</strong> — all data is stored on secure EU servers, ensuring compliance with data residency requirements</li>
-</ul>
+- **GDPR-compliant** – lawful, fair, and transparent data processing
+- **Full control** – clear retention policies and automated redaction to protect member privacy
+- **Privacy-first design** – secure storage, controlled access, and security audits
+- **End-to-end encryption** – data encrypted in transit and at rest for maximum security
+- **EU-based hosting** – data stored on secure EU servers, ensuring compliance with data residency requirements
+{:.flaticon-list.list-4}
 
-With **Join** your union can be confident that every application is handled securely, responsibly, and in compliance
-with data protection laws.
 
-**[Learn more about our security and data policies](/information-security)**
+With **Join** your union can be confident that every application is handled 
+[securely, responsibly, and **in compliance with data protection laws**](/information-security).
 
 <!-- Final bit of social proof, content tbc -->
-<figure class="quote">
+<figure class="quote bfawu">
   <img class="avatar" src="/assets/images/people/sarah-woolley.jpg" alt="">
 
   <blockquote>Partnering with Join Together has transformed how people join BFAWU. Their intuitive online join form
@@ -125,12 +118,11 @@ Join Together Co-operative is a [team of technologists](/team/) with a passion f
 experience delivering world-class digital services, we understand the unique challenges unions face and we build
 solutions that help them grow.
 
-<div class="union-logos">
-  <a href="https://neu.org.uk"><img alt="National Education Union" src="/assets/images/logos/neu-logo.svg"></a>
-  <a href="https://cwu.org"><img alt="Communication Workers Union" src="/assets/images/logos/cwu-logo.svg"></a>
-  <a href="https://bfawu.org"><img alt="Bakers Food and Allied Workers Union" src="/assets/images/logos/bfawu-logo.png"></a>
-  <a href="https://www.forsa.ie"><img alt="Forsa the Irish Trade Union" src="/assets/images/logos/forsa-logo.png"></a>
-</div>
+- [![National Education Union](/assets/images/logos/neu-logo.svg)](https://neu.org.uk)
+- [![Communication Workers Union](/assets/images/logos/cwu-logo.svg)](https://cwu.org)
+- [![Bakers Food and Allied Workers Union](/assets/images/logos/bfawu-logo.png)](https://bfawu.org)
+- [![Forsa the Irish Trade Union](/assets/images/logos/forsa-logo.png)](https://www.forsa.ie)
+{:.union-logos}
 
 <!-- Final heading and call to action... -->
 ## Grow your union smarter with Join Together
@@ -146,21 +138,21 @@ needs.
 </nav>
 
 <div class="callout">
-  <h2>Update:Upgrade — the simpler way to keep member data up-to-date</h2>
+  <h2>Update:Upgrade — the simpler way to keep member data up to date</h2>
 
   <p>
     Outdated and inaccurate member data is a costly headache for unions. It wastes time, drains resources, and makes organising harder:
   </p>
 
-  <ul class="emoji-list list-5">
-    <li><strong>Ballots go undelivered</strong> — reducing turnout and wasting money</li>
-    <li><strong>Poor communication frustrates members</strong> — weakening engagement and increasing the risk of churn</li>
-    <li><strong>Staff waste hours chasing updates</strong> — instead of focusing on organising and servicing members</li>
-    <li><strong>Incorrect records mean lost revenue</strong> — from members paying the wrong subs or not paying at all</li>
+  <ul class="flaticon-list list-5">
+    <li><strong>Ballots go undelivered</strong>, reducing turnout and wasting money</li>
+    <li><strong>Poor communication frustrates members</strong>, weakening engagement and increasing churn</li> 
+    <li><strong>Staff waste hours chasing updates</strong>, instead of focusing on organising and servicing members</li>
+    <li><strong>Incorrect records mean lost revenue</strong>, from members paying the wrong subs or not paying at all</li>
   </ul>
 
   <p>
-    Keeping member data up-to-date isn’t just admin — it’s essential for a stronger, more effective union.
+    Keeping member data up to date isn’t just admin — it’s essential for a stronger, more effective union.
   </p>
 
   <h3>Member Portals Don’t Work</h3>
@@ -173,17 +165,17 @@ needs.
     One union we work with found that <em>“forgot password”</em> was the <strong>second most visited page</strong> on their website—a clear sign of frustration. Worse, when unions urgently need accurate data (such as before a ballot), they scramble to update records with mass emails, calls, and spreadsheets, overloading staff and delaying critical work.
   </p>
 
-  <h3>Meet Update:Upgrade — The hassle-free and cost-effective way to maintain up-to-date member data</h3>
+  <h3>Meet Update:Upgrade, the hassle-free and cost-effective way to maintain up-to-date member data</h3>
 
   <p>
     We built <strong>Update:Upgrade</strong> to make keeping member data up-to-date effortless. It’s a simple, secure,
     and easy-to-use web service that lets members update their own details in seconds.
   </p>
 
-  <ul class="emoji-list list-6">
-    <li><strong>Members update their own details in seconds</strong> — updates happen securely and instantly, reducing admin for your team</li>
-    <li><strong>Better engagement, stronger organising</strong> — keeping your records fresh and accurate</li>
-    <li><strong>Lower costs, higher retention</strong> — minimising wasted resources and lost revenue</li>
+  <ul class="flaticon-list list-6">
+    <li><strong>Members update their own details in seconds</strong> – reduce team admin. Updates are instant and secure</li>
+    <li><strong>Better engagement, stronger organising</strong> – stay accurate. Reduce member frustration</li>
+    <li><strong>Lower costs, higher retention</strong>– minimise wasted resources and lost revenue</li>
   </ul>
 
   <p>
@@ -192,7 +184,7 @@ needs.
     costs and manual processing.
   </p>
 
-  <figure class="quote">
+  <figure class="quote neu">
     <img class="avatar" src="/assets/images/people/scarlet-harris.jpg" alt="">
     <blockquote>The upgrade service Join Together built for us helps us retain more members and has reduced costs.</blockquote>
     <figcaption>Scarlet Harris, Recruitment and Retention Strategy Manager, <a href="https://neu.org.uk">NEU</a></figcaption>

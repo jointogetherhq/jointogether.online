@@ -25,6 +25,8 @@
 @import url("//hello.myfonts.net/count/4a3fe4");
 @import url("//hello.myfonts.net/count/4a4a37");
 
+@import "./sprite";
+
 @font-face {
   font-family: "JoinTogether";
   font-style: normal;
@@ -77,6 +79,13 @@ $max-width-wide: 31em;
 $corner-radius: 13px;
 $transition: 0.3s ease;
 
+// Tenant-specific colours
+
+$bfawu-primary: #DE333A;
+$cwu-primary:   #ff0076;
+$forsa-primary: #3d8a94;
+$neu-primary:   #8f8bb7;
+
 @-webkit-keyframes homepage-graphic-ripple {
   0% { background-position: 30% 70% }
   50% { background-position: 80% 20% }
@@ -90,7 +99,7 @@ $transition: 0.3s ease;
 @mixin font-core {
   font-family: JoinTogether, sans-serif;
   font-size: $measure*0.9;
-  line-height: $baseline*0.95;
+  line-height: $baseline*0.97;
   font-weight: 700;
   letter-spacing: 0.01em;
   @media (min-width: $viewport-tablet) {
@@ -113,6 +122,21 @@ $transition: 0.3s ease;
   line-height: $baseline *1.5;
   font-weight: 700;
   letter-spacing: 0;
+}
+
+@mixin font-medium-large {
+  font-size: $measure * 1.5;
+  line-height: $baseline * 1.5;
+  font-weight: 800;
+  letter-spacing: 0;
+  @media (min-width: $viewport-tablet) {
+    font-size: $measure * 2;
+    line-height: $baseline * 2;
+  }
+  @media (min-width: $viewport-wide) {
+    font-size: $measure * 2.5;
+    line-height: $baseline * 2.2;
+  }
 }
 
 @mixin font-large {
@@ -363,7 +387,11 @@ $transition: 0.3s ease;
   }
 }
 
-
+@mixin union-quote($color) {
+  border-left: 0.5em solid $color;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0
+}
 
 // BASE STYLES
 
@@ -596,8 +624,12 @@ header {
       margin-bottom: $gutter;
     }
     h2 {
-      @include font-medium();
-      font-weight: 800;
+      @include font-medium-large();
+
+      // An alternative to <sections> for the homepage
+      &:not(:first-of-type) {
+        margin-top: $measure * 3.5;
+      }
     }
     h3 {
       @include font-medium-small();
@@ -1114,6 +1146,17 @@ blockquote {
 }
 .quote figcaption a { font-weight: 800; }
 
+.quote {
+  &.bfawu { @include union-quote($bfawu-primary) }
+  &.neu   { @include union-quote($neu-primary) }
+  &.forsa { @include union-quote($forsa-primary) }
+  &.cwu   { @include union-quote($cwu-primary) }
+}
+
+.callout .quote {
+  background-color: white;
+}
+
 img.avatar {
   width: 100px;
   height: 100px;
@@ -1127,7 +1170,9 @@ video {
   margin: 2em 0;
 }
 
-.union-logos {
+ul.union-logos {
+  list-style-type: none;
+  margin-top: $measure * 2;
   display: flex;
   justify-content: space-between;
 
@@ -1140,7 +1185,6 @@ video {
     @media (min-width: $viewport-tablet) {
       height: $baseline*3;
     }
-
   }
   :hover {
     img:hover {
@@ -1164,43 +1208,71 @@ video {
   h2:first-child { margin-top: $baseline*0.5; }
 }
 
-.emoji-list {
+#layout-homepage #homepage-detail ul.flaticon-list {
   list-style: none;
+  margin: $gutter * 2 $gutter;
   padding: 0;
-  margin: 0;
+  position: relative;
+
+  li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+  }
+
+  li {
+    padding-left: 2em; // leave room for the icon
+    margin-bottom: $measure;
+  }
+
+  &.list-1 {
+    li:nth-of-type(1) { &::before { @extend .svg-chart-tree; } }
+    li:nth-of-type(2) { &::before { @extend .svg-pound;} }
+    li:nth-of-type(3) { &::before { @extend .svg-bank;} }
+    li:nth-of-type(4) { &::before { @extend .svg-coins;} }
+  }
+
+  &.list-2 {
+    li:nth-of-type(1) { &::before { @extend .svg-rocket-lunch; } }
+    li:nth-of-type(2) { &::before { @extend .svg-mobile-hand;} }
+    li:nth-of-type(3) { &::before { @extend .svg-users-alt;} }
+    li:nth-of-type(4) { &::before { @extend .svg-palette;} }
+  }
+
+  &.list-3 {
+    li:nth-of-type(1) { &::before { @extend .svg-system-cloud; } }
+    li:nth-of-type(2) { &::before { @extend .svg-auto-sync;} }
+    li:nth-of-type(3) { &::before { @extend .svg-paper-plane-launch;} }
+  }
+
+  &.list-4 {
+    li:nth-of-type(1) { &::before { @extend .svg-scale-comparison-alt; } }
+    li:nth-of-type(2) { &::before { @extend .svg-remote-control-hand;} }
+    li:nth-of-type(3) { &::before { @extend .svg-user-lock;} }
+    li:nth-of-type(4) { &::before { @extend .svg-binary-lock;} }
+    li:nth-of-type(5) { &::before { @extend .svg-european-union;} }
+  }
+
+  &.list-5 {
+    li:nth-of-type(1) { &::before { @extend .svg-fail; } }
+    li:nth-of-type(2) { &::before { @extend .svg-face-confused;} }
+    li:nth-of-type(3) { &::before { @extend .svg-duration-alt;} }
+    li:nth-of-type(4) { &::before { @extend .svg-chart-arrow-down;} }
+  }
+
+  &.list-6 {
+    li:nth-of-type(1) { &::before { @extend .svg-time-fast; } }
+    li:nth-of-type(2) { &::before { @extend .svg-people-carry-box;} }
+    li:nth-of-type(3) { &::before { @extend .svg-chart-line-up;} }
+  }
+
+  @media (min-width: $viewport-tablet) {
+    margin: $gutter * 2 $gutter * 3 $gutter * 2 $gutter * 3;
+  }
+  @media (min-width: $viewport-wide) {
+    margin: $gutter * 2 $gutter * 4 $gutter * 2 $gutter * 4;
+  }
 }
-
-.emoji-list li {
-  padding-left: 1.5rem;
-  text-indent: -1.5rem;
-  margin-top: $gutter*0.5;
-}
-
-.list-1 li:before { content: '✅ '; }
-.list-1 li:nth-child(2):before { content: '💰 '; }
-.list-1 li:nth-child(3):before { content: '🏦 '; }
-.list-1 li:nth-child(4):before { content: '🏛️ '; }
-
-.list-2 li:before { content: '🚀 '; }
-.list-2 li:nth-child(2):before { content: '📱 '; }
-.list-2 li:nth-child(3):before { content: '🌍 '; }
-.list-2 li:nth-child(4):before { content: '🎨 '; }
-
-.list-3 li:before { content: '🔄 '; }
-.list-3 li:nth-child(2):before { content: '⚡ '; }
-.list-3 li:nth-child(3):before { content: '🔗 '; }
-
-.list-4 li:before { content: '🔐 '; }
-.list-4 li:nth-child(2):before { content: '📜 '; }
-.list-4 li:nth-child(3):before { content: '🛠 '; }
-.list-4 li:nth-child(4):before { content: '🔑 '; }
-.list-4 li:nth-child(4):before { content: '🌍 '; }
-
-.list-5 li:before { content: '📬 '; }
-.list-5 li:nth-child(2):before { content: '📢 '; }
-.list-5 li:nth-child(3):before { content: '⏳ '; }
-.list-5 li:nth-child(4):before { content: '💸 '; }
-
-.list-6 li:before { content: '🔄 '; }
-.list-6 li:nth-child(2):before { content: '📈 '; }
-.list-6 li:nth-child(3):before { content: '💰 '; }

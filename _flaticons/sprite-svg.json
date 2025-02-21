@@ -1,0 +1,14 @@
+{
+  "mode": {
+    "css": {
+      "dest": "assets",
+      "sprite": "images/flaticons-sprite.svg",
+      "bust": false,
+      "render": {
+        "scss": {
+          "dest": "sprite.scss"
+        }
+      }
+    }
+  }
+}
