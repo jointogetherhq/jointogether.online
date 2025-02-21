@@ -118,10 +118,10 @@ Join Together Co-operative is a [team of technologists](/team/) with a passion f
 experience delivering world-class digital services, we understand the unique challenges unions face and we build
 solutions that help them grow.
 
-- [![National Education Union](/assets/images/logos/neu-logo.svg){:.larger} ](https://neu.org.uk)
+- [![National Education Union](/assets/images/logos/neu-logo.svg)](https://neu.org.uk)
 - [![Communication Workers Union](/assets/images/logos/cwu-logo.svg)](https://cwu.org)
 - [![Bakers Food and Allied Workers Union](/assets/images/logos/bfawu-logo.png)](https://bfawu.org)
-- [![Forsa the Irish Trade Union](/assets/images/logos/forsa-logo.png){:.larger} ](https://www.forsa.ie)
+- [![Forsa the Irish Trade Union](/assets/images/logos/forsa-logo.png)](https://www.forsa.ie)
 {:.union-logos}
 
 <!-- Final heading and call to action... -->

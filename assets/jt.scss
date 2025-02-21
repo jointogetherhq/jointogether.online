@@ -1186,9 +1186,6 @@ ul.union-logos {
     @media (min-width: $viewport-tablet) {
       height: $baseline*3;
     }
-    &.larger {
-      height: $baseline*3.2;
-    }
   }
   :hover {
     img:hover {
