@@ -125,10 +125,18 @@ $neu-primary:   #8f8bb7;
 }
 
 @mixin font-medium-large {
-  font-size: $measure * 2.5;
-  line-height: $baseline * 2;
+  font-size: $measure * 1.5;
+  line-height: $baseline * 1.5;
   font-weight: 700;
   letter-spacing: 0;
+  @media (min-width: $viewport-tablet) {
+    font-size: $measure * 2;
+    line-height: $baseline * 2;
+  }
+  @media (min-width: $viewport-wide) {
+    font-size: $measure * 2.5;
+    line-height: $baseline * 2.2;
+  }
 }
 
 @mixin font-large {
