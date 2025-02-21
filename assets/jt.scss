@@ -127,7 +127,7 @@ $neu-primary:   #8f8bb7;
 @mixin font-medium-large {
   font-size: $measure * 1.5;
   line-height: $baseline * 1.5;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0;
   @media (min-width: $viewport-tablet) {
     font-size: $measure * 2;
@@ -625,7 +625,6 @@ header {
     }
     h2 {
       @include font-medium-large();
-      font-weight: 800;
 
       // An alternative to <sections> for the homepage
       &:not(:first-of-type) {
