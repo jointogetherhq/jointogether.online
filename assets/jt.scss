@@ -22,8 +22,6 @@
  *
  * © 2022 MyFonts Inc
 */
-@use "sass:color";
-
 @import url("//hello.myfonts.net/count/4a3fe4");
 @import url("//hello.myfonts.net/count/4a4a37");
 
@@ -353,7 +351,7 @@ $transition: 0.3s ease;
   padding: $gutter;
   height: $baseline;
   color: $page;
-  background: color.adjust($text, $lightness: 30%);
+  background: lighten($text, 30%);
   border-radius: $corner-radius;
   text-decoration: none;
   text-align: center;
