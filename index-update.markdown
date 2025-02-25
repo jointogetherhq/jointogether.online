@@ -77,7 +77,7 @@ integrates seamlessly with your existing CRM, keeping your processes intact.
 - **Future-proof flexibility** – switching CRMs? **Join** moves with you. No costly rebuilds
 {:.flaticon-list.list-3}
 
-<!-- Social proof from a union that has gone through a CRM migration, again to be signed-off -->
+<!-- Social proof from a union that has gone through a CRM migration
 <figure class="quote cwu">
   <img class="avatar" src="/assets/images/people/dave-ward.jpg" alt="">
 
@@ -85,6 +85,7 @@ integrates seamlessly with your existing CRM, keeping your processes intact.
   processing online applications with minimal headaches.</blockquote>
   <figcaption>Dave Ward, General Secretary, <a href="https://www.cwu.org">CWU</a></figcaption>
 </figure>
+-->
 
 <!-- A bit of a grab bag about security, performance and hosting... -->
 ## Security and data protection at its core
