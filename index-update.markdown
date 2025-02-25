@@ -20,12 +20,12 @@ themselves:
 <figure class="quote neu">
   <img class="avatar" src="/assets/images/people/scarlet-harris.jpg" alt="">
 
-  <blockquote>There's been a 60% improvement in completion rates for our online join. We couldn't be happier.</blockquote>
+  <blockquote>We’ve seen a 60% improvement in completion rates for people joining the NEU online</blockquote>
   <figcaption>Scarlet Harris, Recruitment and Retention Strategy Manager, <a href="https://neu.org.uk">NEU</a></figcaption>
 </figure>
 
 <!-- Talk a bit about being user and user-experience focused -->
-How do we achieve this? The **Join** platform delivers frictionless forms that are crafted to guide applicants 
+How do we achieve this? The **Join** platform delivers frictionless forms that are crafted to guide applicants
 to completion with minimal effort – while still capturing all the essential information your union needs:
 
 - **Conditional questions** – tailor the journey to each applicant with branching logic
@@ -100,7 +100,7 @@ built from the ground up to help unions meet their data protection responsibilit
 {:.flaticon-list.list-4}
 
 
-With **Join** your union can be confident that every application is handled 
+With **Join** your union can be confident that every application is handled
 [securely, responsibly, and **in compliance with data protection laws**](/information-security).
 
 <!-- Final bit of social proof, content tbc -->
@@ -146,7 +146,7 @@ needs.
 
   <ul class="flaticon-list list-5">
     <li><strong>Ballots go undelivered</strong>, reducing turnout and wasting money</li>
-    <li><strong>Poor communication frustrates members</strong>, weakening engagement and increasing churn</li> 
+    <li><strong>Poor communication frustrates members</strong>, weakening engagement and increasing churn</li>
     <li><strong>Staff waste hours chasing updates</strong>, instead of focusing on organising and servicing members</li>
     <li><strong>Incorrect records mean lost revenue</strong>, from members paying the wrong subs or not paying at all</li>
   </ul>
