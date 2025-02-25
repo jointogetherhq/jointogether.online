@@ -16,7 +16,7 @@ paragraphs:
 We design, develop, and deliver high-performing online join forms that help unions grow. The results speak for
 themselves:
 
-<!-- First bit of social proof. Actual quote and photo needs signing off from Scarlet -->
+<!-- First bit of social proof -->
 <figure class="quote neu">
   <img class="avatar" src="/assets/images/people/scarlet-harris.jpg" alt="">
 
@@ -36,7 +36,7 @@ to completion with minimal effort – while still capturing all the essential in
 
 Your union is unique. Whatever your rules, rates and requirements, **Join** handles them effortlessly.
 
-<!-- More social proof (tbc) — do we need this to have a specific focus? -->
+<!-- More social proof -->
 <figure class="quote forsa">
   <img class="avatar" src="/assets/images/people/sean-mcElhinney.jpg" alt="">
 
@@ -104,7 +104,7 @@ built from the ground up to help unions meet their data protection responsibilit
 With **Join** your union can be confident that every application is handled
 [securely, responsibly, and **in compliance with data protection laws**](/information-security).
 
-<!-- Final bit of social proof, content tbc -->
+<!-- Final bit of social proof-->
 <figure class="quote bfawu">
   <img class="avatar" src="/assets/images/people/sarah-woolley.jpg" alt="">
 
