@@ -27,6 +27,8 @@
 @import url("//hello.myfonts.net/count/4a3fe4");
 @import url("//hello.myfonts.net/count/4a4a37");
 
+@import "./sprite";
+
 @font-face {
   font-family: "JoinTogether";
   font-style: normal;
@@ -79,6 +81,13 @@ $max-width-wide: 31em;
 $corner-radius: 13px;
 $transition: 0.3s ease;
 
+// Tenant-specific colours
+
+$bfawu-primary: #DE333A;
+$cwu-primary:   #ff0076;
+$forsa-primary: #3d8a94;
+$neu-primary:   #8f8bb7;
+
 @-webkit-keyframes homepage-graphic-ripple {
   0% { background-position: 30% 70% }
   50% { background-position: 80% 20% }
@@ -92,7 +101,7 @@ $transition: 0.3s ease;
 @mixin font-core {
   font-family: JoinTogether, sans-serif;
   font-size: $measure*0.9;
-  line-height: $baseline*0.95;
+  line-height: $baseline*0.97;
   font-weight: 700;
   letter-spacing: 0.01em;
   @media (min-width: $viewport-tablet) {
@@ -115,6 +124,21 @@ $transition: 0.3s ease;
   line-height: $baseline *1.5;
   font-weight: 700;
   letter-spacing: 0;
+}
+
+@mixin font-medium-large {
+  font-size: $measure * 1.5;
+  line-height: $baseline * 1.5;
+  font-weight: 800;
+  letter-spacing: 0;
+  @media (min-width: $viewport-tablet) {
+    font-size: $measure * 2;
+    line-height: $baseline * 2;
+  }
+  @media (min-width: $viewport-wide) {
+    font-size: $measure * 2.5;
+    line-height: $baseline * 2.2;
+  }
 }
 
 @mixin font-large {
@@ -183,32 +207,6 @@ $transition: 0.3s ease;
   }
   @media (min-width: $viewport-wide) {
     grid-column: 2 / 6;
-  }
-}
-
-@mixin logo-images {
-  img {
-    display: inline-block;
-    width: auto;
-    height: $gutter*2;
-    margin: $gutter $gutter $gutter 0;
-    filter: saturate(0) contrast(120%);
-    border-bottom: 1px solid transparent;
-    padding-bottom: 5px;
-    cursor: pointer;
-  }
-  &:hover {
-    img {
-      border-bottom: 1px solid $highlight;
-      filter: saturate(100%) contrast(100%);
-    }
-  }
-  &:focus {
-    img {
-      border-bottom: 2px solid $highlight;
-      padding-bottom: 4px;
-      filter: saturate(100%) contrast(100%);
-    }
   }
 }
 
@@ -343,9 +341,6 @@ $transition: 0.3s ease;
     height: auto;
     margin: $gutter*2 0;
   }
-  p a {
-    @include logo-images();
-  }
 }
 
 @mixin button {
@@ -353,12 +348,12 @@ $transition: 0.3s ease;
   padding: $gutter;
   height: $baseline;
   color: $page;
-  background: color.adjust($text, $lightness: 30%);
+  background: color.adjust($highlight, $lightness: 10%);
   border-radius: $corner-radius;
   text-decoration: none;
   text-align: center;
   &:hover {
-    background: $text;
+    background: color.adjust($text, $lightness: 30%);
   }
   &:focus {
     outline: none;
@@ -394,7 +389,11 @@ $transition: 0.3s ease;
   }
 }
 
-
+@mixin union-quote($color) {
+  border-left: 0.5em solid $color;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0
+}
 
 // BASE STYLES
 
@@ -501,7 +500,7 @@ header {
       &:first-child {
         padding-top: $whitespace;
       }
-      &.last-child {
+      &:last-child {
         padding-bottom: $whitespace;
       }
       p {
@@ -565,7 +564,7 @@ header {
         &:nth-child(10) {
           grid-row: 10 / 11;
         }
-        &.last-child {
+        &:last-child {
           justify-self: center;
         }
       }
@@ -627,38 +626,16 @@ header {
       margin-bottom: $gutter;
     }
     h2 {
-      @include font-medium();
-      font-weight: 800;
+      @include font-medium-large();
+
+      // An alternative to <sections> for the homepage
+      &:not(:first-of-type) {
+        margin-top: $measure * 3.5;
+      }
     }
     h3 {
       @include font-medium-small();
       font-weight: 800;
-    }
-    ul {
-      list-style: none;
-      li {
-        position: relative;
-        padding-left: $gutter;
-        &+li {
-          margin-top: $gutter*0.5;
-        }
-        &:before {
-          content: "•";
-          display: inline-block;
-          position: relative;
-          margin-left: $gutter*-1;
-          width: $gutter;
-        }
-      }
-    }
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-      margin: $gutter*2 0;
-    }
-    p a {
-      @include logo-images();
     }
   }
   nav {
@@ -777,9 +754,6 @@ header {
         width: 100%;
         height: auto;
         margin: $gutter*2 0;
-      }
-      p a {
-        @include logo-images();
       }
       ol {
         list-style: none;
@@ -1133,5 +1107,174 @@ footer {
         white-space: nowrap;
       }
     }
+  }
+}
+
+
+/**
+ * Blockquotes
+ * Adapted from https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/
+ **/
+blockquote {
+  font-size: 105%;
+  font-weight: 800;
+  text-indent: -0.45em;
+}
+@supports ( hanging-punctuation: first) {
+  blockquote {
+    text-indent: 0;
+    hanging-punctuation: first;
+  }
+}
+blockquote::before {
+  content: open-quote;
+}
+blockquote::after {
+  content: close-quote;
+}
+blockquote {
+  quotes: "“" "”" "‘" "’";
+}
+.quote {
+  margin: 2em 0;
+  background: $light-shade;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  overflow: auto;
+}
+.quote figcaption,
+.quote blockquote {
+  margin: 1em;
+}
+.quote figcaption a { font-weight: 800; }
+
+.quote {
+  &.bfawu { @include union-quote($bfawu-primary) }
+  &.neu   { @include union-quote($neu-primary) }
+  &.forsa { @include union-quote($forsa-primary) }
+  &.cwu   { @include union-quote($cwu-primary) }
+}
+
+.callout .quote {
+  background-color: white;
+}
+
+img.avatar {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 0.5em 1em;
+  border-radius: 50%;
+}
+
+video {
+  background-color: white;
+  margin: 2em 0;
+}
+
+ul.union-logos {
+  list-style-type: none;
+  margin-top: $measure * 2;
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    display: inline-block;
+    width: auto;
+    height: $baseline*2;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 5px;
+    @media (min-width: $viewport-tablet) {
+      height: $baseline*3;
+    }
+  }
+  :hover {
+    img:hover {
+      border-bottom: 1px solid $highlight;
+    }
+  }
+  :focus {
+    img {
+      border-bottom: 2px solid $highlight;
+      padding-bottom: 4px;
+    }
+  }
+}
+
+#layout-homepage div.callout {
+  margin: 3em 0;
+  padding: $baseline*0.5 $baseline $baseline;
+  background: $light-shade;
+  border-radius: 1em;
+
+  h2:first-child { margin-top: $baseline*0.5; }
+}
+
+#layout-homepage #homepage-detail ul.flaticon-list {
+  list-style: none;
+  margin: $gutter * 2 $gutter;
+  padding: 0;
+  position: relative;
+
+  li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+  }
+
+  li {
+    padding-left: 2em; // leave room for the icon
+    margin-bottom: $measure;
+  }
+
+  &.list-1 {
+    li:nth-of-type(1) { &::before { @extend .svg-chart-tree; } }
+    li:nth-of-type(2) { &::before { @extend .svg-pound;} }
+    li:nth-of-type(3) { &::before { @extend .svg-bank;} }
+    li:nth-of-type(4) { &::before { @extend .svg-coins;} }
+  }
+
+  &.list-2 {
+    li:nth-of-type(1) { &::before { @extend .svg-rocket-lunch; } }
+    li:nth-of-type(2) { &::before { @extend .svg-mobile-hand;} }
+    li:nth-of-type(3) { &::before { @extend .svg-users-alt;} }
+    li:nth-of-type(4) { &::before { @extend .svg-palette;} }
+  }
+
+  &.list-3 {
+    li:nth-of-type(1) { &::before { @extend .svg-system-cloud; } }
+    li:nth-of-type(2) { &::before { @extend .svg-auto-sync;} }
+    li:nth-of-type(3) { &::before { @extend .svg-paper-plane-launch;} }
+  }
+
+  &.list-4 {
+    li:nth-of-type(1) { &::before { @extend .svg-scale-comparison-alt; } }
+    li:nth-of-type(2) { &::before { @extend .svg-remote-control-hand;} }
+    li:nth-of-type(3) { &::before { @extend .svg-user-lock;} }
+    li:nth-of-type(4) { &::before { @extend .svg-binary-lock;} }
+    li:nth-of-type(5) { &::before { @extend .svg-european-union;} }
+  }
+
+  &.list-5 {
+    li:nth-of-type(1) { &::before { @extend .svg-fail; } }
+    li:nth-of-type(2) { &::before { @extend .svg-face-confused;} }
+    li:nth-of-type(3) { &::before { @extend .svg-duration-alt;} }
+    li:nth-of-type(4) { &::before { @extend .svg-chart-arrow-down;} }
+  }
+
+  &.list-6 {
+    li:nth-of-type(1) { &::before { @extend .svg-time-fast; } }
+    li:nth-of-type(2) { &::before { @extend .svg-people-carry-box;} }
+    li:nth-of-type(3) { &::before { @extend .svg-chart-line-up;} }
+  }
+
+  @media (min-width: $viewport-tablet) {
+    margin: $gutter * 2 $gutter * 3 $gutter * 2 $gutter * 3;
+  }
+  @media (min-width: $viewport-wide) {
+    margin: $gutter * 2 $gutter * 4 $gutter * 2 $gutter * 4;
   }
 }
