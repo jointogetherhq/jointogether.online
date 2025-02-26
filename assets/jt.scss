@@ -129,7 +129,7 @@ $neu-primary:   #8f8bb7;
 @mixin font-medium-large {
   font-size: $measure * 1.5;
   line-height: $baseline * 1.5;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0;
   @media (min-width: $viewport-tablet) {
     font-size: $measure * 2;
@@ -348,7 +348,7 @@ $neu-primary:   #8f8bb7;
   padding: $gutter;
   height: $baseline;
   color: $page;
-  background: color.adjust($highlight, $lightness: 10%);
+  background: color.adjust($text, $lightness: 5%);
   border-radius: $corner-radius;
   text-decoration: none;
   text-align: center;
@@ -627,6 +627,7 @@ header {
     }
     h2 {
       @include font-medium-large();
+      font-weight: 800;
 
       // An alternative to <sections> for the homepage
       &:not(:first-of-type) {
@@ -1272,9 +1273,9 @@ ul.union-logos {
   }
 
   @media (min-width: $viewport-tablet) {
-    margin: $gutter * 2 $gutter * 3 $gutter * 2 $gutter * 3;
+    margin: $gutter*2 $gutter*4 $gutter*2 $gutter*2;
   }
   @media (min-width: $viewport-wide) {
-    margin: $gutter * 2 $gutter * 4 $gutter * 2 $gutter * 4;
+    margin: $gutter*2 $gutter*6 $gutter*2 $gutter*2;
   }
 }
