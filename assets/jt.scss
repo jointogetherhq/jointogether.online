@@ -23,11 +23,10 @@
  * © 2022 MyFonts Inc
 */
 @use "sass:color";
+@use "sprite";
 
 @import url("//hello.myfonts.net/count/4a3fe4");
 @import url("//hello.myfonts.net/count/4a4a37");
-
-@import "./sprite";
 
 @font-face {
   font-family: "JoinTogether";
@@ -129,7 +128,7 @@ $neu-primary:   #8f8bb7;
 @mixin font-medium-large {
   font-size: $measure * 1.5;
   line-height: $baseline * 1.5;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0;
   @media (min-width: $viewport-tablet) {
     font-size: $measure * 2;
@@ -348,7 +347,7 @@ $neu-primary:   #8f8bb7;
   padding: $gutter;
   height: $baseline;
   color: $page;
-  background: color.adjust($text, $lightness: 5%);
+  background: color.adjust($highlight, $lightness: 10%);
   border-radius: $corner-radius;
   text-decoration: none;
   text-align: center;
@@ -627,7 +626,6 @@ header {
     }
     h2 {
       @include font-medium-large();
-      font-weight: 800;
 
       // An alternative to <sections> for the homepage
       &:not(:first-of-type) {
