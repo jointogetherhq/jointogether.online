@@ -4,6 +4,9 @@ title: Digital Tools for Trade Unions
 description:
   Join Together designs and builds member-centric digital tools and services
   that help trade union gain and retain more members.
+buttons:
+  - label: 'Book a call to find out more'
+    url: 'https://calendly.com/join-together/hello'
 paragraphs:
   - text: 'Unlock your union’s growth with smarter, member-first services'
   - text: 'Get more members with the best online join experience'

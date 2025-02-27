@@ -10,7 +10,7 @@ footer-order: 20
 ## Introduction
 
 <span>1\. </span>**Join Together (we, us, our)** provides digital tools for
-trade unions. Learn more about [our mission and tools]({{ site.url }}{{ site.baseurl }}/joining-tool).
+trade unions.
 
 <span>2\. </span>Join Together operates the [jointogether.online](/) website (the
 **Site**).

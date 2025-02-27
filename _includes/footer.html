@@ -3,18 +3,24 @@
       <fieldset id="actions">
         <h2>Actions</h2>
         <div>
-          {% assign homepage = site.pages | where: "path", "index.markdown" | first %}
+          {% assign homepage = site.pages | where: "path", "index.md" | first %}
           {% for item in homepage.buttons %}
             <a href="{{ item.url }}">{{ item.label }}</a>
           {% endfor %}
         </div>
       </fieldset>
       <fieldset id="signup">
-        <label for="newsletter-input">Sign up for news or follow&nbsp;us&nbsp;on&nbsp;<a href="https://twitter.com/jointogetherhq">Twitter</a>.</label>
+        <label for="newsletter-input">Sign up for news</label>
         <input id="newsletter-input" placeholder="email" type="email" name="EMAIL" />
         <div></div>
         <button type="submit">Sign up</button>
       </fieldset>
+
+      <p id="socials">
+        Follow us on
+        <a href="http://bsky.app/profile/jointogether.online">Bluesky</a> or
+        <a href="https://union.place/@jointogether">Mastodon</a>.
+      </p>
     </form>
   </div>
   <div id="footer-navigation">
@@ -27,7 +33,7 @@
       {% endif %}
       {% assign footerLinks = site.corporate-pages | sort: 'footer-order' %}
       {% for item in footerLinks %}
-        <span><a href="{{ site.url }}{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></span> 
+        <span><a href="{{ site.url }}{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></span>
       {% endfor %}
     </nav>
   </div>
