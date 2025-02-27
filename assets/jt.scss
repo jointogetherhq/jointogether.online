@@ -956,6 +956,13 @@ footer {
     @media (min-width: $viewport-tablet) {
       flex-direction: row;
     }
+    #socials {
+      margin-top: $gutter*2;
+      @media (min-width: $viewport-tablet) {
+        margin-top: 0;
+        padding-left: $gutter;
+      }
+    }
     #actions {
       margin-bottom: $gutter*4;
       @media (min-width: $viewport-tablet) {
