@@ -3,7 +3,7 @@
       <fieldset id="actions">
         <h2>Actions</h2>
         <div>
-          {% assign homepage = site.pages | where: "path", "index.markdown" | first %}
+          {% assign homepage = site.pages | where: "path", "index.md" | first %}
           {% for item in homepage.buttons %}
             <a href="{{ item.url }}">{{ item.label }}</a>
           {% endfor %}
