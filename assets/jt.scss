@@ -343,6 +343,12 @@ $neu-primary:   #8f8bb7;
     &.avatar {
       @include avatar;
     }
+
+    &.wrap-right {
+      float: right;
+      margin: $gutter*2;
+      width: 30%;
+    }
   }
 }
 

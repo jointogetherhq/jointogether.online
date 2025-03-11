@@ -82,9 +82,11 @@ possible user journey. Within five weeks the NEU was able to view the first vers
 Extensive user testing followed, which saw both education employees and student teachers navigate the form over video
 calls with Join Together. The team ironed out a number of issues – particularly around the choice of terminology –
 before the form went live on the NEU website for a 24-hour beta test. Further rounds of refinements and two further beta
-tests were carried out before the final version of the form was delivered
+tests were carried out before the final version of the form was delivered.
 
 ## Outcome
+
+![Application form](/assets/images/neu-apply-iphone.png){:.wrap-right}
 
 Features of the new membership form include:
 
