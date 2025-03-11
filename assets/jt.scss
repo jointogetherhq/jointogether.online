@@ -339,6 +339,10 @@ $neu-primary:   #8f8bb7;
     width: 100%;
     height: auto;
     margin: $gutter*2 0;
+
+    &.avatar {
+      @include avatar;
+    }
   }
 }
 
@@ -392,6 +396,14 @@ $neu-primary:   #8f8bb7;
   border-left: 0.5em solid $color;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0
+}
+
+@mixin avatar {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 0.5em 1em;
+  border-radius: 50%;
 }
 
 // BASE STYLES
@@ -1163,11 +1175,7 @@ blockquote {
 }
 
 img.avatar {
-  width: 100px;
-  height: 100px;
-  float: left;
-  margin: 0.5em 1em;
-  border-radius: 50%;
+  @include avatar;
 }
 
 video {
