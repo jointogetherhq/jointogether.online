@@ -1125,6 +1125,14 @@ blockquote {
   font-size: 105%;
   font-weight: 800;
   text-indent: -0.45em;
+  quotes: "“" "”" "‘" "’";
+
+  &::before {
+    content: open-quote;
+  }
+  &::after {
+    content: close-quote;
+  }
 }
 @supports ( hanging-punctuation: first) {
   blockquote {
@@ -1132,29 +1140,18 @@ blockquote {
     hanging-punctuation: first;
   }
 }
-blockquote::before {
-  content: open-quote;
-}
-blockquote::after {
-  content: close-quote;
-}
-blockquote {
-  quotes: "“" "”" "‘" "’";
-}
+
 .quote {
   margin: 2em 0;
   background: $light-shade;
   padding: 0.5em;
   border-radius: 0.5em;
   overflow: auto;
-}
-.quote figcaption,
-.quote blockquote {
-  margin: 1em;
-}
-.quote figcaption a { font-weight: 800; }
+  figcaption, blockquote {
+    margin: 1em;
+  }
+  figcaption a { font-weight: 800; }
 
-.quote {
   &.bfawu { @include union-quote($bfawu-primary) }
   &.neu   { @include union-quote($neu-primary) }
   &.forsa { @include union-quote($forsa-primary) }
