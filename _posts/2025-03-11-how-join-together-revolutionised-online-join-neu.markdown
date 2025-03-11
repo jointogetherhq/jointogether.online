@@ -74,7 +74,7 @@ for their membership team.
   <figcaption>Scarlet Harris, Recruitment and Retention Strategy Manager, <a href="https://neu.org.uk">NEU</a></figcaption>
 </figure>
 
-![Process diagram](/assets/images/process.svg)
+![Process diagram](/assets/images/process-narrow.svg)
 
 Join Together then worked with a smaller group from the NEU to wireframe the process, plotting out the path of every
 possible user journey. Within five weeks the NEU was able to view the first version of a clickable form.
