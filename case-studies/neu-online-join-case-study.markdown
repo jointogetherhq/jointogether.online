@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: case-study
 title:  How Join Together revolutionised online member sign up for the NEU
 description: Here's how the NEU turned to Join Together and increased their form completion rate by 60%
 og_image_path: /assets/images/posts/how-jt-revolutionised.jpg

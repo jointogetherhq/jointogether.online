@@ -737,9 +737,9 @@ header {
 
 
 
-// LAYOUT - PRODUCT
+// LAYOUT - CASE STUDY
 
-#layout-product {
+#layout-case-study {
   z-index: 2;
   @include layout-block();
   #layout-inner {
@@ -747,13 +747,13 @@ header {
     margin: $whitespace 0 0;
     @include body-typography();
     @media (min-width: $viewport-tablet) {
-      grid-column: 2 / 6;
+      grid-column: 2 / 5;
     }
     #header {
       hyphens: none;
       -ms-hyphens: none;
       -webkit-hyphens: none;
-      margin: 0 auto $whitespace;
+      margin: 0 auto calc($whitespace / 2);
       @media (min-width: $viewport-tablet) {
         @include font-medium();
       }
@@ -761,69 +761,8 @@ header {
         @include font-large();
       }
     }
-    #body {
-      margin: 0 auto;
-      @media (min-width: $viewport-tablet) {
-        @include font-medium();
-      }
-      img {
-        display: block;
-        width: 100%;
-        height: auto;
-        margin: $gutter*2 0;
-      }
-      ol {
-        list-style: none;
-        display: grid;
-        grid-gap: $gutter;
-        counter-reset: ol;
-        margin: $gutter*1.5 0 $whitespace*0.5;
-        @media (min-width: $viewport-tablet) {
-          grid-template-columns: 1fr 1fr;
-        }
-        li {
-          position: relative;
-          padding: $gutter;
-          min-height: $whitespace*0.5;
-          border-radius: $corner-radius;
-          background: $light-shade;
-          grid-row: span 2;
-          counter-increment: ol;
-          display: flex;
-          flex-direction: column;
-          overflow: hidden;
-          margin-top: 0;
-          &:nth-child(2) {
-            grid-column: 2/ 3;
-            grid-row: 2 / 4;
-          }
-          &:before {
-            content: counter(ol);
-            position: relative;
-            margin-left: 0;
-            display: inline-block;
-            color: $highlight;
-            margin-bottom: $gutter;
-            width: 1.2em;
-            height: 1.2em;
-            line-height: 1.15em;
-            text-align: center;
-            border: 1px solid;
-            border-radius: 100%;
-            @include font-large();
-          }
-          img {
-            position: relative;
-            display: block;
-            width: calc(100% + #{$gutter*2});
-            height: auto;
-            margin: $gutter $gutter*-1 0;
-            &:last-child {
-              margin-bottom: $gutter*-1;
-            }
-          }
-        }
-      }
+    h2 {
+      @include font-medium();
     }
     nav {
       @include cta-buttons;
