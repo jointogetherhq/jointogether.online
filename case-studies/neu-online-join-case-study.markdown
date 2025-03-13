@@ -4,7 +4,7 @@ title:  How Join Together revolutionised online member sign up for the NEU
 sub_title: The NEU’s online join process wasn’t fit for purpose. Join Together took the union back to first principles to redesign it from the ground up.
 description: Here's how the NEU turned to Join Together and increased their form completion rate by 60%
 og_image_path: /assets/images/posts/how-jt-revolutionised.jpg
-date: 2025-03-11 10:08:25 +0000
+date: 2025-03-13 10:08:25 +0000
 ---
 
 ### Background
