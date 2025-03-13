@@ -3,7 +3,7 @@ layout: case-study
 title:  How Join Together revolutionised online member sign up for the NEU
 sub_title: The NEU’s online join process wasn’t fit for purpose. Join Together took the union back to first principles to redesign it from the ground up.
 description: Learn how Join Together worked with the NEU and increased their online join completion rates by 60%.
-og_image_path: /assets/images/posts/how-jt-revolutionised.jpg
+og_image_path: /assets/images/posts/how-jt-revolutionised.png
 date: 2025-03-13 10:08:25 +0000
 ---
 
