@@ -6,13 +6,13 @@ og_image_path: /assets/images/posts/how-jt-revolutionised.jpg
 date: 2025-03-11 10:08:25 +0000
 ---
 
-The NEU’s online join process wasn’t fit for purpose. Join Together took the union back to first principles to 
+The NEU’s online join process wasn’t fit for purpose. Join Together took the union back to first principles to
 redesign it from the ground up.
 
 ## Background
 
-The NEU (the National Education Union) was formed in 2017 by the merger of two education unions: NUT and ATL. 
-The largest education union in Europe, with around half a million members, it has experienced a period of rapid 
+The NEU (the National Education Union) was formed in 2017 by the merger of two education unions: NUT and ATL.
+The largest education union in Europe, with around half a million members, it has experienced a period of rapid
 growth since the amalgamation.
 
 ## The Problem
@@ -23,7 +23,7 @@ form was faring particularly badly. It loaded slowly. It was not accessible. It 
 peppered with confusing terminology, and it was easy to lose your place. The
 form was converting at just 25 percent.
 
-As a response to the shutdown of in-person student fairs due to the pandemic, 
+As a response to the shutdown of in-person student fairs due to the pandemic,
 the NEU had moved quickly to create a newer form for free student
 membership in 2020. This form was performing well, but the NEU wanted to
 combine the two to avoid confusing new joiners and to simplify the process
@@ -42,14 +42,15 @@ for their membership team.
       no clear outcome for all of the data collected. And it all moved way too slowly.
     </p>
     <p>
-      The new form needed to be able to handle all of the idiosyncrasies that come with union memberships, from 
-      different types of memberships to varying location-based costs, alongside providing a straightforward upgrade 
-      experience for newly qualified teachers.</p> 
+      The new form needed to be able to handle all of the idiosyncrasies that come with union memberships, from
+      different types of memberships to varying location-based costs, alongside providing a straightforward upgrade
+      experience for newly qualified teachers.</p>
     <p>
-      All unions have their own unique peculiarities, and we knew from the start that our membership structures and 
+      All unions have their own unique peculiarities, and we knew from the start that our membership structures and
       subs calculations were even more complex than most. We knew this would be a difficult task.
     </p>
   </blockquote>
+
   <figcaption>Scarlet Harris, Recruitment and Retention Strategy Manager, <a href="https://neu.org.uk">NEU</a></figcaption>
 </figure>
 
@@ -65,9 +66,9 @@ for their membership team.
     </p>
     <p>
       We went through the old join forms page by page, questioning the data fields, use of language, and user journey.
-    </p> 
+    </p>
     <p>
-      Join Together’s logical thinking, understanding of the workings of unions and perceptive eye on user experience 
+      Join Together’s logical thinking, understanding of the workings of unions and perceptive eye on user experience
       helped us to let go of old assumptions and start to imagine how the new form could function.
     </p>
   </blockquote>
@@ -93,9 +94,9 @@ Features of the new membership form include:
 - Student and full membership sign-up in a single combined branching form
 - A simple and rapid student upgrade process requiring minimal new input
 - A straightforward and automatic rejoin process for lapsed members
-- The potential for full integration with any CRM, giving NEU the freedom to migrate to another system without having  
+- The potential for full integration with any CRM, giving NEU the freedom to migrate to another system without having
   to rebuild the join form
-- Automated ‘dropped cart’ email reminders encouraging people to resume an incomplete application at the point they 
+- Automated ‘dropped cart’ email reminders encouraging people to resume an incomplete application at the point they
   left off
 - A progress bar, indicating how far applicants are through the form’s flow
 - An accessible, inclusive, WCAG-compliant design
@@ -111,7 +112,7 @@ Features of the new membership form include:
     <p>
       The journey is so much easier for people to complete and its intelligent functions have removed the need for much manual
       work behind the scenes, including deduping student upgrades. It’s completely transformed the user experience!
-    </p> 
+    </p>
   </blockquote>
   <figcaption>Scarlet Harris, Recruitment and Retention Strategy Manager, <a href="https://neu.org.uk">NEU</a></figcaption>
 </figure>
@@ -123,7 +124,7 @@ The NEU’s new online join process has:
 
 - A completion rate **60%** higher than the forms it replaced
 - A median time to complete of less than **two minutes**, with the fastest being just **45 seconds**
-- Student members upgrading in as little as **30 seconds**, with almost **3,000** doing so within a week when they received 
+- Student members upgrading in as little as **30 seconds**, with almost **3,000** doing so within a week when they received
   an email after graduation
 - Lightning-fast page load, with a **95th-percentile** response time of **<50ms**
 - Load testing showing the new system can easily handle the NEU’s stated goal
@@ -134,10 +135,10 @@ The NEU’s new online join process has:
 ## Conclusion
 
 Working with Join Together, the NEU totally overhauled its online sign-up process, combining full and student membership
-applications for the first time. Applicants can complete the new online join form in a fraction of the time (as little 
-as 45 seconds) compared to the forms it replaced and, as a result, completed applications have increased by 60%. 
-Join Together’s platform reduced admin time and cost for the union, and the new process can easily be integrated into 
+applications for the first time. Applicants can complete the new online join form in a fraction of the time (as little
+as 45 seconds) compared to the forms it replaced and, as a result, completed applications have increased by 60%.
+Join Together’s platform reduced admin time and cost for the union, and the new process can easily be integrated into
 any future CRM or updated to reflect new requirements.
 
-Best of all, the new form has given the NEU the confidence to end the availability of costly, inaccurate paper forms 
+Best of all, the new form has given the NEU the confidence to end the availability of costly, inaccurate paper forms
 for full memberships, instead directing everyone to the new, improved, online sign-up process from Join Together.
