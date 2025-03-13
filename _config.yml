@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -20,7 +20,7 @@
 
 title: Join Together
 email: hello@jointogether.online
-description: >- 
+description: >-
   Digital tools for trade unions
 url: "https://jointogether.online"
 
@@ -35,14 +35,9 @@ collections:
     permalink: /:path/
     layout: page
     sort_by: footer-order
-  product-pages:
-    output: true
-    permalink: /:path/
-    layout: product
-    sort_by: order
   posts:
     output: true
     permalink: /post/:path/
     layout: post
     sort_by: date
-    
+
