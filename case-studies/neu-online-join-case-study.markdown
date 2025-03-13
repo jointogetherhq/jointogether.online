@@ -2,7 +2,7 @@
 layout: case-study
 title:  How Join Together revolutionised online member sign up for the NEU
 sub_title: The NEU’s online join process wasn’t fit for purpose. Join Together took the union back to first principles to redesign it from the ground up.
-description: Here's how the NEU turned to Join Together and increased their form completion rate by 60%
+description: Learn about how Join Together worked with the NEU and increased their online join completion rates by 60%.
 og_image_path: /assets/images/posts/how-jt-revolutionised.jpg
 date: 2025-03-13 10:08:25 +0000
 ---
@@ -139,3 +139,5 @@ any future CRM or updated to reflect new requirements.
 
 Best of all, the new form has given the NEU the confidence to end the availability of costly, inaccurate paper forms
 for full memberships, instead directing everyone to the new, improved, online sign-up process from Join Together.
+
+**[Download this case study as a PDF](/assets/pdfs/Join-Together-NEU-case-study.pdf)**.
