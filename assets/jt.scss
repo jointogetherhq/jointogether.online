@@ -760,8 +760,12 @@ header {
       h1 {
         @include font-large();
       }
+      h2 {
+        @include font-medium();
+        font-weight: 1000;
+      }
     }
-    h2 {
+    h3 {
       @include font-medium();
     }
     nav {

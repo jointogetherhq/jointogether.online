@@ -1,21 +1,19 @@
 ---
 layout: case-study
 title:  How Join Together revolutionised online member sign up for the NEU
+sub_title: The NEU’s online join process wasn’t fit for purpose. Join Together took the union back to first principles to redesign it from the ground up.
 description: Here's how the NEU turned to Join Together and increased their form completion rate by 60%
 og_image_path: /assets/images/posts/how-jt-revolutionised.jpg
 date: 2025-03-11 10:08:25 +0000
 ---
 
-The NEU’s online join process wasn’t fit for purpose. Join Together took the union back to first principles to
-redesign it from the ground up.
-
-## Background
+### Background
 
 The NEU (the National Education Union) was formed in 2017 by the merger of two education unions: NUT and ATL.
 The largest education union in Europe, with around half a million members, it has experienced a period of rapid
 growth since the amalgamation.
 
-## The Problem
+### The Problem
 
 The union was all too aware that its online membership sign-up process for both
 student and full memberships was not performing well. The full membership
@@ -54,7 +52,7 @@ for their membership team.
   <figcaption>Scarlet Harris, Recruitment and Retention Strategy Manager, <a href="https://neu.org.uk">NEU</a></figcaption>
 </figure>
 
-## The Process
+### The Process
 
 <figure class="quote neu">
   <img class="avatar" src="/assets/images/people/scarlet-harris.jpg" alt="">
@@ -85,7 +83,7 @@ calls with Join Together. The team ironed out a number of issues – particularl
 before the form went live on the NEU website for a 24-hour beta test. Further rounds of refinements and two further beta
 tests were carried out before the final version of the form was delivered.
 
-## Outcome
+### Outcome
 
 ![Application form](/assets/images/neu-apply-iphone.png){:.wrap-right}
 
@@ -117,8 +115,7 @@ Features of the new membership form include:
   <figcaption>Scarlet Harris, Recruitment and Retention Strategy Manager, <a href="https://neu.org.uk">NEU</a></figcaption>
 </figure>
 
-
-## Key Figures
+### Key Figures
 
 The NEU’s new online join process has:
 
@@ -132,7 +129,7 @@ The NEU’s new online join process has:
 - **2%** of overall submissions result from automated dropped cart emails, which
   remind people to pick up their incomplete application where they left off
 
-## Conclusion
+### Conclusion
 
 Working with Join Together, the NEU totally overhauled its online sign-up process, combining full and student membership
 applications for the first time. Applicants can complete the new online join form in a fraction of the time (as little
