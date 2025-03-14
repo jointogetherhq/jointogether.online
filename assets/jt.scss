@@ -1173,7 +1173,7 @@ ul.union-logos {
   h2:first-child { margin-top: $baseline*0.5; }
 }
 
-a.flaticon-pdf {
+.flat-icons {
   padding-left: 2em; // icon padding
 
   &::before {
@@ -1187,23 +1187,19 @@ a.flaticon-pdf {
   }
 }
 
+a.flaticon-pdf {
+  @extend .flat-icons;
+  &::before { @extend .svg-file-pdf; }
+}
+
 #layout-homepage #homepage-detail ul.flaticon-list {
   list-style: none;
   margin: $gutter * 2 $gutter;
   padding: 0;
   position: relative;
 
-  li:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 24px;
-    height: 24px;
-    display: inline-block;
-  }
-
   li {
-    padding-left: 2em; // leave room for the icon
+    @extend .flat-icons;
     margin-bottom: $measure;
   }
 
