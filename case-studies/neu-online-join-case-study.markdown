@@ -140,4 +140,4 @@ any future CRM or updated to reflect new requirements.
 Best of all, the new form has given the NEU the confidence to end the availability of costly, inaccurate paper forms
 for full memberships, instead directing everyone to the new, improved, online sign-up process from Join Together.
 
-**[Download this case study as a PDF](/assets/pdfs/Join-Together-NEU-case-study.pdf)**.
+**[Download as a PDF](/assets/pdfs/Join-Together-NEU-case-study.pdf){:.flaticon-pdf}**

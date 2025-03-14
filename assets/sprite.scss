@@ -172,9 +172,19 @@
     height: 24px;
 }
 
-.svg-government-budget {
+.svg-file-pdf {
     @extend %svg-common;
     background-position: 80% 20%;
+}
+
+.svg-file-pdf-dims {
+    width: 24px;
+    height: 24px;
+}
+
+.svg-government-budget {
+    @extend %svg-common;
+    background-position: 80% 40%;
 }
 
 .svg-government-budget-dims {
@@ -184,7 +194,7 @@
 
 .svg-megaphone-announcement-leader {
     @extend %svg-common;
-    background-position: 80% 40%;
+    background-position: 80% 60%;
 }
 
 .svg-megaphone-announcement-leader-dims {
@@ -194,7 +204,7 @@
 
 .svg-megaphone-sound-waves {
     @extend %svg-common;
-    background-position: 80% 60%;
+    background-position: 0 80%;
 }
 
 .svg-megaphone-sound-waves-dims {
@@ -204,7 +214,7 @@
 
 .svg-mobile-hand {
     @extend %svg-common;
-    background-position: 0 80%;
+    background-position: 20% 80%;
 }
 
 .svg-mobile-hand-dims {
@@ -214,7 +224,7 @@
 
 .svg-palette {
     @extend %svg-common;
-    background-position: 20% 80%;
+    background-position: 40% 80%;
 }
 
 .svg-palette-dims {
@@ -224,7 +234,7 @@
 
 .svg-paper-plane-launch {
     @extend %svg-common;
-    background-position: 40% 80%;
+    background-position: 60% 80%;
 }
 
 .svg-paper-plane-launch-dims {
@@ -234,7 +244,7 @@
 
 .svg-people-carry-box {
     @extend %svg-common;
-    background-position: 60% 80%;
+    background-position: 80% 80%;
 }
 
 .svg-people-carry-box-dims {
@@ -244,7 +254,7 @@
 
 .svg-pound {
     @extend %svg-common;
-    background-position: 80% 80%;
+    background-position: 100% 0;
 }
 
 .svg-pound-dims {
@@ -254,7 +264,7 @@
 
 .svg-remote-control-hand {
     @extend %svg-common;
-    background-position: 100% 0;
+    background-position: 100% 20%;
 }
 
 .svg-remote-control-hand-dims {
@@ -264,7 +274,7 @@
 
 .svg-rocket-lunch {
     @extend %svg-common;
-    background-position: 100% 20%;
+    background-position: 100% 40%;
 }
 
 .svg-rocket-lunch-dims {
@@ -274,7 +284,7 @@
 
 .svg-scale-comparison-alt {
     @extend %svg-common;
-    background-position: 100% 40%;
+    background-position: 100% 60%;
 }
 
 .svg-scale-comparison-alt-dims {
@@ -284,7 +294,7 @@
 
 .svg-smartphone {
     @extend %svg-common;
-    background-position: 100% 60%;
+    background-position: 100% 80%;
 }
 
 .svg-smartphone-dims {
@@ -294,7 +304,7 @@
 
 .svg-system-cloud {
     @extend %svg-common;
-    background-position: 100% 80%;
+    background-position: 0 100%;
 }
 
 .svg-system-cloud-dims {
@@ -304,7 +314,7 @@
 
 .svg-time-fast {
     @extend %svg-common;
-    background-position: 0 100%;
+    background-position: 20% 100%;
 }
 
 .svg-time-fast-dims {
@@ -314,7 +324,7 @@
 
 .svg-time-forward {
     @extend %svg-common;
-    background-position: 20% 100%;
+    background-position: 40% 100%;
 }
 
 .svg-time-forward-dims {
@@ -324,7 +334,7 @@
 
 .svg-user-lock {
     @extend %svg-common;
-    background-position: 40% 100%;
+    background-position: 60% 100%;
 }
 
 .svg-user-lock-dims {
@@ -334,7 +344,7 @@
 
 .svg-users-alt {
     @extend %svg-common;
-    background-position: 60% 100%;
+    background-position: 80% 100%;
 }
 
 .svg-users-alt-dims {

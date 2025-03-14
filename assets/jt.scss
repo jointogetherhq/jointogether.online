@@ -747,6 +747,9 @@ header {
     margin: $whitespace 0 0;
     @include body-typography();
     @media (min-width: $viewport-tablet) {
+      grid-column: 2 / 6;
+    }
+    @media (min-width: $viewport-wide) {
       grid-column: 2 / 5;
     }
     #header {
@@ -1170,23 +1173,33 @@ ul.union-logos {
   h2:first-child { margin-top: $baseline*0.5; }
 }
 
-#layout-homepage #homepage-detail ul.flaticon-list {
-  list-style: none;
-  margin: $gutter * 2 $gutter;
-  padding: 0;
-  position: relative;
+.flat-icons {
+  padding-left: 2em; // icon padding
 
-  li:before {
+  &::before {
     content: "";
     position: absolute;
     left: 0;
     width: 24px;
     height: 24px;
     display: inline-block;
+    @extend .svg-file-pdf;
   }
+}
+
+a.flaticon-pdf {
+  @extend .flat-icons;
+  &::before { @extend .svg-file-pdf; }
+}
+
+#layout-homepage #homepage-detail ul.flaticon-list {
+  list-style: none;
+  margin: $gutter * 2 $gutter;
+  padding: 0;
+  position: relative;
 
   li {
-    padding-left: 2em; // leave room for the icon
+    @extend .flat-icons;
     margin-bottom: $measure;
   }
 
