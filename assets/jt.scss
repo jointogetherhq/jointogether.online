@@ -1173,6 +1173,20 @@ ul.union-logos {
   h2:first-child { margin-top: $baseline*0.5; }
 }
 
+a.flaticon-pdf {
+  padding-left: 2em; // icon padding
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    @extend .svg-file-pdf;
+  }
+}
+
 #layout-homepage #homepage-detail ul.flaticon-list {
   list-style: none;
   margin: $gutter * 2 $gutter;
