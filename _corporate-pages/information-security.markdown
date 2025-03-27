@@ -89,4 +89,4 @@ To ensure an acceptable level of password security, we have an existing password
 
 The use of multi-factor authentication (MFA) is enforced on all the main services Join Together relies on, including Heroku, GitHub and Postmark.
 
-The Join Together platform itself enforces MFA for on-platform access to application data is required by your staff.
+The Join Together platform itself enforces MFA for any back-end administrative access required for your staff members.
