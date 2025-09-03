@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  To retain more members, should unions actually make it easier for people to leave?
-description: Creating a digital "leave the union" service would help unions get better data and keep more members
+description: Creating a digital 'leave the union' service would help unions get better data and keep more members
 date: 2025-09-03 11:19:13 +0000
 ---
 
