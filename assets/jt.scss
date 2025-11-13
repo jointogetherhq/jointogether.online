@@ -451,6 +451,19 @@ hr {
   height: $whitespace;
 }
 
+code {
+  font-family: Menlo, Consolas, "Courier New", monospace;
+  font-weight: normal;
+}
+
+table {
+  border-spacing: 5px;
+  margin-top: $measure * 2;
+  margin-bottom: $measure * 2;
+  thead {
+    font-weight: 800;
+  }
+}
 
 
 // BRAND AREA

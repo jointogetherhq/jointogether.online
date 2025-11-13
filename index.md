@@ -141,7 +141,7 @@ needs.
   <a href="https://calendly.com/join-together/hello">Book a call to find out more</a>
 </nav>
 
-<div class="callout">
+<div class="callout" id="update-upgrade">
   <h2>Update:Upgrade — the simpler way to keep member data up to date</h2>
 
   <p>
