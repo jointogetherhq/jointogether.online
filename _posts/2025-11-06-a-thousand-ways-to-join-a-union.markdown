@@ -2,7 +2,7 @@
 layout: post
 title:  A thousand new ways to join a union
 description: Join Together’s Campaigns let you tailor online joining for every workplace, organiser, and moment — turning interest into action
-og_image_path: 
+og_image_path: /assets/images/posts/1000-ways-to-join.jpg
 date: 2025-11-18 12:08:14 +0000
 ---
 
