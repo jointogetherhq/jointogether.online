@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Is your union’s join form ready for the new employment rights act?
+title:  Is your union’s join form ready for the Employment Rights Act 2025?
 description: The Employment Rights Act 2025 comes into effect 18 February 2026. Is your union's join for ready?
 og_image_path: /assets/images/posts/2026-02-10-og.jpg
 date: 2026-02-09
