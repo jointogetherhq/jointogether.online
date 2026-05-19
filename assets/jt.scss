@@ -1149,19 +1149,47 @@ video {
 }
 
 ul.union-logos {
+  $num-logos: 5;
+
   list-style-type: none;
   margin-top: $measure * 2;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; // Start mobile first, centering logos
+  flex-wrap: wrap;         // wrapping each logo onto new rows as necessary (max 2 really)
+  gap: $gutter * 5;        // with a little gap to stop them bunching
+  row-gap: 0;              // but not so much vertically
 
+  @media (min-width: $viewport-desktop) {
+    // On a desktop, stop wrapping. 5 logos all fit. Remove at $num-logos: 6!
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: $gutter * 4;
+  }
+
+  li {
+    flex: 0 0 calc(100% / #{$num-logos});
+    // Also use flex within a single li for vertical align-items
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $viewport-desktop) {
+      flex: 0 1 auto;
+    }
+  }
+
+
+  $logo-padding-bottom: 5px;
   img {
-    display: inline-block;
-    width: auto;
-    height: $baseline*2;
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: $baseline * 3.5;
     border-bottom: 1px solid transparent;
-    padding-bottom: 5px;
+    padding-bottom: $logo-padding-bottom;
     @media (min-width: $viewport-tablet) {
-      height: $baseline*3;
+      width: 100%;
+      max-width: $baseline * 6;
     }
   }
   :hover {
@@ -1172,7 +1200,7 @@ ul.union-logos {
   :focus {
     img {
       border-bottom: 2px solid $highlight;
-      padding-bottom: 4px;
+      padding-bottom: calc($logo-padding-bottom - 1px);
     }
   }
 }
