@@ -124,7 +124,6 @@ solutions that help them grow.
 
 - [![National Education Union](/assets/images/logos/neu-logo.svg)](https://neu.org.uk)
 - [![Communication Workers Union](/assets/images/logos/cwu-logo.svg)](https://cwu.org)
-- [![Bakers Food and Allied Workers Union](/assets/images/logos/bfawu-logo.png)](https://bfawu.org)
 - [![Forsa the Irish Trade Union](/assets/images/logos/forsa-logo.png)](https://www.forsa.ie)
 <!-- - [![Royal College of Midwives](/assets/images/logos/rcm-logo.png)](https://rcm.org.uk) -->
 - [![Bakers Food and Allied Workers Union](/assets/images/logos/bfawu-logo.png)](https://bfawu.org)
