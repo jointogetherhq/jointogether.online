@@ -7,7 +7,7 @@ date: 2026-08-28
 ---
 
 Over the last few months, we’ve been putting together improved online joining experiences for two new unions to the Join
-Together platform - ASLEF and the Royal College of Midwives.
+Together platform — ASLEF and the Royal College of Midwives.
 
 ASLEF, the union for train drivers, is using our new “campaigns” functionality, allowing them to customise recruitment
 all the way down to the individual depot level, with unique “join” links, QR codes and messaging for each. They’re also
