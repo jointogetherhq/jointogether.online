@@ -14,7 +14,7 @@ all the way down to the individual depot level, with unique “join” links, QR
 using our passwordless “update your details” tool, giving members a user-friendly way of maintaining their record with
 the union, making it easier to stay in contact and increase engagement and participation.
 
-The RCM’s new, simpler, faster, deals with some long-standing issues and pain points, including handling for rejoiners
+The RCM’s new, simpler, faster form deals with some long-standing issues and pain points, including handling for rejoiners,
 and an improved experience for international members. The redesigned form quickly captures all of the key information
 needed from members to understand their professional background, employer and workplace, as well as add professional
 subscriptions that can help them in their midwifery career. It's still early days, but the new form is currently
