@@ -8,7 +8,8 @@ date: 2026-02-09
 
 Part of the [Employment Rights Act 2025](https://www.legislation.gov.uk/ukpga/2025/36/contents) will come into force on
 18 February 2026, strengthening trade unions’ ability to organise, gain recognition, and represent workers in the
-workplace. In this post we'll look at how the provisions impact online joining for unions.
+workplace. In this post we'll look at how the provisions impact online joining for unions. Note that none of this is
+legal advice, do read the legislation and decide on the appropriate changes for your union.
 
 ## Automatic Political Fund opt-in
 
@@ -20,8 +21,11 @@ political party:
 
 ![a join form question asking if the applicant wants to contribute to the union's political fund](/assets/images/posts/2026-02-10-is-your-join-form-ready-for-the-employment-rights-act.jpg)
 
-From 18 February 2026 unions will no longer need this explicit opt-in, and can (again) automatically opt new members
-into a union’s political fund. This means any opt-in questions can be removed from your union’s join form, and rate calculations updated to automatically include political fund contributions.
+From 18 February 2026 unions will no longer need this explicit opt-in for the political fund, and can (again)
+automatically opt new members into a union’s political fund. This means any opt-in questions can be removed from your
+union’s join form, and rate calculations updated to automatically include political fund contributions. Note this only
+applies to those joining from Great Britain; those joining from Northern Ireland will still need to provide explicit
+opt-in.
 
 ## Coming soon: e-balloting
 
