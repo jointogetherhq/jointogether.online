@@ -2,7 +2,7 @@
 layout: post
 title:  Welcoming ASLEF and the RCM to Join Together
 description: Two new unions taking advantage of the Join Together platform's improved experience for their members
-og_image_path:
+og_image_path: /assets/images/posts/2026-08-28-welcome-aslef-and-rcm.jpg
 date: 2026-08-28
 ---
 
