@@ -3,7 +3,7 @@ layout: post
 title:  Welcoming ASLEF and the RCM to Join Together
 description: Two new unions taking advantage of the Join Together platform's improved experience for their members
 og_image_path:
-date: 2026-08-18
+date: 2026-08-28
 ---
 
 Over the last few months, we’ve been putting together improved online joining experiences for two new unions to the Join
