@@ -11,7 +11,7 @@
       </fieldset>
       <fieldset id="signup">
         <label for="newsletter-input">Sign up for news</label>
-        <input id="newsletter-input" placeholder="email" type="email" name="EMAIL" />
+        <input id="newsletter-input" placeholder="email" type="email" name="EMAIL">
         <div></div>
         <button type="submit">Sign up</button>
       </fieldset>
@@ -24,7 +24,6 @@
     </form>
   </div>
   <div id="footer-navigation">
-    <div><p>&copy; JoinTogether Cooperative Ltd&nbsp;{{ site.time | date: '%Y' }}<a href="https://www.uk.coop"><img src="{{ site.baseurl }}/assets/images/coop-uk-logo.svg" /></a></p></div>
     <nav>
       <h2>Corporate info: </h2>
       {% assign post_count=site.posts | size %}
@@ -35,5 +34,12 @@
       {% for item in footerLinks %}
         <span><a href="{{ site.url }}{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></span>
       {% endfor %}
+
+    <p id="legal-disclosures">
+      Join Together Co-operative Ltd is registered in England and Wales with Company number 13633630 and VAT number GB
+      409825969.
+      Its registered office is The Old Bakery, 90 Camden Road, Tunbridge Wells, Kent, TN1 2QP.
+    </p>
     </nav>
+
   </div>
